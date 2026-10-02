@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Weekday brief for Bitcoin, bitcoin-linked equities, and space and defense names.">
+  <meta name="theme-color" content="#f3efe6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#141210" media="(prefers-color-scheme: dark)">
+  <title>Daily Investment Brief</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,650&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231a1714'/%3E%3Crect x='7' y='8' width='18' height='3' fill='%23e7b08a'/%3E%3Crect x='7' y='15' width='12' height='3' fill='%23f3efe6'/%3E%3Crect x='7' y='22' width='16' height='3' fill='%23f3efe6'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      --bg: #f3efe6;
+      --paper: #faf7f1;
+      --ink: #1a1714;
+      --muted: #655e54;
+      --line: #e2dacd;
+      --accent: #b85a28;
+      --up: #0c6b45;
+      --up-bg: #e5f4ec;
+      --down: #9d342c;
+      --down-bg: #f8e8e5;
+      --flat: #5c564c;
+      --flat-bg: #ece7de;
+      --shadow: 0 1px 0 rgba(26, 23, 20, 0.04);
+      color-scheme: light;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #141210;
+        --paper: #1c1916;
+        --ink: #f4efe6;
+        --muted: #b7aea2;
+        --line: #322d27;
+        --accent: #e0a070;
+        --up: #8ed4ae;
+        --up-bg: #1a3328;
+        --down: #f0b0a8;
+        --down-bg: #3a221f;
+        --flat: #c8bfb2;
+        --flat-bg: #2a261f;
+        --shadow: none;
+        color-scheme: dark;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Outfit, "Avenir Next", "Segoe UI", sans-serif;
+      font-size: 1rem;
+      line-height: 1.45;
+    }
+
+    .wrap {
+      width: min(40rem, calc(100% - 2rem));
+      margin: 0 auto;
+      padding-bottom: 3rem;
+    }
+
+    header {
+      padding: 1.4rem 0 0.4rem;
+    }
+
+    .eyebrow {
+      margin: 0 0 0.35rem;
+      color: var(--accent);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-family: Fraunces, "Iowan Old Style", Palatino, Georgia, serif;
+      font-size: clamp(2.1rem, 8vw, 3.15rem);
+      font-weight: 560;
+      letter-spacing: -0.03em;
+      line-height: 0.95;
+    }
+
+    .dateline {
+      margin: 0.85rem 0 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      display: flex;
+      gap: 1rem;
+      margin: 1rem -1rem 0;
+      padding: 0.7rem 1rem;
+      overflow-x: auto;
+      background: color-mix(in srgb, var(--bg) 90%, transparent);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid transparent;
+    }
+
+    nav a {
+      flex: 0 0 auto;
+      color: var(--ink);
+      font-size: 0.84rem;
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 0.15rem;
+    }
+
+    nav a:focus-visible,
+    .headlines a:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+    }
+
+    main { padding-top: 0.4rem; }
+
+    section {
+      padding-top: 1.35rem;
+      scroll-margin-top: 3.6rem;
+    }
+
+    .section-kicker {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin: 0.2rem 0 0;
+      font-family: Fraunces, "Iowan Old Style", Palatino, Georgia, serif;
+      font-size: 1.7rem;
+      font-weight: 560;
+      letter-spacing: -0.03em;
+    }
+
+    .blurb {
+      margin: 0.2rem 0 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .analysis {
+      margin: 0.85rem 0 0;
+      padding-left: 0.75rem;
+      border-left: 2px solid var(--accent);
+      font-size: 0.98rem;
+    }
+
+    .quotes { margin-top: 0.35rem; }
+
+    .quote {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 3.4rem auto;
+      gap: 0.35rem 0.7rem;
+      align-items: center;
+      padding: 0.8rem 0 0.7rem;
+      border-top: 1px solid var(--line);
+    }
+
+    .quote:first-child { border-top: 0; }
+
+    .symbol {
+      font-weight: 600;
+      letter-spacing: 0.04em;
+    }
+
+    .name {
+      display: block;
+      color: var(--muted);
+      font-size: 0.8rem;
+      line-height: 1.25;
+    }
+
+    .spark { width: 3.4rem; height: 1.35rem; }
+
+    .px {
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .price {
+      display: block;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+
+    .pct {
+      display: inline-block;
+      margin-top: 0.15rem;
+      padding: 0.08rem 0.42rem;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 600;
+    }
+
+    .pct.up { color: var(--up); background: var(--up-bg); }
+    .pct.down { color: var(--down); background: var(--down-bg); }
+    .pct.flat { color: var(--flat); background: var(--flat-bg); }
+
+    .sub {
+      grid-column: 1 / -1;
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.75rem;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .quote-error .name { color: var(--down); }
+
+    .news-label {
+      margin: 1rem 0 0.35rem;
+      color: var(--muted);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .headlines {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 0.7rem;
+      box-shadow: var(--shadow);
+    }
+
+    .headlines li + li { border-top: 1px solid var(--line); }
+
+    .headlines a {
+      display: block;
+      padding: 0.75rem 0.85rem;
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .headlines a:hover .headline-title { color: var(--accent); }
+
+    .headline-title {
+      display: block;
+      font-weight: 560;
+      letter-spacing: -0.01em;
+    }
+
+    .headline-meta,
+    .empty-news,
+    .status {
+      color: var(--muted);
+      font-size: 0.78rem;
+    }
+
+    .headline-meta { display: block; margin-top: 0.2rem; }
+
+    .empty-news { margin: 0.4rem 0 0; }
+
+    footer {
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+
+    footer p { margin: 0.35rem 0; }
+
+    @media (min-width: 720px) {
+      .wrap { width: min(44rem, calc(100% - 4rem)); }
+      header { padding-top: 2.2rem; }
+      .quote { padding: 0.9rem 0; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+    @media print {
+      nav, .spark { display: none; }
+      body { background: white; color: black; }
+      .headlines a { text-decoration: underline; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <p class="eyebrow">Weekday note</p>
+      <h1>Daily Investment Brief</h1>
+      <p class="dateline" id="dateline">Loading the latest brief…</p>
+    </header>
+    <nav aria-label="Sections">
+      <a href="#bitcoin">Bitcoin</a>
+      <a href="#bitcoin-equities">BTC equities</a>
+      <a href="#space-defense">Space &amp; defense</a>
+    </nav>
+    <main id="brief">
+      <p class="status">Fetching quotes and headlines.</p>
+    </main>
+    <footer>
+      <p id="disclaimer">Delayed market data for information only. Not investment advice.</p>
+      <p>Quotes and headlines are collected from Yahoo Finance by <code>scripts/refresh-brief.py</code>.</p>
+    </footer>
+  </div>
+  <script>
+    const dateline = document.querySelector("#dateline");
+    const brief = document.querySelector("#brief");
+    const disclaimer = document.querySelector("#disclaimer");
+
+    const money = new Intl.NumberFormat("en-US", {
+      style: "currency",
+      currency: "USD",
+      maximumFractionDigits: 2,
+    });
+    const moneyWhole = new Intl.NumberFormat("en-US", {
+      style: "currency",
+      currency: "USD",
+      maximumFractionDigits: 0,
+    });
+    const when = new Intl.DateTimeFormat("en-US", {
+      timeZone: "America/New_York",
+      month: "short",
+      day: "numeric",
+      hour: "numeric",
+      minute: "2-digit",
+      timeZoneName: "short",
+    });
+    const day = new Intl.DateTimeFormat("en-US", {
+      timeZone: "America/New_York",
+      weekday: "long",
+      month: "long",
+      day: "numeric",
+      year: "numeric",
+    });
+
+    function formatPrice(value) {
+      if (value == null || Number.isNaN(value)) return "—";
+      return Math.abs(value) >= 10000 ? moneyWhole.format(value) : money.format(value);
+    }
+
+    function formatPct(value) {
+      if (value == null || Number.isNaN(value)) return "n/a";
+      if (Math.abs(value) < 0.005) return "0.00%";
+      const sign = value < 0 ? "−" : "+";
+      return sign + Math.abs(value).toFixed(2) + "%";
+    }
+
+    function tone(value) {
+      if (value == null || Math.abs(value) < 0.05) return "flat";
+      return value > 0 ? "up" : "down";
+    }
+
+    function lineTone(closes, fallback) {
+      if (!closes || closes.length < 2) return fallback;
+      const delta = closes[closes.length - 1] - closes[0];
+      const scale = Math.abs(closes[0]) || 1;
+      if (Math.abs(delta) / scale < 0.0005) return "flat";
+      return delta > 0 ? "up" : "down";
+    }
+
+    function formatVolume(value) {
+      if (value == null) return null;
+      if (value >= 1e9) return (value / 1e9).toFixed(1) + "B";
+      if (value >= 1e6) return (value / 1e6).toFixed(1) + "M";
+      if (value >= 1e3) return (value / 1e3).toFixed(1) + "K";
+      return String(value);
+    }
+
+    function formatStamp(iso) {
+      if (!iso) return "";
+      const parsed = new Date(iso);
+      if (Number.isNaN(parsed.getTime())) return "";
+      return when.format(parsed);
+    }
+
+    function sparkline(closes, direction) {
+      if (!closes || closes.length < 2) return document.createElement("span");
+      const width = 56;
+      const height = 22;
+      const pad = 1.5;
+      const min = Math.min(...closes);
+      const max = Math.max(...closes);
+      const span = max - min || 1;
+      const points = closes.map((value, index) => {
+        const x = pad + (index * (width - pad * 2)) / (closes.length - 1);
+        const y = height - pad - ((value - min) / span) * (height - pad * 2);
+        return x.toFixed(1) + "," + y.toFixed(1);
+      }).join(" ");
+      const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+      svg.setAttribute("class", "spark");
+      svg.setAttribute("viewBox", "0 0 " + width + " " + height);
+      svg.setAttribute("aria-hidden", "true");
+      const line = document.createElementNS("http://www.w3.org/2000/svg", "polyline");
+      line.setAttribute("fill", "none");
+      line.setAttribute("stroke", direction === "down" ? "var(--down)" : direction === "up" ? "var(--up)" : "var(--muted)");
+      line.setAttribute("stroke-width", "1.6");
+      line.setAttribute("stroke-linejoin", "round");
+      line.setAttribute("stroke-linecap", "round");
+      line.setAttribute("points", points);
+      svg.appendChild(line);
+      return svg;
+    }
+
+    function subline(quote) {
+      const bits = [];
+      if (quote.five_session_change_percent != null) {
+        bits.push("5-session " + formatPct(quote.five_session_change_percent));
+      }
+      if (quote.day_low != null && quote.day_high != null) {
+        bits.push("Day " + formatPrice(quote.day_low) + "–" + formatPrice(quote.day_high));
+      }
+      const volume = formatVolume(quote.volume);
+      if (volume) bits.push("Vol " + volume);
+      const sessionLabels = {
+        "Regular close": "Close",
+        "Regular session": "Live",
+        "24-hour": "24h",
+      };
+      if (quote.session) bits.push(sessionLabels[quote.session] || quote.session);
+      return bits.join(" · ");
+    }
+
+    function renderQuote(quote) {
+      const row = document.createElement("article");
+      row.className = "quote";
+      const id = document.createElement("div");
+      const symbol = document.createElement("span");
+      symbol.className = "symbol";
+      symbol.textContent = quote.symbol;
+      const name = document.createElement("span");
+      name.className = "name";
+      name.textContent = quote.note ? quote.label + " · " + quote.note : quote.label;
+      id.append(symbol, name);
+
+      if (quote.price == null) {
+        row.classList.add("quote-error");
+        name.textContent = (quote.label || quote.symbol) + " · quote unavailable";
+        const message = document.createElement("p");
+        message.className = "sub";
+        message.textContent = quote.error || "No price returned.";
+        row.append(id, message);
+        return row;
+      }
+
+      const direction = tone(quote.change_percent);
+      const pathTone = lineTone(quote.closes, direction);
+      const px = document.createElement("div");
+      px.className = "px";
+      const price = document.createElement("span");
+      price.className = "price";
+      price.textContent = formatPrice(quote.price);
+      const pct = document.createElement("span");
+      pct.className = "pct " + direction;
+      pct.textContent = formatPct(quote.change_percent);
+      px.append(price, pct);
+      const meta = document.createElement("p");
+      meta.className = "sub";
+      meta.textContent = subline(quote);
+      row.append(id, sparkline(quote.closes, pathTone), px, meta);
+      return row;
+    }
+
+    function renderHeadlines(headlines) {
+      const label = document.createElement("h3");
+      label.className = "news-label";
+      label.textContent = "Headlines";
+      if (!headlines || !headlines.length) {
+        const empty = document.createElement("p");
+        empty.className = "empty-news";
+        empty.textContent = "No headlines returned for this group.";
+        return [label, empty];
+      }
+      const list = document.createElement("ul");
+      list.className = "headlines";
+      headlines.forEach((story) => {
+        const item = document.createElement("li");
+        const link = document.createElement("a");
+        link.href = story.url;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        const title = document.createElement("span");
+        title.className = "headline-title";
+        title.textContent = story.title;
+        const meta = document.createElement("span");
+        meta.className = "headline-meta";
+        const stamp = formatStamp(story.published);
+        meta.textContent = [story.source, story.symbol, stamp].filter(Boolean).join(" · ");
+        link.append(title, meta);
+        item.appendChild(link);
+        list.appendChild(item);
+      });
+      return [label, list];
+    }
+
+    function render(data) {
+      const generated = data.generated_at ? new Date(data.generated_at) : null;
+      dateline.textContent = generated && !Number.isNaN(generated.getTime())
+        ? day.format(generated) + " · Updated " + when.format(generated)
+        : "Latest saved brief";
+      if (data.source) {
+        dateline.textContent += " · " + data.source;
+      }
+      if (data.disclaimer) disclaimer.textContent = data.disclaimer;
+      document.title = "Daily Investment Brief";
+      brief.replaceChildren();
+      (data.groups || []).forEach((group, index) => {
+        const section = document.createElement("section");
+        section.id = group.id;
+        const kicker = document.createElement("p");
+        kicker.className = "section-kicker";
+        const count = document.createElement("span");
+        count.textContent = String(index + 1).padStart(2, "0");
+        const kind = document.createElement("span");
+        kind.textContent = group.kicker || "";
+        kicker.append(count, kind);
+        const title = document.createElement("h2");
+        title.textContent = group.title;
+        const blurb = document.createElement("p");
+        blurb.className = "blurb";
+        blurb.textContent = group.blurb || "";
+        const analysis = document.createElement("p");
+        analysis.className = "analysis";
+        analysis.textContent = group.analysis || "";
+        const quotes = document.createElement("div");
+        quotes.className = "quotes";
+        (group.quotes || []).forEach((quote) => quotes.appendChild(renderQuote(quote)));
+        section.append(kicker, title, blurb, analysis, quotes, ...renderHeadlines(group.headlines));
+        brief.appendChild(section);
+      });
+    }
+
+    fetch("brief-data.json", { cache: "no-cache" })
+      .then((response) => {
+        if (!response.ok) throw new Error("Could not load brief-data.json");
+        return response.json();
+      })
+      .then(render)
+      .catch(() => {
+        dateline.textContent = "Brief data is unavailable.";
+        brief.replaceChildren();
+        const status = document.createElement("p");
+        status.className = "status";
+        status.textContent = "Open this page from a local server, or from GitHub Pages, so brief-data.json can load. From the repo: python3 -m http.server";
+        brief.appendChild(status);
+      });
+  </script>
+</body>
+</html>

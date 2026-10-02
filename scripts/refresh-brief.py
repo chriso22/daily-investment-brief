@@ -8,6 +8,7 @@ analysis is a factual read of those moves, not a recommendation.
 
 from __future__ import annotations
 
+import argparse
 import json
 import re
 import sys
@@ -20,9 +21,13 @@ from datetime import datetime, timezone
 from decimal import Decimal, ROUND_HALF_UP
 from email.utils import parsedate_to_datetime
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT_PATH = ROOT / "brief-data.json"
+CENTRAL = ZoneInfo("America/Chicago")
+NOTICE_MENTION = "@chriso22"
+PAGES_URL = "https://chriso22.github.io/daily-investment-brief/"
 USER_AGENT = (
     "daily-investment-brief/1.0 "
     "(+https://github.com/chriso22/daily-investment-brief)"
@@ -616,7 +621,74 @@ def print_summary(payload: dict) -> None:
         print(f"  headlines: {len(group['headlines'])}")
 
 
+def central_stamp(generated_at: str | None) -> str:
+    if not generated_at:
+        return "this morning"
+    try:
+        moment = datetime.fromisoformat(generated_at)
+    except ValueError:
+        return "this morning"
+    if moment.tzinfo is None:
+        moment = moment.replace(tzinfo=timezone.utc)
+    local = moment.astimezone(CENTRAL)
+    hour = local.strftime("%I").lstrip("0") or "12"
+    clock = f"{hour}:{local.strftime('%M')} {local.strftime('%p').lower()}"
+    zone = local.tzname() or "CT"
+    return f"{local.strftime('%A, %B')} {local.day}, {clock} {zone}"
+
+
+def format_notice(payload: dict) -> str:
+    lines = [
+        (
+            f"{NOTICE_MENTION} The Daily Investment Brief is ready "
+            f"({central_stamp(payload.get('generated_at'))})."
+        ),
+        "",
+    ]
+    for group in payload.get("groups") or []:
+        for quote in group.get("quotes") or []:
+            label = quote.get("label") or quote.get("symbol")
+            symbol = quote.get("symbol")
+            if quote.get("price") is None or quote.get("change_percent") is None:
+                lines.append(f"- {label} ({symbol}): unavailable")
+                continue
+            lines.append(
+                f"- {label} ({symbol}): {format_price(quote['price'])} "
+                f"({signed_pct(quote['change_percent'])})"
+            )
+    lines.extend(
+        [
+            "",
+            PAGES_URL,
+            "",
+            payload.get("disclaimer")
+            or "Delayed market data for information only. Not investment advice.",
+        ]
+    )
+    return "\n".join(lines).rstrip() + "\n"
+
+
+def write_notice(path: Path) -> int:
+    if not OUTPUT_PATH.exists():
+        print("brief-data.json is missing. Run a refresh first.", file=sys.stderr)
+        return 1
+    payload = json.loads(OUTPUT_PATH.read_text(encoding="utf-8"))
+    path.write_text(format_notice(payload), encoding="utf-8")
+    print(f"Wrote {path}")
+    return 0
+
+
 def main() -> int:
+    parser = argparse.ArgumentParser(description="Refresh the daily investment brief.")
+    parser.add_argument(
+        "--notice-body",
+        type=Path,
+        help="Write a GitHub notice from the saved brief-data.json and exit.",
+    )
+    args = parser.parse_args()
+    if args.notice_body is not None:
+        return write_notice(args.notice_body)
+
     payload = build_brief()
     priced = [
         quote

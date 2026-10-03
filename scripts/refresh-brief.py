@@ -29,7 +29,7 @@ from zoneinfo import ZoneInfo
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT_PATH = ROOT / "brief-data.json"
 CENTRAL = ZoneInfo("America/Chicago")
-NOTICE_MENTION = "@chriso22"
+NOTICE_MENTIONS = ("@chriso22", "@bevstr")
 PAGES_URL = "https://chriso22.github.io/daily-investment-brief/"
 USER_AGENT = (
     "daily-investment-brief/1.0 "
@@ -660,9 +660,10 @@ def central_stamp(generated_at: str | None) -> str:
 
 
 def format_notice(payload: dict) -> str:
+    mentions = " ".join(NOTICE_MENTIONS)
     lines = [
         (
-            f"{NOTICE_MENTION} The Daily Investment Brief is ready "
+            f"{mentions} The Daily Investment Brief is ready "
             f"({central_stamp(payload.get('generated_at'))})."
         ),
         "",

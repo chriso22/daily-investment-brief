@@ -41,7 +41,7 @@ The script writes `brief-data.json` in the repository root and prints each quote
 
 `.github/workflows/daily-brief.yml` runs at 6:45 a.m. Central Time (`America/Chicago`) Monday through Friday. That is 6:45 a.m. CDT during daylight time and 6:45 a.m. CST during standard time. GitHub schedules are UTC-only, so the workflow registers both 11:45 UTC and 12:45 UTC and continues only when the clock in Chicago is in the 6:45 a.m. window.
 
-The run rebuilds `brief-data.json`, commits it when prices changed, and posts a notice on the open issue titled **Daily Investment Brief**, mentioning @chriso22. The first successful run opens that issue. GitHub sends the mention through the notification settings on that account. The workflow can also be started manually from the Actions tab (`workflow_dispatch`), which refreshes and notifies immediately.
+The run rebuilds `brief-data.json`, commits it when prices changed, and posts a notice on the open issue titled **Daily Investment Brief**, mentioning @chriso22 and @bevstr. The first successful run opens that issue. GitHub sends the mentions through the notification settings on those accounts. The workflow can also be started manually from the Actions tab (`workflow_dispatch`), which refreshes and notifies immediately.
 
 GitHub may delay a scheduled run. The workflow requests permission to write contents and issues.
 

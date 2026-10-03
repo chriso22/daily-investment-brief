@@ -4,6 +4,9 @@
 Uses only the Python standard library. Quote figures are the latest daily
 chart print (regular-session close when the equity session is over). Group
 analysis is a factual read of those moves, not a recommendation.
+
+Bitcoin-group headlines must mention Bitcoin (or BTC) and must not cover
+other cryptocurrencies such as Ethereum, Solana, Litecoin, and similar.
 """
 
 from __future__ import annotations
@@ -96,7 +99,21 @@ SOURCE_NAMES = {
     "stocktwits.com": "Stocktwits",
 }
 
-BITCOIN_TERMS = ("bitcoin", "btc", "crypto")
+# Bitcoin group headlines must be about Bitcoin itself. Match bitcoin/btc only —
+# not the broader word "crypto", which pulls in altcoin roundups.
+BITCOIN_TERMS = ("bitcoin", "btc")
+# Reject BTC-USD stories that also cover other coins or general altcoin news.
+OTHER_CRYPTO_RE = re.compile(
+    r"\b(?:"
+    r"ethereum|ether|\beth\b|solana|\bsol\b|litecoin|\bltc\b|"
+    r"dogecoin|\bdoge\b|\bxrp\b|ripple|cardano|chainlink|"
+    r"avalanche|\bavax\b|polygon|\bmatic\b|binance|\bbnb\b|"
+    r"shiba|\bshib\b|polkadot|tron|\btrx\b|toncoin|\bsui\b|"
+    r"aptos|altcoin|altcoins|other cryptocurrenc(?:y|ies)|"
+    r"cryptocurrencies"
+    r")\b",
+    re.IGNORECASE,
+)
 NAME_TERMS = {
     "BTC-USD": ("bitcoin", "btc"),
     "MSTR": ("mstr", "strategy", "microstrategy"),
@@ -329,10 +346,15 @@ def mentions_symbol(story: dict, symbol: str) -> bool:
 
 
 def relevant_story(story: dict, symbol: str) -> bool:
+    """Keep BTC-USD headlines Bitcoin-only; drop other-crypto coverage."""
     if symbol != "BTC-USD":
         return True
     text = story_text(story)
-    return any(term in text for term in BITCOIN_TERMS)
+    if not any(term in text for term in BITCOIN_TERMS):
+        return False
+    if OTHER_CRYPTO_RE.search(text):
+        return False
+    return True
 
 
 def select_headlines(by_symbol: dict[str, list[dict]]) -> list[dict]:

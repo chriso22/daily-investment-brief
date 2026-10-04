@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T03:11:38.636284+00:00",
+  "generated_at": "2026-10-04T22:07:52.046286+00:00",
   "source": "Yahoo Finance",
   "disclaimer": "Delayed market data for information only. Not investment advice.",
   "groups": [
@@ -8,7 +8,7 @@
       "title": "Bitcoin",
       "kicker": "Crypto",
       "blurb": "U.S. dollar spot price.",
-      "analysis": "Bitcoin is at $84,540, −1.10% from the prior daily close. Across the last five sessions, Bitcoin is 1.10% higher. The session ranged from $84,434 to $84,673.",
+      "analysis": "Bitcoin is at $86,198, +1.70% from the prior daily close. Across the last five sessions, Bitcoin is 3.16% higher. The session ranged from $84,707 to $86,186.",
       "quotes": [
         {
           "symbol": "BTC-USD",
@@ -16,57 +16,58 @@
           "note": "Spot",
           "official_name": "Bitcoin USD",
           "currency": "USD",
-          "price": 84540.07,
-          "change": -943.7413,
-          "change_percent": -1.1,
-          "previous_close": 85483.8113,
-          "day_high": 84673.016,
-          "day_low": 84434.45,
-          "volume": 44599005184,
-          "five_session_change_percent": 1.1,
+          "price": 86198.11,
+          "change": 1442.5398,
+          "change_percent": 1.7,
+          "previous_close": 84755.5702,
+          "day_high": 86185.6,
+          "day_low": 84707.32,
+          "volume": 13057658880,
+          "five_session_change_percent": 3.16,
           "closes": [
-            83622.4297,
             83553.8516,
             84853.1016,
-            84540.0703
+            84497.2109,
+            84763.5781,
+            86198.1094
           ],
           "session": "24-hour",
           "exchange": "CCC",
-          "as_of": "2026-10-03T03:11:32+00:00",
+          "as_of": "2026-10-04T22:07:45+00:00",
           "timezone": "UTC"
         }
       ],
       "headlines": [
         {
-          "title": "Bitcoin holds below $85,000 as SEC custody proposal boosts institutional outlook",
-          "url": "https://finance.yahoo.com/markets/crypto/articles/bitcoin-holds-below-85-000-022303070.html",
-          "source": "Yahoo Finance",
-          "published": "2026-10-03T02:23:03+00:00",
-          "summary": "Investing.com -- Bitcoin held below $85,000 on Friday after briefly topping $87,000, with a new U.S. Securities and Exchange Commission proposal on crypto custody adding to...",
+          "title": "Peter Schiff Says MicroStrategy Lost Its Bitcoin-Buying Power",
+          "url": "https://beincrypto.com/peter-schiff-microstrategy-stretch-bitcoin-buying/",
+          "source": "Beincrypto",
+          "published": "2026-10-04T20:51:31+00:00",
+          "summary": "Schiff says Strategy's Stretch rebound didn't reopen its STRC funding route, while MSTR sales still bought 1,665 BTC.",
           "symbol": "BTC-USD"
         },
         {
-          "title": "If you invested $1,000 in Bitcoin when Trump took office in 2017 vs 2025, here's how much you'd have made or lost",
-          "url": "https://www.thestreet.com/crypto/markets/if-you-invested-1000-in-bitcoin-when-trump-took-office-in-2017-vs-2025-heres-how-much-youd-have-made-or-lost",
-          "source": "Thestreet",
-          "published": "2026-10-03T00:30:00+00:00",
-          "summary": "Two inaugurations, two $1,000 Bitcoin bets, and two very different results: one is up nearly 100 times, the other is still in the red.",
+          "title": "Cathie Wood Predicts This Cryptocurrency Could Surge 1,665% From Here",
+          "url": "https://www.fool.com/investing/2026/10/04/cathie-wood-predicts-this-cryptocurrency-could-sur/",
+          "source": "Motley Fool",
+          "published": "2026-10-04T18:54:00+00:00",
+          "summary": "Bitcoin needs to double in value every year in order to hit a price of $1.5 million by 2030.",
           "symbol": "BTC-USD"
         },
         {
-          "title": "Bitcoin Heads Higher on Macro Moves: Where Does BTC Go Next?",
-          "url": "https://decrypt.co/379936/bitcoin-heads-higher-fed-jobs-where-does-btc-go-next",
-          "source": "Decrypt",
-          "published": "2026-10-02T16:45:52+00:00",
-          "summary": "A jobs report miss just erased the odds of an October rate hike, and BTC is now knocking on the door of its yearly ceiling.",
+          "title": "Bitcoin's Monthly Closes Keep Climbing From Its Summer Low As Ben Cowen Says Burden Of Proof Has Shifted To Bears",
+          "url": "https://stocktwits.com/news-articles/markets/cryptocurrency/bitcoin-monthly-closes-ben-cowen/cZDFyhQRB1v",
+          "source": "Stocktwits",
+          "published": "2026-10-04T18:04:11+00:00",
+          "summary": "Analyst Ben Cowen changed his stance, saying he \"certainly didn't think\" Bitcoin would take out its May high this year.",
           "symbol": "BTC-USD"
         },
         {
-          "title": "Strategy Stock is Riding Bitcoin’s Climb",
-          "url": "https://www.investopedia.com/market-update-strategy-stock-is-riding-bitcoins-climb-mstr-saylor-12154392",
-          "source": "Investopedia",
-          "published": "2026-10-02T16:27:30+00:00",
-          "summary": "Crypto markets are springing back to life. And one bitcoin-linked stock has reaped big benefits.",
+          "title": "French Bond Crisis: Will Japan's October 8 Data Spill Into Bitcoin?",
+          "url": "https://beincrypto.com/french-bond-crisis-japan-data-bitcoin/",
+          "source": "Beincrypto",
+          "published": "2026-10-04T17:59:34+00:00",
+          "summary": "A Tokyo fund dumped its French bonds. Japan's October 8 data shows if the French bond crisis spreads, and Bitcoin is watching.",
           "symbol": "BTC-USD"
         }
       ]
@@ -90,7 +91,7 @@
           "previous_close": 160.4995,
           "day_high": 170.17,
           "day_low": 155.89,
-          "volume": 27192681,
+          "volume": 27457402,
           "five_session_change_percent": 1.83,
           "closes": [
             157.14,
@@ -116,7 +117,7 @@
           "previous_close": 30.1101,
           "day_high": 32.08,
           "day_low": 29.14,
-          "volume": 11308889,
+          "volume": 11388034,
           "five_session_change_percent": 3.55,
           "closes": [
             29.0,
@@ -159,28 +160,28 @@
       ],
       "headlines": [
         {
+          "title": "Peter Schiff Says MicroStrategy Lost Its Bitcoin-Buying Power",
+          "url": "https://beincrypto.com/peter-schiff-microstrategy-stretch-bitcoin-buying/",
+          "source": "Beincrypto",
+          "published": "2026-10-04T20:51:31+00:00",
+          "summary": "Schiff says Strategy's Stretch rebound didn't reopen its STRC funding route, while MSTR sales still bought 1,665 BTC.",
+          "symbol": "MSTR"
+        },
+        {
+          "title": "Michael Saylor Rejects Musk's Vision of a Moneyless Future",
+          "url": "https://www.cryptoprowl.com/releases/michael-saylor-rejects-musks-vision-of-a-moneyless-future-7217",
+          "source": "CryptoProwl",
+          "published": "2026-10-03T21:55:00+00:00",
+          "summary": "Elon Musk and Strategy (NASDAQ: $MSTR) co-founder Michael Saylor are offering competing visions of how artificial i...",
+          "symbol": "MSTR"
+        },
+        {
           "title": "Strive (ASST) Rebounds Sharply, Is The Stock Fairly Valued?",
           "url": "https://finance.yahoo.com/markets/stocks/articles/strive-asst-rebounds-sharply-stock-020747375.html",
           "source": "Yahoo Finance",
           "published": "2026-10-03T02:07:47+00:00",
           "summary": "Recent trading in Strive (ASST) has drawn attention after a sharp move over the past 3 months, putting fresh focus on how its asset management model and financial profile stack up...",
           "symbol": "ASST"
-        },
-        {
-          "title": "Strategy Stock is Riding Bitcoin’s Climb",
-          "url": "https://www.investopedia.com/market-update-strategy-stock-is-riding-bitcoins-climb-mstr-saylor-12154392",
-          "source": "Investopedia",
-          "published": "2026-10-02T16:27:30+00:00",
-          "summary": "Crypto markets are springing back to life. And one bitcoin-linked stock has reaped big benefits.",
-          "symbol": "MSTR"
-        },
-        {
-          "title": "Strategy Is Up 30% in a Month and Citigroup Just Doubled Its Price Target to $240. Is It Time to Buy MSTR Stock Now?",
-          "url": "https://247wallst.com/investing/2026/10/02/strategy-is-up-30-in-a-month-and-citigroup-just-doubled-its-price-target-to-240-is-it-time-to-buy-mstr-stock-now/",
-          "source": "24/7 Wall St.",
-          "published": "2026-10-02T15:59:14+00:00",
-          "summary": "Citigroup just slapped a bold new price target on Strategy stock after a stunning one-month run that left Bitcoin and every crypto peer in the dust. Before you chase the momentum...",
-          "symbol": "MSTR"
         },
         {
           "title": "Twenty One Capital CEO Raphael Zagury on Opportunities in Current Crypto Market",
@@ -196,8 +197,8 @@
       "id": "space-defense",
       "title": "Space & defense",
       "kicker": "Equities",
-      "blurb": "SpaceX, AST SpaceMobile, and Merlin.",
-      "analysis": "Two names closed higher and one name closed lower. SpaceX (SPCX) leads at +7.36%; Merlin (MRLN) lags at −5.53%. The average session move is +1.43%. Five-session moves: SPCX +9.27%, ASTS −4.18%, MRLN −2.29%.",
+      "blurb": "SpaceX, AST SpaceMobile, Merlin, and Kraken Robotics.",
+      "analysis": "Two names closed higher and two names closed lower. SpaceX (SPCX) leads at +7.36%; Merlin (MRLN) lags at −5.53%. The average session move is +0.25%. Five-session moves: SPCX +9.27%, ASTS −4.18%, MRLN −2.29%, KRKNF −3.96%.",
       "quotes": [
         {
           "symbol": "SPCX",
@@ -211,7 +212,7 @@
           "previous_close": 148.0695,
           "day_high": 159.84,
           "day_low": 149.34,
-          "volume": 119274773,
+          "volume": 119859134,
           "five_session_change_percent": 9.27,
           "closes": [
             145.47,
@@ -222,7 +223,7 @@
           ],
           "session": "Regular close",
           "exchange": "NasdaqGS",
-          "as_of": "2026-10-02T20:00:00+00:00",
+          "as_of": "2026-10-02T20:00:01+00:00",
           "timezone": "America/New_York"
         },
         {
@@ -237,7 +238,7 @@
           "previous_close": 57.04,
           "day_high": 59.53,
           "day_low": 55.42,
-          "volume": 14939524,
+          "volume": 15068798,
           "five_session_change_percent": -4.18,
           "closes": [
             61.0,
@@ -263,7 +264,7 @@
           "previous_close": 1.81,
           "day_high": 1.85,
           "day_low": 1.7,
-          "volume": 2434708,
+          "volume": 2534511,
           "five_session_change_percent": -2.29,
           "closes": [
             1.75,
@@ -276,32 +277,58 @@
           "exchange": "NasdaqGM",
           "as_of": "2026-10-02T20:00:01+00:00",
           "timezone": "America/New_York"
+        },
+        {
+          "symbol": "KRKNF",
+          "label": "Kraken Robotics",
+          "note": "Underwater defense",
+          "official_name": "Kraken Robotics Inc.",
+          "currency": "USD",
+          "price": 2.91,
+          "change": -0.099,
+          "change_percent": -3.29,
+          "previous_close": 3.009,
+          "day_high": 3.04,
+          "day_low": 2.85,
+          "volume": 230347,
+          "five_session_change_percent": -3.96,
+          "closes": [
+            3.03,
+            2.94,
+            3.069,
+            3.009,
+            2.91
+          ],
+          "session": "Regular close",
+          "exchange": "OTC Markets OTCQB",
+          "as_of": "2026-10-02T20:00:00+00:00",
+          "timezone": "America/New_York"
         }
       ],
       "headlines": [
         {
-          "title": "SpaceX's Third Quarter Just Ended. Here Are the 3 Numbers That Matter Most for the Stock.",
-          "url": "https://www.fool.com/investing/2026/10/02/spacex-s-third-quarter-just-ended-here-are-the-3-numbers-that-matter-most-for-the-stock/",
-          "source": "Motley Fool",
-          "published": "2026-10-03T00:01:01+00:00",
-          "summary": "The rocket and AI giant's next report will be the first to show a full quarter of its largest computing deal.",
-          "symbol": "SPCX"
-        },
-        {
-          "title": "Planet Labs (PL) Shares Skyrocket, What You Need To Know",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/planet-labs-pl-shares-skyrocket-231803075.html",
+          "title": "What Jim Cramer Says About Space Exploration Technologies’ (SPCX) Starlink and AI Opportunity",
+          "url": "https://finance.yahoo.com/technology/ai/articles/jim-cramer-says-space-exploration-220205490.html",
           "source": "Yahoo Finance",
-          "published": "2026-10-02T23:18:03+00:00",
-          "summary": "Shares of earth imaging satellite company Planet Labs (NYSE:PL) jumped 7.8% in the afternoon session after Planet Labs launched 20 satellites on SpaceX’s Transporter-18 rideshare...",
+          "published": "2026-10-04T22:02:05+00:00",
+          "summary": "Jim Cramer sees Space Exploration Technologies Corp. (NASDAQ:SPCX) developing into a broader technology and infrastructure company, with Starlink, AI computing, and Starship...",
           "symbol": "SPCX"
         },
         {
-          "title": "SpaceX Climbs 6% on Fresh Falcon 9 Rideshare Launch; Rocket Lab Jumps 7%, AST SpaceMobile Ticks Up",
-          "url": "https://247wallst.com/investing/2026/10/02/spacex-climbs-6-on-fresh-falcon-9-rideshare-launch-rocket-lab-jumps-7-ast-spacemobile-ticks-up/",
-          "source": "24/7 Wall St.",
-          "published": "2026-10-02T14:47:28+00:00",
-          "summary": "A single Falcon 9 rideshare mission lit a fire under the space sector, but the company that flew the rocket is not leading the rally, and the reasons why reveal something...",
+          "title": "AST SpaceMobile (ASTS) Is Down 5.4% After Class Action Allegations Over Funding Model - What's Changed",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/ast-spacemobile-asts-down-5-151032406.html",
+          "source": "Yahoo Finance",
+          "published": "2026-10-04T15:10:32+00:00",
+          "summary": "In the past few days, law firms Schall, Brown & Schwartz LLP and Rosen Law Firm announced securities class action lawsuits against AST SpaceMobile, alleging misleading statements...",
           "symbol": "ASTS"
+        },
+        {
+          "title": "Kraken Robotics Is Down 57% From Its High. Is the Undersea Drone Maker a Hidden Gem?",
+          "url": "https://www.fool.com/investing/2026/09/28/kraken-robotics-is-down-55-from-its-high-is-the/",
+          "source": "Motley Fool",
+          "published": "2026-09-28T17:20:00+00:00",
+          "summary": "This is a hidden supply chain winner for the future of warfare.",
+          "symbol": "KRKNF"
         },
         {
           "title": "Merlin Demonstrates Autonomous Flight Capabilities at Texas Department of Transportation Project NEXUS eIPP Kickoff Event",

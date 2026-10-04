@@ -63,7 +63,7 @@ GROUPS = [
         "id": "space-defense",
         "title": "Space & defense",
         "kicker": "Equities",
-        "blurb": "SpaceX, AST SpaceMobile, and Merlin.",
+        "blurb": "SpaceX, AST SpaceMobile, Merlin, and Kraken Robotics.",
         "symbols": [
             {
                 "symbol": "SPCX",
@@ -72,6 +72,7 @@ GROUPS = [
             },
             {"symbol": "ASTS", "label": "AST SpaceMobile", "note": "Satellite connectivity"},
             {"symbol": "MRLN", "label": "Merlin", "note": "Autonomous flight"},
+            {"symbol": "KRKNF", "label": "Kraken Robotics", "note": "Underwater defense"},
         ],
     },
 ]
@@ -122,6 +123,7 @@ NAME_TERMS = {
     "SPCX": ("spcx", "spacex"),
     "ASTS": ("asts", "ast spacemobile", "spacemobile"),
     "MRLN": ("mrln", "merlin"),
+    "KRKNF": ("krknf", "kraken"),
 }
 TRACKING_PARAMS = {"tsrc", "utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content"}
 
@@ -478,7 +480,7 @@ def single_analysis(quote: dict) -> str:
     return " ".join(part for part in parts if part)
 
 
-COUNT_WORDS = {1: "One", 2: "Two", 3: "Three"}
+COUNT_WORDS = {1: "One", 2: "Two", 3: "Three", 4: "Four"}
 
 
 def count_label(count: int) -> str:

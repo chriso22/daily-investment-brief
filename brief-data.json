@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T22:07:52.046286+00:00",
+  "generated_at": "2026-10-05T13:02:24.109910+00:00",
   "source": "Yahoo Finance",
   "disclaimer": "Delayed market data for information only. Not investment advice.",
   "groups": [
@@ -8,7 +8,7 @@
       "title": "Bitcoin",
       "kicker": "Crypto",
       "blurb": "U.S. dollar spot price.",
-      "analysis": "Bitcoin is at $86,198, +1.70% from the prior daily close. Across the last five sessions, Bitcoin is 3.16% higher. The session ranged from $84,707 to $86,186.",
+      "analysis": "Bitcoin is at $86,000, +0.90% from the prior daily close. Across the last five sessions, Bitcoin is 1.35% higher. The session ranged from $85,444 to $86,930.",
       "quotes": [
         {
           "symbol": "BTC-USD",
@@ -16,58 +16,58 @@
           "note": "Spot",
           "official_name": "Bitcoin USD",
           "currency": "USD",
-          "price": 86198.11,
-          "change": 1442.5398,
-          "change_percent": 1.7,
-          "previous_close": 84755.5702,
-          "day_high": 86185.6,
-          "day_low": 84707.32,
-          "volume": 13057658880,
-          "five_session_change_percent": 3.16,
+          "price": 85999.99,
+          "change": 766.2513,
+          "change_percent": 0.9,
+          "previous_close": 85233.7387,
+          "day_high": 86929.66,
+          "day_low": 85443.79,
+          "volume": 24075169792,
+          "five_session_change_percent": 1.35,
           "closes": [
-            83553.8516,
             84853.1016,
             84497.2109,
             84763.5781,
-            86198.1094
+            86480.3047,
+            85999.9922
           ],
           "session": "24-hour",
           "exchange": "CCC",
-          "as_of": "2026-10-04T22:07:45+00:00",
+          "as_of": "2026-10-05T13:02:18+00:00",
           "timezone": "UTC"
         }
       ],
       "headlines": [
         {
-          "title": "Peter Schiff Says MicroStrategy Lost Its Bitcoin-Buying Power",
-          "url": "https://beincrypto.com/peter-schiff-microstrategy-stretch-bitcoin-buying/",
-          "source": "Beincrypto",
-          "published": "2026-10-04T20:51:31+00:00",
-          "summary": "Schiff says Strategy's Stretch rebound didn't reopen its STRC funding route, while MSTR sales still bought 1,665 BTC.",
-          "symbol": "BTC-USD"
-        },
-        {
-          "title": "Cathie Wood Predicts This Cryptocurrency Could Surge 1,665% From Here",
-          "url": "https://www.fool.com/investing/2026/10/04/cathie-wood-predicts-this-cryptocurrency-could-sur/",
-          "source": "Motley Fool",
-          "published": "2026-10-04T18:54:00+00:00",
-          "summary": "Bitcoin needs to double in value every year in order to hit a price of $1.5 million by 2030.",
-          "symbol": "BTC-USD"
-        },
-        {
-          "title": "Bitcoin's Monthly Closes Keep Climbing From Its Summer Low As Ben Cowen Says Burden Of Proof Has Shifted To Bears",
-          "url": "https://stocktwits.com/news-articles/markets/cryptocurrency/bitcoin-monthly-closes-ben-cowen/cZDFyhQRB1v",
+          "title": "Michael Saylor’s Strategy Forecasts $20.9B Q3 Digital-Asset Gain As MSTR Bitcoin Stack Hits 848,000 BTC",
+          "url": "https://stocktwits.com/news-articles/markets/cryptocurrency/michael-saylor-mstr-forecasts-20-b-q3-digital-asset-gain-bitcoin-stack-hits-84-k/cZDpxXPRBjb",
           "source": "Stocktwits",
-          "published": "2026-10-04T18:04:11+00:00",
-          "summary": "Analyst Ben Cowen changed his stance, saying he \"certainly didn't think\" Bitcoin would take out its May high this year.",
+          "published": "2026-10-05T12:58:34+00:00",
+          "summary": "Strategy bought 344 BTC for $28.7 million at an average price of $85,839 per Bitcoin.",
           "symbol": "BTC-USD"
         },
         {
-          "title": "French Bond Crisis: Will Japan's October 8 Data Spill Into Bitcoin?",
-          "url": "https://beincrypto.com/french-bond-crisis-japan-data-bitcoin/",
-          "source": "Beincrypto",
-          "published": "2026-10-04T17:59:34+00:00",
-          "summary": "A Tokyo fund dumped its French bonds. Japan's October 8 data shows if the French bond crisis spreads, and Bitcoin is watching.",
+          "title": "Strategy Q3 2026 earnings: $21 billion bitcoin gain",
+          "url": "https://qz.com/strategy-bitcoin-gain-profit-q3-2026-100526",
+          "source": "Qz",
+          "published": "2026-10-05T12:53:44+00:00",
+          "summary": "The company returned to profitability for the first time in four quarters as bitcoin rose 43% from the year-earlier period",
+          "symbol": "BTC-USD"
+        },
+        {
+          "title": "Strategy Posts $21B Q3 Gain, Buys $29M in BTC, Repurchases $176M in STRC",
+          "url": "https://decrypt.co/380056/strategy-posts-21b-q3-gain-buys-29m-in-btc-repurchases-176m-in-strc",
+          "source": "Decrypt",
+          "published": "2026-10-05T12:51:42+00:00",
+          "summary": "The firm's Bitcoin holdings hit a record 848,000 BTC, while the quarterly gain is a fair-value mark carrying $1.88 billion in deferred tax.",
+          "symbol": "BTC-USD"
+        },
+        {
+          "title": "BREAKING: Metaplanet Sold 10K and Bought 11K BTC in Q3, Becomes 2nd Largest Bitcoin Holder",
+          "url": "https://coingape.com/metaplanet-sold-10k-bought-11k-btc-in-q3-becomes-2nd-largest-bitcoin-holder/",
+          "source": "Coingape",
+          "published": "2026-10-05T12:15:42+00:00",
+          "summary": "Metaplanet has become the 2nd largest corporate Bitcoin holder, with 44,000 BTC in total holdings. The company increased its overall Bitcoin position in Q3, selling a net 10,000...",
           "symbol": "BTC-USD"
         }
       ]
@@ -160,19 +160,19 @@
       ],
       "headlines": [
         {
-          "title": "Peter Schiff Says MicroStrategy Lost Its Bitcoin-Buying Power",
-          "url": "https://beincrypto.com/peter-schiff-microstrategy-stretch-bitcoin-buying/",
-          "source": "Beincrypto",
-          "published": "2026-10-04T20:51:31+00:00",
-          "summary": "Schiff says Strategy's Stretch rebound didn't reopen its STRC funding route, while MSTR sales still bought 1,665 BTC.",
+          "title": "Michael Saylor’s Strategy Forecasts $20.9B Q3 Digital-Asset Gain As MSTR Bitcoin Stack Hits 848,000 BTC",
+          "url": "https://stocktwits.com/news-articles/markets/cryptocurrency/michael-saylor-mstr-forecasts-20-b-q3-digital-asset-gain-bitcoin-stack-hits-84-k/cZDpxXPRBjb",
+          "source": "Stocktwits",
+          "published": "2026-10-05T12:58:34+00:00",
+          "summary": "Strategy bought 344 BTC for $28.7 million at an average price of $85,839 per Bitcoin.",
           "symbol": "MSTR"
         },
         {
-          "title": "Michael Saylor Rejects Musk's Vision of a Moneyless Future",
-          "url": "https://www.cryptoprowl.com/releases/michael-saylor-rejects-musks-vision-of-a-moneyless-future-7217",
-          "source": "CryptoProwl",
-          "published": "2026-10-03T21:55:00+00:00",
-          "summary": "Elon Musk and Strategy (NASDAQ: $MSTR) co-founder Michael Saylor are offering competing visions of how artificial i...",
+          "title": "Strategy Q3 2026 earnings: $21 billion bitcoin gain",
+          "url": "https://qz.com/strategy-bitcoin-gain-profit-q3-2026-100526",
+          "source": "Qz",
+          "published": "2026-10-05T12:53:44+00:00",
+          "summary": "The company returned to profitability for the first time in four quarters as bitcoin rose 43% from the year-earlier period",
           "symbol": "MSTR"
         },
         {
@@ -288,38 +288,39 @@
           "change": -0.099,
           "change_percent": -3.29,
           "previous_close": 3.009,
-          "day_high": 3.04,
-          "day_low": 2.85,
-          "volume": 230347,
+          "day_high": 2.95,
+          "day_low": 2.95,
+          "volume": 500,
           "five_session_change_percent": -3.96,
           "closes": [
             3.03,
             2.94,
             3.069,
             3.009,
+            2.91,
             2.91
           ],
           "session": "Regular close",
           "exchange": "OTC Markets OTCQB",
-          "as_of": "2026-10-02T20:00:00+00:00",
+          "as_of": "2026-10-05T12:27:09+00:00",
           "timezone": "America/New_York"
         }
       ],
       "headlines": [
         {
-          "title": "What Jim Cramer Says About Space Exploration Technologies’ (SPCX) Starlink and AI Opportunity",
-          "url": "https://finance.yahoo.com/technology/ai/articles/jim-cramer-says-space-exploration-220205490.html",
-          "source": "Yahoo Finance",
-          "published": "2026-10-04T22:02:05+00:00",
-          "summary": "Jim Cramer sees Space Exploration Technologies Corp. (NASDAQ:SPCX) developing into a broader technology and infrastructure company, with Starlink, AI computing, and Starship...",
+          "title": "Morgan Stanley Reiterates $300 SpaceX Target, Citing Growth-Adjusted Valuation",
+          "url": "https://investorshub.advfn.com/market-news/article/37447/morgan-stanley-reiterates-300-spacex-target-citing-growth-adjusted-valuation",
+          "source": "Investorshub",
+          "published": "2026-10-05T12:16:05+00:00",
+          "summary": "SpaceX (NASDAQ:SPCX) trades at a discount to other large-cap AI-related companies when its expected growth is taken into account, according to Morgan Stanley analyst Adam Jonas...",
           "symbol": "SPCX"
         },
         {
-          "title": "AST SpaceMobile (ASTS) Is Down 5.4% After Class Action Allegations Over Funding Model - What's Changed",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/ast-spacemobile-asts-down-5-151032406.html",
-          "source": "Yahoo Finance",
-          "published": "2026-10-04T15:10:32+00:00",
-          "summary": "In the past few days, law firms Schall, Brown & Schwartz LLP and Rosen Law Firm announced securities class action lawsuits against AST SpaceMobile, alleging misleading statements...",
+          "title": "ASTS Stock Edges Up Overnight: Retail Traders Seize On T-Mobile Dropping Starlink Name From Satellite Page",
+          "url": "https://stocktwits.com/news-articles/markets/equity/asts-stock-retail-traders-seize-tmobile-dropping-starlink-name-satellite-page/cZDpm4mRBSe",
+          "source": "Stocktwits",
+          "published": "2026-10-05T04:44:57+00:00",
+          "summary": "T-Mobile apparently removed Starlink’s name from its main T-Satellite consumer page but has not announced a change in satellite providers.",
           "symbol": "ASTS"
         },
         {

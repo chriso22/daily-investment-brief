@@ -19,10 +19,8 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  schedule-gate:
+  refresh:
     runs-on: ubuntu-latest
-    outputs:
-      run: ${{ steps.gate.outputs.run }}
     steps:
       - name: Run only at 6:45 a.m. Central
         id: gate
@@ -34,32 +32,43 @@ jobs:
           fi
           hour=$(TZ=America/Chicago date +%H)
           minute=$(TZ=America/Chicago date +%M)
-          # Accept 6:45 through 7:29 Central so a slightly late cron still
-          # runs. The other offset lands at 5:45 or 7:45 and is skipped.
-          if [ "$hour" = "06" ] || { [ "$hour" = "07" ] && [ "$minute" -lt 30 ]; }; then
+          schedule="${{ github.event.schedule }}"
+          # 12:45 UTC is 6:45 a.m. Central during standard time only.
+          if [ "$schedule" = "45 12 * * 1-5" ]; then
+            if [ "$hour" = "06" ]; then
+              echo "run=true" >> "$GITHUB_OUTPUT"
+            else
+              echo "Central time is ${hour}:${minute}; skipping 12:45 UTC offset."
+              echo "run=false" >> "$GITHUB_OUTPUT"
+            fi
+            exit 0
+          fi
+          # 11:45 UTC is 6:45 a.m. Central during daylight time. Allow GitHub
+          # schedule delay into the 7:xx hour, but stop before 7:45 when the
+          # 12:45 UTC offset would also match this window.
+          if [ "$hour" = "06" ] || { [ "$hour" = "07" ] && [ "$minute" -lt 45 ]; }; then
             echo "run=true" >> "$GITHUB_OUTPUT"
           else
-            echo "Central time is ${hour}:${minute}; skipping this offset."
+            echo "Central time is ${hour}:${minute}; skipping 11:45 UTC offset."
             echo "run=false" >> "$GITHUB_OUTPUT"
           fi
 
-  refresh:
-    needs: schedule-gate
-    if: needs.schedule-gate.outputs.run == 'true'
-    runs-on: ubuntu-latest
-    steps:
       - name: Check out repository
+        if: steps.gate.outputs.run == 'true'
         uses: actions/checkout@v4
 
       - name: Set up Python
+        if: steps.gate.outputs.run == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
       - name: Refresh brief data
+        if: steps.gate.outputs.run == 'true'
         run: python3 scripts/refresh-brief.py
 
       - name: Commit and push brief-data.json
+        if: steps.gate.outputs.run == 'true'
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
@@ -73,6 +82,7 @@ jobs:
           git push
 
       - name: Notify that the brief is ready
+        if: steps.gate.outputs.run == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |

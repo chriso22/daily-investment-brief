@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T13:42:01.952958+00:00",
+  "generated_at": "2026-10-06T12:05:23.480076+00:00",
   "source": "Yahoo Finance",
   "disclaimer": "Delayed market data for information only. Not investment advice.",
   "groups": [
@@ -8,7 +8,7 @@
       "title": "Bitcoin",
       "kicker": "Crypto",
       "blurb": "U.S. dollar spot price.",
-      "analysis": "Bitcoin is at $85,945, +0.83% from the prior daily close. Across the last five sessions, Bitcoin is 1.29% higher. The session ranged from $85,444 to $86,930.",
+      "analysis": "Bitcoin is at $86,282, +0.48% from the prior daily close. Across the last five sessions, Bitcoin is 2.11% higher. The session ranged from $85,134 to $86,299.",
       "quotes": [
         {
           "symbol": "BTC-USD",
@@ -16,58 +16,58 @@
           "note": "Spot",
           "official_name": "Bitcoin USD",
           "currency": "USD",
-          "price": 85944.92,
-          "change": 710.8521,
-          "change_percent": 0.83,
-          "previous_close": 85234.0679,
-          "day_high": 86929.66,
-          "day_low": 85443.79,
-          "volume": 24608325632,
-          "five_session_change_percent": 1.29,
+          "price": 86281.75,
+          "change": 411.3194,
+          "change_percent": 0.48,
+          "previous_close": 85870.4306,
+          "day_high": 86298.75,
+          "day_low": 85133.71,
+          "volume": 26252535808,
+          "five_session_change_percent": 2.11,
           "closes": [
-            84853.1016,
             84497.2109,
             84763.5781,
             86480.3047,
-            85944.9219
+            85786.5938,
+            86281.75
           ],
           "session": "24-hour",
           "exchange": "CCC",
-          "as_of": "2026-10-05T13:41:55+00:00",
+          "as_of": "2026-10-06T12:05:21+00:00",
           "timezone": "UTC"
         }
       ],
       "headlines": [
         {
-          "title": "Strategy Adds 334 Bitcoin As Pace Of Buying Slows",
-          "url": "https://www.cryptoprowl.com/releases/strategy-adds-334-bitcoin-as-pace-of-buying-slows-7220",
-          "source": "CryptoProwl",
-          "published": "2026-10-05T13:33:00+00:00",
-          "summary": "Strategy (NASDAQ: $MSTR) slowed its pace of Bitcoin (CRYPTO: $BTC) buying over the last week, adding 334 of the dig...",
-          "symbol": "BTC-USD"
-        },
-        {
-          "title": "Michael Saylor’s Strategy Forecasts $20.9B Q3 Digital-Asset Gain As MSTR Bitcoin Stack Hits 848,000 BTC",
-          "url": "https://stocktwits.com/news-articles/markets/cryptocurrency/michael-saylor-mstr-forecasts-20-b-q3-digital-asset-gain-bitcoin-stack-hits-84-k/cZDpxXPRBjb",
+          "title": "Bitcoin Beat The Forecast, But TD Cowen Reportedly Says The Rally May Have Further To Run",
+          "url": "https://stocktwits.com/news-articles/markets/cryptocurrency/bitcoin-beat-td-cowen-forecast/cZDtTLSRBku",
           "source": "Stocktwits",
-          "published": "2026-10-05T12:58:34+00:00",
-          "summary": "Strategy bought 344 BTC for $28.7 million at an average price of $85,839 per Bitcoin.",
+          "published": "2026-10-06T11:40:15+00:00",
+          "summary": "TD Cowen’s MD forecast Bitcoin to hit $132,750 by the end of 2027, roughly 54% above current levels.",
           "symbol": "BTC-USD"
         },
         {
-          "title": "Strategy Q3 2026 earnings: $21 billion bitcoin gain",
-          "url": "https://qz.com/strategy-bitcoin-gain-profit-q3-2026-100526",
-          "source": "Qz",
-          "published": "2026-10-05T12:53:44+00:00",
-          "summary": "The company returned to profitability for the first time in four quarters as bitcoin rose 43% from the year-earlier period",
+          "title": "BTC USD Price Stalls as Fresh Saylor Buy Fails to Clear $87K",
+          "url": "https://99bitcoins.com/news/bitcoin-btc/btc-usd-price-87000-resistance-saylor-buy/",
+          "source": "99Bitcoins",
+          "published": "2026-10-06T10:55:23+00:00",
+          "summary": "Bitcoin (BTC USD) fell about -0.5% to about $85,800 after sellers rejected a move above $87,000 for the third time since September 23. The setback came as Strategy bought 334 BTC...",
           "symbol": "BTC-USD"
         },
         {
-          "title": "Strategy Posts $21B Q3 Gain, Buys $29M in BTC, Repurchases $176M in STRC",
-          "url": "https://decrypt.co/380056/strategy-posts-21b-q3-gain-buys-29m-in-btc-repurchases-176m-in-strc",
-          "source": "Decrypt",
-          "published": "2026-10-05T12:51:42+00:00",
-          "summary": "The firm's Bitcoin holdings hit a record 848,000 BTC, while the quarterly gain is a fair-value mark carrying $1.88 billion in deferred tax.",
+          "title": "Bitcoin Falls as Dollar Rises, Geopolitical Tensions Persist",
+          "url": "https://finance.yahoo.com/m/854c4ac2-f275-30e7-94b5-4d11292f82d5/bitcoin-falls-as-dollar.html",
+          "source": "Yahoo Finance",
+          "published": "2026-10-06T08:58:57+00:00",
+          "summary": "Bitcoin fell as the dollar rose on U.S. interest-rate rise expectations and as Middle East tensions persist.",
+          "symbol": "BTC-USD"
+        },
+        {
+          "title": "Bitcoin Price Could Reverse Following Tech Stocks, Peter Schiff Says",
+          "url": "https://cryptonews.com/news/bitcoin-price-strategy-funding/",
+          "source": "Cryptonews",
+          "published": "2026-10-06T08:01:08+00:00",
+          "summary": "Strategy bought 334 BTC for about $28.7 million and repurchased $176 million of STRC in its latest disclosure, even as Peter Schiff warned that the Bitcoin price could reverse if...",
           "symbol": "BTC-USD"
         }
       ]
@@ -77,7 +77,7 @@
       "title": "Bitcoin-linked equities",
       "kicker": "Equities",
       "blurb": "Strategy, Strive, and Twenty One Capital.",
-      "analysis": "All three names are higher. Strategy (MSTR) leads at +1.33%; Twenty One Capital (XXI) is the smallest gain at +0.30%. The average session move is +0.89%. Five-session moves: MSTR +4.83%, ASST +3.51%, XXI +1.53%.",
+      "analysis": "All three names closed higher. Strategy (MSTR) leads at +2.76%; Strive (ASST) is the smallest gain at +0.77%. The average session move is +1.58%. Five-session moves: MSTR +6.31%, ASST +3.24%, XXI +2.30%.",
       "quotes": [
         {
           "symbol": "MSTR",
@@ -85,24 +85,24 @@
           "note": "Bitcoin treasury",
           "official_name": "Strategy Inc",
           "currency": "USD",
-          "price": 162.14,
-          "change": 2.1297,
-          "change_percent": 1.33,
-          "previous_close": 160.0103,
-          "day_high": 165.23,
-          "day_low": 161.91,
-          "volume": 2703912,
-          "five_session_change_percent": 4.83,
+          "price": 164.43,
+          "change": 4.4195,
+          "change_percent": 2.76,
+          "previous_close": 160.0105,
+          "day_high": 166.2,
+          "day_low": 160.12,
+          "volume": 17920929,
+          "five_session_change_percent": 6.31,
           "closes": [
             154.67,
             153.09,
             160.5,
             160.01,
-            162.14
+            164.43
           ],
-          "session": "Regular session",
+          "session": "Regular close",
           "exchange": "NasdaqGS",
-          "as_of": "2026-10-05T13:42:01+00:00",
+          "as_of": "2026-10-05T20:00:02+00:00",
           "timezone": "America/New_York"
         },
         {
@@ -111,24 +111,24 @@
           "note": "Bitcoin treasury",
           "official_name": "Strive, Inc.",
           "currency": "USD",
-          "price": 30.34,
-          "change": 0.3099,
-          "change_percent": 1.03,
-          "previous_close": 30.0301,
-          "day_high": 30.62,
+          "price": 30.26,
+          "change": 0.23,
+          "change_percent": 0.77,
+          "previous_close": 30.03,
+          "day_high": 31.16,
           "day_low": 29.71,
-          "volume": 947174,
-          "five_session_change_percent": 3.51,
+          "volume": 9544559,
+          "five_session_change_percent": 3.24,
           "closes": [
             29.31,
             29.41,
             30.11,
             30.03,
-            30.34
+            30.26
           ],
-          "session": "Regular session",
+          "session": "Regular close",
           "exchange": "NasdaqGM",
-          "as_of": "2026-10-05T13:42:01+00:00",
+          "as_of": "2026-10-05T20:00:01+00:00",
           "timezone": "America/New_York"
         },
         {
@@ -137,50 +137,50 @@
           "note": "Bitcoin treasury",
           "official_name": "Twenty One Capital, Inc.",
           "currency": "USD",
-          "price": 6.63,
-          "change": 0.02,
-          "change_percent": 0.3,
-          "previous_close": 6.61,
-          "day_high": 6.71,
+          "price": 6.68,
+          "change": 0.08,
+          "change_percent": 1.21,
+          "previous_close": 6.6,
+          "day_high": 6.88,
           "day_low": 6.63,
-          "volume": 103304,
-          "five_session_change_percent": 1.53,
+          "volume": 1180531,
+          "five_session_change_percent": 2.3,
           "closes": [
             6.53,
             6.5,
             6.75,
             6.6,
-            6.63
+            6.68
           ],
-          "session": "Regular session",
+          "session": "Regular close",
           "exchange": "NYSE",
-          "as_of": "2026-10-05T13:41:10+00:00",
+          "as_of": "2026-10-05T20:00:02+00:00",
           "timezone": "America/New_York"
         }
       ],
       "headlines": [
         {
-          "title": "Strategy Adds 334 Bitcoin As Pace Of Buying Slows",
-          "url": "https://www.cryptoprowl.com/releases/strategy-adds-334-bitcoin-as-pace-of-buying-slows-7220",
-          "source": "CryptoProwl",
-          "published": "2026-10-05T13:33:00+00:00",
-          "summary": "Strategy (NASDAQ: $MSTR) slowed its pace of Bitcoin (CRYPTO: $BTC) buying over the last week, adding 334 of the dig...",
+          "title": "BTC USD Price Stalls as Fresh Saylor Buy Fails to Clear $87K",
+          "url": "https://99bitcoins.com/news/bitcoin-btc/btc-usd-price-87000-resistance-saylor-buy/",
+          "source": "99Bitcoins",
+          "published": "2026-10-06T10:55:23+00:00",
+          "summary": "Bitcoin (BTC USD) fell about -0.5% to about $85,800 after sellers rejected a move above $87,000 for the third time since September 23. The setback came as Strategy bought 334 BTC...",
           "symbol": "MSTR"
         },
         {
-          "title": "Michael Saylor’s Strategy Forecasts $20.9B Q3 Digital-Asset Gain As MSTR Bitcoin Stack Hits 848,000 BTC",
-          "url": "https://stocktwits.com/news-articles/markets/cryptocurrency/michael-saylor-mstr-forecasts-20-b-q3-digital-asset-gain-bitcoin-stack-hits-84-k/cZDpxXPRBjb",
-          "source": "Stocktwits",
-          "published": "2026-10-05T12:58:34+00:00",
-          "summary": "Strategy bought 344 BTC for $28.7 million at an average price of $85,839 per Bitcoin.",
+          "title": "Bitcoin Price Could Reverse Following Tech Stocks, Peter Schiff Says",
+          "url": "https://cryptonews.com/news/bitcoin-price-strategy-funding/",
+          "source": "Cryptonews",
+          "published": "2026-10-06T08:01:08+00:00",
+          "summary": "Strategy bought 334 BTC for about $28.7 million and repurchased $176 million of STRC in its latest disclosure, even as Peter Schiff warned that the Bitcoin price could reverse if...",
           "symbol": "MSTR"
         },
         {
-          "title": "Strive (ASST) Rebounds Sharply, Is The Stock Fairly Valued?",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/strive-asst-rebounds-sharply-stock-020747375.html",
-          "source": "Yahoo Finance",
-          "published": "2026-10-03T02:07:47+00:00",
-          "summary": "Recent trading in Strive (ASST) has drawn attention after a sharp move over the past 3 months, putting fresh focus on how its asset management model and financial profile stack up...",
+          "title": "Strive Adds $169M Bitcoin in Its Biggest Buy in Four Months",
+          "url": "https://decrypt.co/380129/strive-adds-169m-bitcoin-biggest-buy-four-months",
+          "source": "Decrypt",
+          "published": "2026-10-05T22:30:20+00:00",
+          "summary": "The Nasdaq-listed bitcoin treasury company, co-founded by Vivek Ramaswamy, paid roughly $169 million for 2,000 coins last week and now holds 29,462 BTC.",
           "symbol": "ASST"
         },
         {
@@ -198,7 +198,7 @@
       "title": "Space & defense",
       "kicker": "Equities",
       "blurb": "SpaceX, AST SpaceMobile, Merlin, and Kraken Robotics.",
-      "analysis": "One name is higher and three names are lower. SpaceX (SPCX) leads at +2.32%; Kraken Robotics (KRKNF) lags at −3.29%. The average session move is −0.70%. Five-session moves: SPCX +8.98%, ASTS −2.54%, MRLN −4.78%, KRKNF −1.02%.",
+      "analysis": "Two names closed higher, one name closed lower, and one name was little changed. Kraken Robotics (KRKNF) leads at +9.97%; Merlin (MRLN) lags at −8.19%. The average session move is +2.35%. Five-session moves: SPCX +14.64%, ASTS −1.62%, MRLN −11.80%, KRKNF +8.84%.",
       "quotes": [
         {
           "symbol": "SPCX",
@@ -206,24 +206,24 @@
           "note": "Space Exploration Technologies",
           "official_name": "Space Exploration Technologies Corp.",
           "currency": "USD",
-          "price": 162.645,
-          "change": 3.6847,
-          "change_percent": 2.32,
-          "previous_close": 158.9603,
-          "day_high": 162.94,
+          "price": 171.09,
+          "change": 12.1302,
+          "change_percent": 7.63,
+          "previous_close": 158.9598,
+          "day_high": 172.47,
           "day_low": 158.62,
-          "volume": 12440572,
-          "five_session_change_percent": 8.98,
+          "volume": 134420923,
+          "five_session_change_percent": 14.64,
           "closes": [
             149.24,
             150.86,
             148.07,
             158.96,
-            162.645
+            171.09
           ],
-          "session": "Regular session",
+          "session": "Regular close",
           "exchange": "NasdaqGS",
-          "as_of": "2026-10-05T13:42:02+00:00",
+          "as_of": "2026-10-05T20:00:01+00:00",
           "timezone": "America/New_York"
         },
         {
@@ -232,24 +232,24 @@
           "note": "Satellite connectivity",
           "official_name": "AST SpaceMobile, Inc.",
           "currency": "USD",
-          "price": 57.89,
-          "change": -0.56,
-          "change_percent": -0.96,
-          "previous_close": 58.45,
-          "day_high": 59.025,
+          "price": 58.44,
+          "change": -0.0099,
+          "change_percent": -0.02,
+          "previous_close": 58.4499,
+          "day_high": 59.26,
           "day_low": 57.295,
-          "volume": 932951,
-          "five_session_change_percent": -2.54,
+          "volume": 8078978,
+          "five_session_change_percent": -1.62,
           "closes": [
             59.4,
             58.86,
             57.04,
             58.45,
-            57.89
+            58.44
           ],
-          "session": "Regular session",
+          "session": "Regular close",
           "exchange": "NasdaqGS",
-          "as_of": "2026-10-05T13:41:58+00:00",
+          "as_of": "2026-10-05T20:00:01+00:00",
           "timezone": "America/New_York"
         },
         {
@@ -258,24 +258,24 @@
           "note": "Autonomous flight",
           "official_name": "Merlin, Inc.",
           "currency": "USD",
-          "price": 1.695,
-          "change": -0.015,
-          "change_percent": -0.88,
+          "price": 1.57,
+          "change": -0.14,
+          "change_percent": -8.19,
           "previous_close": 1.71,
           "day_high": 1.76,
-          "day_low": 1.66,
-          "volume": 183897,
-          "five_session_change_percent": -4.78,
+          "day_low": 1.57,
+          "volume": 3150860,
+          "five_session_change_percent": -11.8,
           "closes": [
             1.78,
             1.88,
             1.81,
             1.71,
-            1.695
+            1.57
           ],
-          "session": "Regular session",
+          "session": "Regular close",
           "exchange": "NasdaqGM",
-          "as_of": "2026-10-05T13:41:49+00:00",
+          "as_of": "2026-10-05T20:00:02+00:00",
           "timezone": "America/New_York"
         },
         {
@@ -284,57 +284,58 @@
           "note": "Underwater defense",
           "official_name": "Kraken Robotics Inc.",
           "currency": "USD",
-          "price": 2.91,
-          "change": -0.099,
-          "change_percent": -3.29,
-          "previous_close": 3.009,
-          "day_high": 2.95,
+          "price": 3.2,
+          "change": 0.29,
+          "change_percent": 9.97,
+          "previous_close": 2.91,
+          "day_high": 3.18,
           "day_low": 2.95,
-          "volume": 500,
-          "five_session_change_percent": -1.02,
+          "volume": 257410,
+          "five_session_change_percent": 8.84,
           "closes": [
             2.94,
             3.069,
             3.009,
-            2.91
+            2.91,
+            3.2
           ],
-          "session": "Regular session",
+          "session": "Regular close",
           "exchange": "OTC Markets OTCQB",
-          "as_of": "2026-10-05T12:27:09+00:00",
+          "as_of": "2026-10-05T20:00:00+00:00",
           "timezone": "America/New_York"
         }
       ],
       "headlines": [
         {
-          "title": "Should You Buy AST SpaceMobile Stock While It's Trading Below $60?",
-          "url": "https://www.fool.com/investing/2026/10/05/should-you-buy-ast-spacemobile-stock-while-it-s-trading-below-usd60/",
+          "title": "SpaceX Just Reached Orbit With Starship. Here's What a $1,000 Investment Could Be Worth by 2030",
+          "url": "https://www.fool.com/investing/2026/10/06/spacex-just-reached-orbit-with-starship-here-s-what-a-usd1-000-investment-could-be-worth-by-2030/",
           "source": "Motley Fool",
-          "published": "2026-10-05T13:05:01+00:00",
-          "summary": "AST SpaceMobile stock is down nearly 60% from its 52-week high of nearly $134.",
-          "symbol": "ASTS"
-        },
-        {
-          "title": "Elon Musk Proposes Renaming SpaceX Unit To Match Trump's View On AI",
-          "url": "https://finance.yahoo.com/m/425fe4a3-6525-3e05-8b97-c25c7041bad0/elon-musk-proposes-renaming.html",
-          "source": "Yahoo Finance",
-          "published": "2026-10-05T12:56:10+00:00",
-          "summary": "SpaceX stock is up about 18% from its IPO price.",
+          "published": "2026-10-06T11:51:01+00:00",
+          "summary": "SpaceX just reached a big milestone, but could it actually help investors profit?",
           "symbol": "SPCX"
         },
         {
-          "title": "Kraken Robotics Is Down 57% From Its High. Is the Undersea Drone Maker a Hidden Gem?",
-          "url": "https://www.fool.com/investing/2026/09/28/kraken-robotics-is-down-55-from-its-high-is-the/",
-          "source": "Motley Fool",
-          "published": "2026-09-28T17:20:00+00:00",
-          "summary": "This is a hidden supply chain winner for the future of warfare.",
+          "title": "Kraken Robotics (TSXV:PNG) Is Up 5.8% After Q2 Results Highlight Backlog And Covelya Integration Questions",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/kraken-robotics-tsxv-png-5-110651755.html",
+          "source": "Yahoo Finance",
+          "published": "2026-10-06T11:06:51+00:00",
+          "summary": "In early October 2026, Kraken Robotics reported Q2 2026 revenue of C$27.3 million and adjusted EBITDA of C$5.0 million, supported by a combined 2026 order book of about C$355...",
           "symbol": "KRKNF"
         },
         {
-          "title": "Merlin Demonstrates Autonomous Flight Capabilities at Texas Department of Transportation Project NEXUS eIPP Kickoff Event",
-          "url": "https://finance.yahoo.com/technology/ai/articles/merlin-demonstrates-autonomous-flight-capabilities-200100471.html",
+          "title": "ASTS Stock Edges Up Overnight: US-Japan Tech Statement Backs Rakuten Tie-Up, But Launch Questions Linger",
+          "url": "https://stocktwits.com/news-articles/markets/equity/asts-stock-us-japan-tech-statement-backs-rakuten-tieup-launch-questions-linger/cZDsriARBkc",
+          "source": "Stocktwits",
+          "published": "2026-10-06T04:49:00+00:00",
+          "summary": "The U.S. and Japan highlighted AST’s Rakuten partnership in a tech cooperation statement, while William Blair cut its 2027 revenue forecast over launch delays.",
+          "symbol": "ASTS"
+        },
+        {
+          "title": "Merlin, Inc. To Participate in Upcoming Investor Conferences",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/merlin-inc-participate-upcoming-investor-200700014.html",
           "source": "Yahoo Finance",
-          "published": "2026-09-10T20:01:00+00:00",
-          "summary": "Merlin showcased how autonomy can support safer, more efficient aviation operations Merlin Cessna Caravan Merlin Cessna Caravan at Alliance Airport BOSTON, Sept. 10, 2026 (GLOBE...",
+          "published": "2026-10-05T20:07:00+00:00",
+          "summary": "BOSTON, Oct. 05, 2026 (GLOBE NEWSWIRE) -- Merlin, Inc. (Nasdaq: MRLN), an aerospace and defense technology company building the operating system of record for autonomous flight...",
           "symbol": "MRLN"
         }
       ]

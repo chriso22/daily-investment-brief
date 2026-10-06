@@ -3,12 +3,17 @@ name: Daily brief
 on:
   workflow_dispatch:
   schedule:
-    # 6:45 a.m. America/Chicago, Monday–Friday. GitHub cron is UTC and does
-    # not follow daylight time, so both Central offsets are scheduled:
-    # 11:45 UTC during daylight time and 12:45 UTC during standard time.
-    # The gate below lets only the 6:45 a.m. Central run continue.
-    - cron: "45 11 * * 1-5"
-    - cron: "45 12 * * 1-5"
+    # Target ~6:45 a.m. America/Chicago on weekdays. GitHub cron is UTC-only
+    # and often delayed (sometimes by hours), so several morning slots run and
+    # a once-per-Central-day gate keeps only the first refresh.
+    # 11:47 UTC ≈ 6:47 a.m. CDT / 5:47 a.m. CST
+    # 12:47 UTC ≈ 7:47 a.m. CDT / 6:47 a.m. CST
+    # Later slots catch delayed earlier triggers.
+    - cron: "47 11 * * 1-5"
+    - cron: "47 12 * * 1-5"
+    - cron: "47 13 * * 1-5"
+    - cron: "47 14 * * 1-5"
+    - cron: "47 15 * * 1-5"
 
 permissions:
   contents: write
@@ -22,40 +27,50 @@ jobs:
   refresh:
     runs-on: ubuntu-latest
     steps:
-      - name: Run only at 6:45 a.m. Central
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Run once per Central weekday (or on manual dispatch)
         id: gate
         run: |
           set -euo pipefail
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "Manual dispatch; refreshing."
             echo "run=true" >> "$GITHUB_OUTPUT"
             exit 0
           fi
-          hour=$(TZ=America/Chicago date +%H)
-          minute=$(TZ=America/Chicago date +%M)
-          schedule="${{ github.event.schedule }}"
-          # 12:45 UTC is 6:45 a.m. Central during standard time only.
-          if [ "$schedule" = "45 12 * * 1-5" ]; then
-            if [ "$hour" = "06" ]; then
-              echo "run=true" >> "$GITHUB_OUTPUT"
-            else
-              echo "Central time is ${hour}:${minute}; skipping 12:45 UTC offset."
-              echo "run=false" >> "$GITHUB_OUTPUT"
-            fi
+          today=$(TZ=America/Chicago date +%F)
+          now_central=$(TZ=America/Chicago date '+%Y-%m-%d %H:%M %Z')
+          if [ ! -f brief-data.json ]; then
+            echo "No brief-data.json yet; refreshing at ${now_central}."
+            echo "run=true" >> "$GITHUB_OUTPUT"
             exit 0
           fi
-          # 11:45 UTC is 6:45 a.m. Central during daylight time. Allow GitHub
-          # schedule delay into the 7:xx hour, but stop before 7:45 when the
-          # 12:45 UTC offset would also match this window.
-          if [ "$hour" = "06" ] || { [ "$hour" = "07" ] && [ "$minute" -lt 45 ]; }; then
-            echo "run=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "Central time is ${hour}:${minute}; skipping 11:45 UTC offset."
-            echo "run=false" >> "$GITHUB_OUTPUT"
-          fi
+          brief_day=$(
+            python3 - <<'PY'
+          import json
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
 
-      - name: Check out repository
-        if: steps.gate.outputs.run == 'true'
-        uses: actions/checkout@v4
+          payload = json.load(open("brief-data.json", encoding="utf-8"))
+          generated = payload.get("generated_at")
+          if not generated:
+              print("")
+              raise SystemExit(0)
+          moment = datetime.fromisoformat(generated)
+          if moment.tzinfo is None:
+              from datetime import timezone
+              moment = moment.replace(tzinfo=timezone.utc)
+          print(moment.astimezone(ZoneInfo("America/Chicago")).date().isoformat())
+          PY
+          )
+          if [ "$brief_day" = "$today" ]; then
+            echo "Brief already generated for ${today} Central (last: ${brief_day}); skipping at ${now_central}."
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "Last brief day ${brief_day:-none}; today is ${today} Central. Refreshing at ${now_central}."
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Set up Python
         if: steps.gate.outputs.run == 'true'

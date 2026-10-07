@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T12:05:23.480076+00:00",
+  "generated_at": "2026-10-07T13:52:58.270560+00:00",
   "source": "Yahoo Finance",
   "disclaimer": "Delayed market data for information only. Not investment advice.",
   "groups": [
@@ -8,7 +8,7 @@
       "title": "Bitcoin",
       "kicker": "Crypto",
       "blurb": "U.S. dollar spot price.",
-      "analysis": "Bitcoin is at $86,282, +0.48% from the prior daily close. Across the last five sessions, Bitcoin is 2.11% higher. The session ranged from $85,134 to $86,299.",
+      "analysis": "Bitcoin is at $83,266, −3.52% from the prior daily close. Across the last five sessions, Bitcoin is 1.77% lower. The session ranged from $82,898 to $85,571.",
       "quotes": [
         {
           "symbol": "BTC-USD",
@@ -16,58 +16,58 @@
           "note": "Spot",
           "official_name": "Bitcoin USD",
           "currency": "USD",
-          "price": 86281.75,
-          "change": 411.3194,
-          "change_percent": 0.48,
-          "previous_close": 85870.4306,
-          "day_high": 86298.75,
-          "day_low": 85133.71,
-          "volume": 26252535808,
-          "five_session_change_percent": 2.11,
+          "price": 83265.81,
+          "change": -3034.3123,
+          "change_percent": -3.52,
+          "previous_close": 86300.1223,
+          "day_high": 85570.695,
+          "day_low": 82898.195,
+          "volume": 37449609216,
+          "five_session_change_percent": -1.77,
           "closes": [
-            84497.2109,
             84763.5781,
             86480.3047,
             85786.5938,
-            86281.75
+            85557.5625,
+            83265.8125
           ],
           "session": "24-hour",
           "exchange": "CCC",
-          "as_of": "2026-10-06T12:05:21+00:00",
+          "as_of": "2026-10-07T13:52:53+00:00",
           "timezone": "UTC"
         }
       ],
       "headlines": [
         {
-          "title": "Bitcoin Beat The Forecast, But TD Cowen Reportedly Says The Rally May Have Further To Run",
-          "url": "https://stocktwits.com/news-articles/markets/cryptocurrency/bitcoin-beat-td-cowen-forecast/cZDtTLSRBku",
+          "title": "Robinhood Markets Adds $25 Million Of Bitcoin To Its Balance Sheet",
+          "url": "https://www.cryptoprowl.com/releases/robinhood-markets-adds-25-million-of-bitcoin-to-its-balance-sheet-7252",
+          "source": "CryptoProwl",
+          "published": "2026-10-07T13:46:00+00:00",
+          "summary": "Online brokerage Robinhood Markets (NASDAQ: $HOOD) has added $25 million U.S. of Bitcoin (CRYPTO: $BTC) to its bala...",
+          "symbol": "BTC-USD"
+        },
+        {
+          "title": "Cathie Wood Says Bitcoin Is Beating Gold as Strive’s $169M Spree Outpaces Strategy",
+          "url": "https://www.ccn.com/news/crypto/strive-outbuys-strategy-cathie-woods-bitcoin-call/",
+          "source": "Ccn",
+          "published": "2026-10-07T13:22:15+00:00",
+          "summary": "Strive bought 2,000 BTC for nearly $169 million, almost six times Strategy’s latest disclosed purchase. Bitcoin per effective common share increased approximately 3.8%, after...",
+          "symbol": "BTC-USD"
+        },
+        {
+          "title": "Arthur Hayes bets AI data center crash will boost bitcoin",
+          "url": "https://qz.com/arthur-hayes-bitmex-ai-data-center-crash-bitcoin-100726",
+          "source": "Qz",
+          "published": "2026-10-07T12:18:26+00:00",
+          "summary": "Hayes says the AI infrastructure buildout mirrors past technology overbuild cycles that ended in crashes and government bailouts",
+          "symbol": "BTC-USD"
+        },
+        {
+          "title": "HOOD Stock Falls Despite Barclays’ Price Target Hike And Robinhood’s $25M BTC Purchase",
+          "url": "https://stocktwits.com/news-articles/markets/equity/why-is-hood-stock-down-today-barclays-robinhood-bitcoin/cZDv9jMRBmK",
           "source": "Stocktwits",
-          "published": "2026-10-06T11:40:15+00:00",
-          "summary": "TD Cowen’s MD forecast Bitcoin to hit $132,750 by the end of 2027, roughly 54% above current levels.",
-          "symbol": "BTC-USD"
-        },
-        {
-          "title": "BTC USD Price Stalls as Fresh Saylor Buy Fails to Clear $87K",
-          "url": "https://99bitcoins.com/news/bitcoin-btc/btc-usd-price-87000-resistance-saylor-buy/",
-          "source": "99Bitcoins",
-          "published": "2026-10-06T10:55:23+00:00",
-          "summary": "Bitcoin (BTC USD) fell about -0.5% to about $85,800 after sellers rejected a move above $87,000 for the third time since September 23. The setback came as Strategy bought 334 BTC...",
-          "symbol": "BTC-USD"
-        },
-        {
-          "title": "Bitcoin Falls as Dollar Rises, Geopolitical Tensions Persist",
-          "url": "https://finance.yahoo.com/m/854c4ac2-f275-30e7-94b5-4d11292f82d5/bitcoin-falls-as-dollar.html",
-          "source": "Yahoo Finance",
-          "published": "2026-10-06T08:58:57+00:00",
-          "summary": "Bitcoin fell as the dollar rose on U.S. interest-rate rise expectations and as Middle East tensions persist.",
-          "symbol": "BTC-USD"
-        },
-        {
-          "title": "Bitcoin Price Could Reverse Following Tech Stocks, Peter Schiff Says",
-          "url": "https://cryptonews.com/news/bitcoin-price-strategy-funding/",
-          "source": "Cryptonews",
-          "published": "2026-10-06T08:01:08+00:00",
-          "summary": "Strategy bought 334 BTC for about $28.7 million and repurchased $176 million of STRC in its latest disclosure, even as Peter Schiff warned that the Bitcoin price could reverse if...",
+          "published": "2026-10-07T12:15:34+00:00",
+          "summary": "Barclays lifted its HOOD price target to $132 from $105 with an ‘Overweight’ rating, implying almost 18% upside from Tuesday’s close.",
           "symbol": "BTC-USD"
         }
       ]
@@ -77,7 +77,7 @@
       "title": "Bitcoin-linked equities",
       "kicker": "Equities",
       "blurb": "Strategy, Strive, and Twenty One Capital.",
-      "analysis": "All three names closed higher. Strategy (MSTR) leads at +2.76%; Strive (ASST) is the smallest gain at +0.77%. The average session move is +1.58%. Five-session moves: MSTR +6.31%, ASST +3.24%, XXI +2.30%.",
+      "analysis": "All three names are lower. Strategy (MSTR) is down the most at −4.89%; Twenty One Capital (XXI) held up best at −2.45%. The average session move is −3.75%. Five-session moves: MSTR −2.49%, ASST −5.05%, XXI −5.63%.",
       "quotes": [
         {
           "symbol": "MSTR",
@@ -85,24 +85,24 @@
           "note": "Bitcoin treasury",
           "official_name": "Strategy Inc",
           "currency": "USD",
-          "price": 164.43,
-          "change": 4.4195,
-          "change_percent": 2.76,
-          "previous_close": 160.0105,
-          "day_high": 166.2,
-          "day_low": 160.12,
-          "volume": 17920929,
-          "five_session_change_percent": 6.31,
+          "price": 156.51,
+          "change": -8.0399,
+          "change_percent": -4.89,
+          "previous_close": 164.5499,
+          "day_high": 158.66,
+          "day_low": 154.82,
+          "volume": 3675476,
+          "five_session_change_percent": -2.49,
           "closes": [
-            154.67,
-            153.09,
             160.5,
             160.01,
-            164.43
+            164.43,
+            164.55,
+            156.51
           ],
-          "session": "Regular close",
+          "session": "Regular session",
           "exchange": "NasdaqGS",
-          "as_of": "2026-10-05T20:00:02+00:00",
+          "as_of": "2026-10-07T13:52:58+00:00",
           "timezone": "America/New_York"
         },
         {
@@ -111,24 +111,24 @@
           "note": "Bitcoin treasury",
           "official_name": "Strive, Inc.",
           "currency": "USD",
-          "price": 30.26,
-          "change": 0.23,
-          "change_percent": 0.77,
-          "previous_close": 30.03,
-          "day_high": 31.16,
-          "day_low": 29.71,
-          "volume": 9544559,
-          "five_session_change_percent": 3.24,
+          "price": 28.59,
+          "change": -1.16,
+          "change_percent": -3.9,
+          "previous_close": 29.75,
+          "day_high": 28.86,
+          "day_low": 28.2,
+          "volume": 1480369,
+          "five_session_change_percent": -5.05,
           "closes": [
-            29.31,
-            29.41,
             30.11,
             30.03,
-            30.26
+            30.26,
+            29.75,
+            28.59
           ],
-          "session": "Regular close",
+          "session": "Regular session",
           "exchange": "NasdaqGM",
-          "as_of": "2026-10-05T20:00:01+00:00",
+          "as_of": "2026-10-07T13:52:55+00:00",
           "timezone": "America/New_York"
         },
         {
@@ -137,50 +137,50 @@
           "note": "Bitcoin treasury",
           "official_name": "Twenty One Capital, Inc.",
           "currency": "USD",
-          "price": 6.68,
-          "change": 0.08,
-          "change_percent": 1.21,
-          "previous_close": 6.6,
-          "day_high": 6.88,
-          "day_low": 6.63,
-          "volume": 1180531,
-          "five_session_change_percent": 2.3,
+          "price": 6.37,
+          "change": -0.16,
+          "change_percent": -2.45,
+          "previous_close": 6.53,
+          "day_high": 6.419,
+          "day_low": 6.25,
+          "volume": 276891,
+          "five_session_change_percent": -5.63,
           "closes": [
-            6.53,
-            6.5,
             6.75,
             6.6,
-            6.68
+            6.68,
+            6.53,
+            6.37
           ],
-          "session": "Regular close",
+          "session": "Regular session",
           "exchange": "NYSE",
-          "as_of": "2026-10-05T20:00:02+00:00",
+          "as_of": "2026-10-07T13:52:29+00:00",
           "timezone": "America/New_York"
         }
       ],
       "headlines": [
         {
-          "title": "BTC USD Price Stalls as Fresh Saylor Buy Fails to Clear $87K",
-          "url": "https://99bitcoins.com/news/bitcoin-btc/btc-usd-price-87000-resistance-saylor-buy/",
-          "source": "99Bitcoins",
-          "published": "2026-10-06T10:55:23+00:00",
-          "summary": "Bitcoin (BTC USD) fell about -0.5% to about $85,800 after sellers rejected a move above $87,000 for the third time since September 23. The setback came as Strategy bought 334 BTC...",
+          "title": "Cathie Wood Says Bitcoin Is Beating Gold as Strive’s $169M Spree Outpaces Strategy",
+          "url": "https://www.ccn.com/news/crypto/strive-outbuys-strategy-cathie-woods-bitcoin-call/",
+          "source": "Ccn",
+          "published": "2026-10-07T13:22:15+00:00",
+          "summary": "Strive bought 2,000 BTC for nearly $169 million, almost six times Strategy’s latest disclosed purchase. Bitcoin per effective common share increased approximately 3.8%, after...",
           "symbol": "MSTR"
         },
         {
-          "title": "Bitcoin Price Could Reverse Following Tech Stocks, Peter Schiff Says",
-          "url": "https://cryptonews.com/news/bitcoin-price-strategy-funding/",
-          "source": "Cryptonews",
-          "published": "2026-10-06T08:01:08+00:00",
-          "summary": "Strategy bought 334 BTC for about $28.7 million and repurchased $176 million of STRC in its latest disclosure, even as Peter Schiff warned that the Bitcoin price could reverse if...",
+          "title": "Is Strategy (MSTR) Fully Valued Following Its Q3 Digital Asset Gain?",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/strategy-mstr-fully-valued-following-091742980.html",
+          "source": "Yahoo Finance",
+          "published": "2026-10-07T09:17:42+00:00",
+          "summary": "Strategy (MSTR) just put a huge number on the board. Management now pegs its third quarter gain on digital assets at about US$20.91b, alongside fresh Bitcoin buying and sizeable...",
           "symbol": "MSTR"
         },
         {
-          "title": "Strive Adds $169M Bitcoin in Its Biggest Buy in Four Months",
-          "url": "https://decrypt.co/380129/strive-adds-169m-bitcoin-biggest-buy-four-months",
-          "source": "Decrypt",
-          "published": "2026-10-05T22:30:20+00:00",
-          "summary": "The Nasdaq-listed bitcoin treasury company, co-founded by Vivek Ramaswamy, paid roughly $169 million for 2,000 coins last week and now holds 29,462 BTC.",
+          "title": "Strive buys $169M as leveraged crypto trading expands",
+          "url": "https://finance.yahoo.com/video/strive-buys-169m-leveraged-crypto-160100593.html",
+          "source": "Yahoo Finance",
+          "published": "2026-10-06T16:01:00+00:00",
+          "summary": "Scott Melker breaks down Strive’s (ASST) purchase of 2,000 bitcoin (BTC-USD) for roughly $169 million, the Securities and Exchange Commission’s approval of the first 3X leveraged...",
           "symbol": "ASST"
         },
         {
@@ -198,7 +198,7 @@
       "title": "Space & defense",
       "kicker": "Equities",
       "blurb": "SpaceX, AST SpaceMobile, Merlin, and Kraken Robotics.",
-      "analysis": "Two names closed higher, one name closed lower, and one name was little changed. Kraken Robotics (KRKNF) leads at +9.97%; Merlin (MRLN) lags at −8.19%. The average session move is +2.35%. Five-session moves: SPCX +14.64%, ASTS −1.62%, MRLN −11.80%, KRKNF +8.84%.",
+      "analysis": "All four names are lower. AST SpaceMobile (ASTS) is down the most at −5.19%; SpaceX (SPCX) held up best at −1.98%. The average session move is −3.96%. Five-session moves: SPCX +13.80%, ASTS +4.92%, MRLN −17.46%, KRKNF +7.01%.",
       "quotes": [
         {
           "symbol": "SPCX",
@@ -206,24 +206,24 @@
           "note": "Space Exploration Technologies",
           "official_name": "Space Exploration Technologies Corp.",
           "currency": "USD",
-          "price": 171.09,
-          "change": 12.1302,
-          "change_percent": 7.63,
-          "previous_close": 158.9598,
-          "day_high": 172.47,
-          "day_low": 158.62,
-          "volume": 134420923,
-          "five_session_change_percent": 14.64,
+          "price": 168.51,
+          "change": -3.4092,
+          "change_percent": -1.98,
+          "previous_close": 171.9192,
+          "day_high": 171.31,
+          "day_low": 167.331,
+          "volume": 13743208,
+          "five_session_change_percent": 13.8,
           "closes": [
-            149.24,
-            150.86,
             148.07,
             158.96,
-            171.09
+            171.09,
+            171.92,
+            168.51
           ],
-          "session": "Regular close",
+          "session": "Regular session",
           "exchange": "NasdaqGS",
-          "as_of": "2026-10-05T20:00:01+00:00",
+          "as_of": "2026-10-07T13:52:58+00:00",
           "timezone": "America/New_York"
         },
         {
@@ -232,24 +232,24 @@
           "note": "Satellite connectivity",
           "official_name": "AST SpaceMobile, Inc.",
           "currency": "USD",
-          "price": 58.44,
-          "change": -0.0099,
-          "change_percent": -0.02,
-          "previous_close": 58.4499,
-          "day_high": 59.26,
-          "day_low": 57.295,
-          "volume": 8078978,
-          "five_session_change_percent": -1.62,
+          "price": 59.845,
+          "change": -3.2753,
+          "change_percent": -5.19,
+          "previous_close": 63.1203,
+          "day_high": 61.63,
+          "day_low": 58.95,
+          "volume": 2456415,
+          "five_session_change_percent": 4.92,
           "closes": [
-            59.4,
-            58.86,
             57.04,
             58.45,
-            58.44
+            58.44,
+            63.12,
+            59.845
           ],
-          "session": "Regular close",
+          "session": "Regular session",
           "exchange": "NasdaqGS",
-          "as_of": "2026-10-05T20:00:01+00:00",
+          "as_of": "2026-10-07T13:52:57+00:00",
           "timezone": "America/New_York"
         },
         {
@@ -258,24 +258,24 @@
           "note": "Autonomous flight",
           "official_name": "Merlin, Inc.",
           "currency": "USD",
-          "price": 1.57,
-          "change": -0.14,
-          "change_percent": -8.19,
-          "previous_close": 1.71,
-          "day_high": 1.76,
-          "day_low": 1.57,
-          "volume": 3150860,
-          "five_session_change_percent": -11.8,
+          "price": 1.494,
+          "change": -0.066,
+          "change_percent": -4.23,
+          "previous_close": 1.56,
+          "day_high": 1.52,
+          "day_low": 1.48,
+          "volume": 314422,
+          "five_session_change_percent": -17.46,
           "closes": [
-            1.78,
-            1.88,
             1.81,
             1.71,
-            1.57
+            1.57,
+            1.56,
+            1.494
           ],
-          "session": "Regular close",
+          "session": "Regular session",
           "exchange": "NasdaqGM",
-          "as_of": "2026-10-05T20:00:02+00:00",
+          "as_of": "2026-10-07T13:52:51+00:00",
           "timezone": "America/New_York"
         },
         {
@@ -284,35 +284,43 @@
           "note": "Underwater defense",
           "official_name": "Kraken Robotics Inc.",
           "currency": "USD",
-          "price": 3.2,
-          "change": 0.29,
-          "change_percent": 9.97,
-          "previous_close": 2.91,
-          "day_high": 3.18,
-          "day_low": 2.95,
-          "volume": 257410,
-          "five_session_change_percent": 8.84,
+          "price": 3.22,
+          "change": -0.15,
+          "change_percent": -4.45,
+          "previous_close": 3.37,
+          "day_high": 3.43,
+          "day_low": 3.22,
+          "volume": 43309,
+          "five_session_change_percent": 7.01,
           "closes": [
-            2.94,
-            3.069,
             3.009,
             2.91,
-            3.2
+            3.2,
+            3.37,
+            3.22
           ],
-          "session": "Regular close",
+          "session": "Regular session",
           "exchange": "OTC Markets OTCQB",
-          "as_of": "2026-10-05T20:00:00+00:00",
+          "as_of": "2026-10-07T13:37:19+00:00",
           "timezone": "America/New_York"
         }
       ],
       "headlines": [
         {
-          "title": "SpaceX Just Reached Orbit With Starship. Here's What a $1,000 Investment Could Be Worth by 2030",
-          "url": "https://www.fool.com/investing/2026/10/06/spacex-just-reached-orbit-with-starship-here-s-what-a-usd1-000-investment-could-be-worth-by-2030/",
-          "source": "Motley Fool",
-          "published": "2026-10-06T11:51:01+00:00",
-          "summary": "SpaceX just reached a big milestone, but could it actually help investors profit?",
+          "title": "Elon Musk's SpaceX seeking to raise $40B to buy Nvidia chips",
+          "url": "https://finance.yahoo.com/video/elon-musks-spacex-seeking-raise-132132685.html",
+          "source": "Yahoo Finance",
+          "published": "2026-10-07T13:21:32+00:00",
+          "summary": "Elon Musk's SpaceX (SPCX) is seeking to issue $40 billion in new debt to purchase Nvidia (NVDA) chips, according to Bloomberg. The 8:30 Hosts Pras Subramanian, Julie Hyman, and...",
           "symbol": "SPCX"
+        },
+        {
+          "title": "SpaceX Slips 2% on a Reported $40 Billion Chip Financing Plan; Rocket Lab Eases, AST SpaceMobile Falls 3%",
+          "url": "https://247wallst.com/investing/2026/10/07/spacex-slips-2-on-a-reported-40-billion-chip-financing-plan-rocket-lab-eases-ast-spacemobile-falls-3/",
+          "source": "24/7 Wall St.",
+          "published": "2026-10-07T13:19:21+00:00",
+          "summary": "A leaked financing report is sending shockwaves through space stocks well beyond the company at the center of the story, raising urgent questions about leverage, compute strategy...",
+          "symbol": "ASTS"
         },
         {
           "title": "Kraken Robotics (TSXV:PNG) Is Up 5.8% After Q2 Results Highlight Backlog And Covelya Integration Questions",
@@ -321,14 +329,6 @@
           "published": "2026-10-06T11:06:51+00:00",
           "summary": "In early October 2026, Kraken Robotics reported Q2 2026 revenue of C$27.3 million and adjusted EBITDA of C$5.0 million, supported by a combined 2026 order book of about C$355...",
           "symbol": "KRKNF"
-        },
-        {
-          "title": "ASTS Stock Edges Up Overnight: US-Japan Tech Statement Backs Rakuten Tie-Up, But Launch Questions Linger",
-          "url": "https://stocktwits.com/news-articles/markets/equity/asts-stock-us-japan-tech-statement-backs-rakuten-tieup-launch-questions-linger/cZDsriARBkc",
-          "source": "Stocktwits",
-          "published": "2026-10-06T04:49:00+00:00",
-          "summary": "The U.S. and Japan highlighted AST’s Rakuten partnership in a tech cooperation statement, while William Blair cut its 2027 revenue forecast over launch delays.",
-          "symbol": "ASTS"
         },
         {
           "title": "Merlin, Inc. To Participate in Upcoming Investor Conferences",

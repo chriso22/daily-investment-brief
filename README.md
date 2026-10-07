@@ -39,11 +39,13 @@ The script writes `brief-data.json` in the repository root and prints each quote
 
 ## Weekday automation
 
-`.github/workflows/daily-brief.yml` targets about 6:45 a.m. Central Time (`America/Chicago`) Monday through Friday. GitHub schedules are UTC-only and often delayed, so the workflow registers several morning UTC slots (`47 11` through `47 15`, Monday–Friday). The first scheduled run whose `brief-data.json` is not already from today’s Central calendar date refreshes; later slots that day no-op.
+The brief is due at **6:45 a.m. Central** (`America/Chicago`), Monday through Friday. That is about an hour and 45 minutes before the US cash open at 8:30 a.m. Central. The clock time is not the problem: 6:45 a.m. is early enough. GitHub’s own scheduler is often hours late, so it is only a backup.
 
-The run rebuilds `brief-data.json`, commits it when prices changed, and posts a notice on the open issue titled **Daily Investment Brief**, mentioning @chriso22 and @bevstr. The first successful run opens that issue. GitHub sends the mentions through the notification settings on those accounts. The workflow can also be started manually from the Actions tab (`workflow_dispatch`), which refreshes and notifies immediately even if today’s brief already exists.
+The on-time run is the weekday morning check in this project’s Cursor chat. At 6:45 a.m. Central it refreshes `brief-data.json` and pushes that file to `main` when today’s Central date is not already published. One check is 11:45 UTC (6:45 a.m. CDT) and the other is 12:45 UTC (6:45 a.m. CST). Outside 6:40–7:40 a.m. Central the check stays quiet.
 
-GitHub may delay or drop a scheduled run under load. Extra morning slots are there so a late trigger can still publish the weekday brief. The workflow requests permission to write contents and issues.
+`.github/workflows/daily-brief.yml` still has backup slots at 47 minutes past 11:00–15:00 UTC, weekdays. The first run whose saved brief is not already from today’s Central date refreshes, commits `brief-data.json` when it changed, and posts a notice on the open issue titled **Daily Investment Brief**, mentioning @chriso22 and @bevstr. Later slots that day do nothing. A manual run from the Actions tab (`workflow_dispatch`) refreshes and notifies even if today’s brief already exists.
+
+The workflow requests permission to write contents and issues.
 
 ## GitHub Pages
 

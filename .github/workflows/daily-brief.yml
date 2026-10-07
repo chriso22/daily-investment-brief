@@ -3,12 +3,14 @@ name: Daily brief
 on:
   workflow_dispatch:
   schedule:
-    # Target ~6:45 a.m. America/Chicago on weekdays. GitHub cron is UTC-only
-    # and often delayed (sometimes by hours), so several morning slots run and
-    # a once-per-Central-day gate keeps only the first refresh.
+    # Backup only. The brief is due at 6:45 a.m. America/Chicago, before the
+    # 8:30 a.m. Central cash open. GitHub cron is often hours late, so it
+    # cannot be the alarm. These slots publish the weekday brief if nothing
+    # else has yet. The once-per-Central-day gate below skips the rest.
     # 11:47 UTC ≈ 6:47 a.m. CDT / 5:47 a.m. CST
     # 12:47 UTC ≈ 7:47 a.m. CDT / 6:47 a.m. CST
-    # Later slots catch delayed earlier triggers.
+    # Later slots are after the open during daylight time; they only fill in
+    # a day the earlier runs missed.
     - cron: "47 11 * * 1-5"
     - cron: "47 12 * * 1-5"
     - cron: "47 13 * * 1-5"

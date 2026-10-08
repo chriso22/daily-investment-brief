@@ -2,6 +2,10 @@ name: Daily brief
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - brief-data.json
   schedule:
     # Backup only. The brief is due at 6:45 a.m. America/Chicago, before the
     # 8:30 a.m. Central cash open. GitHub cron is often hours late, so it
@@ -27,6 +31,7 @@ concurrency:
 
 jobs:
   refresh:
+    if: github.event_name != 'push'
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -100,6 +105,38 @@ jobs:
 
       - name: Notify that the brief is ready
         if: steps.gate.outputs.run == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          python3 scripts/refresh-brief.py --notice-body notice.md
+          title="Daily Investment Brief"
+          number=$(gh issue list --state open --limit 100 --json number,title \
+            --jq '.[] | select(.title == "Daily Investment Brief") | .number' | head -n 1)
+          if [ -z "$number" ]; then
+            gh issue create --title "$title" --body-file notice.md
+          else
+            gh issue comment "$number" --body-file notice.md
+          fi
+
+  # The morning check pushes brief-data.json with the Cursor app token, which
+  # cannot comment on issues. This job runs as github-actions[bot], and that
+  # comment is what notifies the mentioned accounts. Pushes made with the
+  # workflow's own token do not start a new run, so this does not double-post
+  # after a scheduled refresh.
+  notify:
+    if: github.event_name == 'push' && github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Notify that the brief is ready
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |

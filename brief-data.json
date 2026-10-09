@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T12:49:14.049409+00:00",
+  "generated_at": "2026-10-09T11:45:43.937163+00:00",
   "source": "Yahoo Finance",
   "disclaimer": "Delayed market data for information only. Not investment advice.",
   "groups": [
@@ -8,7 +8,7 @@
       "title": "Bitcoin",
       "kicker": "Crypto",
       "blurb": "U.S. dollar spot price.",
-      "analysis": "Bitcoin is at $82,187, −1.53% from the prior daily close. Across the last five sessions, Bitcoin is 4.96% lower. The session ranged from $82,290 to $83,427.",
+      "analysis": "Bitcoin is at $82,983, +0.67% from the prior daily close. Across the last five sessions, Bitcoin is 3.27% lower. The session ranged from $81,602 to $82,913.",
       "quotes": [
         {
           "symbol": "BTC-USD",
@@ -16,58 +16,58 @@
           "note": "Spot",
           "official_name": "Bitcoin USD",
           "currency": "USD",
-          "price": 82186.77,
-          "change": -1276.9956,
-          "change_percent": -1.53,
-          "previous_close": 83463.7656,
-          "day_high": 83427.12,
-          "day_low": 82290.28,
-          "volume": 33026963456,
-          "five_session_change_percent": -4.96,
+          "price": 82983.08,
+          "change": 553.9239,
+          "change_percent": 0.67,
+          "previous_close": 82429.1561,
+          "day_high": 82912.79,
+          "day_low": 81602.41,
+          "volume": 41050009600,
+          "five_session_change_percent": -3.27,
           "closes": [
-            86480.3047,
             85786.5938,
             85557.5625,
             83275.9297,
-            82186.7734
+            81676.3359,
+            82983.0781
           ],
           "session": "24-hour",
           "exchange": "CCC",
-          "as_of": "2026-10-08T12:49:08+00:00",
+          "as_of": "2026-10-09T11:45:39+00:00",
           "timezone": "UTC"
         }
       ],
       "headlines": [
         {
-          "title": "Is the Bitcoin Bottom Already In at $57,000?",
-          "url": "https://247wallst.com/investing/cryptocurrency/2026/10/08/is-the-bitcoin-bottom-already-in-at-57000/",
-          "source": "24/7 Wall St.",
-          "published": "2026-10-08T12:30:38+00:00",
-          "summary": "Two research teams say Bitcoin's worst days are already behind it, but derivatives traders and ETF holders sitting near breakeven tell a very different story about what comes next.",
+          "title": "Bitcoin Returns to ETF Holders’ Breakeven Price, and $729 Million Heads for the Exit",
+          "url": "https://beincrypto.com/bitcoin-etf-investors-breakeven-outflows/",
+          "source": "Beincrypto",
+          "published": "2026-10-09T10:35:06+00:00",
+          "summary": "Bitcoin ETF investors pulled $729M as BTC hit their cost basis. See why Fidelity, not BlackRock, is driving the outflows.",
           "symbol": "BTC-USD"
         },
         {
-          "title": "Wells Fargo Is Making a Move on Crypto, and Kraken Could Be the Key",
-          "url": "https://www.ccn.com/news/crypto/wells-fargo-kraken-payward-crypto-liquidity-talks/",
+          "title": "U.S. Government Sends $1 Billion in Seized Bitfinex Bitcoin to Unlabeled Wallets",
+          "url": "https://unchainedcrypto.com/u-s-government-sends-1-billion-in-seized-bitfinex-bitcoin-to-unlabeled-wallets/",
+          "source": "Unchainedcrypto",
+          "published": "2026-10-09T10:21:00+00:00",
+          "summary": "Arkham data shows 12,267 BTC left a wallet holding coins stolen in the 2016 Bitfinex hack on Thursday, with no exchange deposit recorded.",
+          "symbol": "BTC-USD"
+        },
+        {
+          "title": "Nearly 1 in 3 Bitcoin Is Sitting With Its Public Key Exposed, and the Number Keeps Growing",
+          "url": "https://www.ccn.com/news/crypto/bitcoin-public-key-exposure-glassnode/",
           "source": "Ccn",
-          "published": "2026-10-08T12:21:38+00:00",
-          "summary": "Wells Fargo is reportedly discussing crypto trading liquidity with Kraken’s parent company, Payward. Wells Fargo already offers spot Bitcoin ETFs to eligible wealth clients and ...",
+          "published": "2026-10-09T10:12:15+00:00",
+          "summary": "Glassnode says 6.26 million BTC, or 31.2% of issued supply, sits behind public keys already visible on-chain. Address reuse accounts for 4.33 million BTC, making ...",
           "symbol": "BTC-USD"
         },
         {
-          "title": "Bitcoin ETFs Faced Outflows on Nearly Half of All Trading Days This Year, Yet Still Took In Money. Should You Worry About One Bad Day?",
-          "url": "https://247wallst.com/investing/cryptocurrency/2026/10/08/bitcoin-etfs-faced-outflows-on-nearly-half-of-all-trading-days-this-year-yet-still-took-in-money-should-you-worry-about-one-bad-day/",
-          "source": "24/7 Wall St.",
-          "published": "2026-10-08T12:00:47+00:00",
-          "summary": "Nearly half of all Bitcoin ETF trading days this year ended in the red, yet the funds kept growing anyway. Before you panic over the next bad day, here is what the data actually...",
-          "symbol": "BTC-USD"
-        },
-        {
-          "title": "Elon Musk’s Two Companies: Divergent Paths on Bitcoin. Who Made the Smarter Move?",
-          "url": "https://247wallst.com/investing/cryptocurrency/2026/10/08/elon-musks-two-companies-divergent-paths-on-bitcoin-who-made-the-smarter-move/",
-          "source": "24/7 Wall St.",
-          "published": "2026-10-08T11:30:47+00:00",
-          "summary": "Tesla and SpaceX both bet on Bitcoin, but one company held firm while the other cashed out early. The gap between those two choices has since grown into a multi-billion dollar...",
+          "title": "Bitcoin Price Flashes a Hidden Uptrend Signal Amid One 96% Problem",
+          "url": "https://beincrypto.com/bitcoin-price-hidden-uptrend-signal/",
+          "source": "Beincrypto",
+          "published": "2026-10-09T09:21:08+00:00",
+          "summary": "Bitcoin price flashes a hidden uptrend signal as long-term holder buying drops 96%. See why a breakdown may not come and the levels to watch.",
           "symbol": "BTC-USD"
         }
       ]
@@ -77,7 +77,7 @@
       "title": "Bitcoin-linked equities",
       "kicker": "Equities",
       "blurb": "Strategy, Strive, and Twenty One Capital.",
-      "analysis": "All three names closed lower. Strategy (MSTR) is down the most at −6.79%; Twenty One Capital (XXI) held up best at −2.14%. The average session move is −4.73%. Five-session moves: MSTR −4.44%, ASST −6.39%, XXI −5.33%.",
+      "analysis": "One name closed higher and two names closed lower. Strive (ASST) leads at +0.16%; Strategy (MSTR) lags at −1.24%. The average session move is −0.73%. Five-session moves: MSTR −5.34%, ASST −5.99%, XXI −4.24%.",
       "quotes": [
         {
           "symbol": "MSTR",
@@ -85,24 +85,24 @@
           "note": "Bitcoin treasury",
           "official_name": "Strategy Inc",
           "currency": "USD",
-          "price": 153.37,
-          "change": -11.1795,
-          "change_percent": -6.79,
-          "previous_close": 164.5495,
-          "day_high": 158.66,
-          "day_low": 152.53,
-          "volume": 21318561,
-          "five_session_change_percent": -4.44,
+          "price": 151.47,
+          "change": -1.9003,
+          "change_percent": -1.24,
+          "previous_close": 153.3703,
+          "day_high": 153.631,
+          "day_low": 147.41,
+          "volume": 23421830,
+          "five_session_change_percent": -5.34,
           "closes": [
-            160.5,
             160.01,
             164.43,
             164.55,
-            153.37
+            153.37,
+            151.47
           ],
           "session": "Regular close",
           "exchange": "NasdaqGS",
-          "as_of": "2026-10-07T20:00:01+00:00",
+          "as_of": "2026-10-08T20:00:01+00:00",
           "timezone": "America/New_York"
         },
         {
@@ -111,24 +111,24 @@
           "note": "Bitcoin treasury",
           "official_name": "Strive, Inc.",
           "currency": "USD",
-          "price": 28.185,
-          "change": -1.5652,
-          "change_percent": -5.26,
-          "previous_close": 29.7502,
-          "day_high": 28.86,
-          "day_low": 27.71,
-          "volume": 8315833,
-          "five_session_change_percent": -6.39,
+          "price": 28.23,
+          "change": 0.0451,
+          "change_percent": 0.16,
+          "previous_close": 28.1849,
+          "day_high": 28.36,
+          "day_low": 27.33,
+          "volume": 7848904,
+          "five_session_change_percent": -5.99,
           "closes": [
-            30.11,
             30.03,
             30.26,
             29.75,
-            28.185
+            28.185,
+            28.23
           ],
           "session": "Regular close",
           "exchange": "NasdaqGM",
-          "as_of": "2026-10-07T20:00:01+00:00",
+          "as_of": "2026-10-08T20:00:01+00:00",
           "timezone": "America/New_York"
         },
         {
@@ -137,43 +137,51 @@
           "note": "Bitcoin treasury",
           "official_name": "Twenty One Capital, Inc.",
           "currency": "USD",
-          "price": 6.39,
-          "change": -0.14,
-          "change_percent": -2.14,
-          "previous_close": 6.53,
-          "day_high": 6.42,
-          "day_low": 6.25,
-          "volume": 1045869,
-          "five_session_change_percent": -5.33,
+          "price": 6.32,
+          "change": -0.07,
+          "change_percent": -1.1,
+          "previous_close": 6.39,
+          "day_high": 6.365,
+          "day_low": 6.125,
+          "volume": 1222987,
+          "five_session_change_percent": -4.24,
           "closes": [
-            6.75,
             6.6,
             6.68,
             6.53,
-            6.39
+            6.39,
+            6.32
           ],
           "session": "Regular close",
           "exchange": "NYSE",
-          "as_of": "2026-10-07T20:00:02+00:00",
+          "as_of": "2026-10-08T20:00:02+00:00",
           "timezone": "America/New_York"
         }
       ],
       "headlines": [
         {
-          "title": "What Does Strategy (MSTR) 24 7 Tokenized Stock Trading Mean For Investors?",
-          "url": "https://finance.yahoo.com/markets/crypto/articles/does-strategy-mstr-24-7-121121382.html",
+          "title": "Twenty One Capital (XXI) Stock May Be Below Fair Value On Book Value",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/twenty-one-capital-xxi-stock-111432453.html",
           "source": "Yahoo Finance",
-          "published": "2026-10-08T12:11:21+00:00",
-          "summary": "Strategy (NasdaqGS:MSTR) is among the first equities offered in a new 24/7 tokenized stock trading venture from OKX and Intercontinental Exchange. The joint platform uses an SEC...",
+          "published": "2026-10-09T11:14:32+00:00",
+          "summary": "Twenty One Capital has seen a sharp reset in its share price over the past year, which puts a spotlight on whether the current US$6.32 level still lines up with what its balance...",
+          "symbol": "XXI"
+        },
+        {
+          "title": "Why Saylor Called Musk’s Wildest SpaceX Claim “₿ullish”",
+          "url": "https://beincrypto.com/saylor-strategy-tokenized-stock-spacex/",
+          "source": "Beincrypto",
+          "published": "2026-10-09T07:08:59+00:00",
+          "summary": "Michael Saylor calls Musk's 100x SpaceX vision bullish as Strategy leads all companies in tokenized stock value with $491 million on-chain.",
           "symbol": "MSTR"
         },
         {
-          "title": "Strategy Lost More Than 50% of Its Value Last Year: It Will Return 180% According to One Wall Street Pro",
-          "url": "https://247wallst.com/investing/2026/10/08/strategy-lost-more-than-50-of-its-value-last-year-it-will-return-180-according-to-one-wall-street-pro/",
-          "source": "24/7 Wall St.",
-          "published": "2026-10-08T11:15:02+00:00",
-          "summary": "Strategy Inc. lost more than half its value while quietly becoming the world's largest corporate Bitcoin treasury, and one Wall Street analyst thinks that combination sets up a...",
-          "symbol": "MSTR"
+          "title": "Twenty One Capital (XXI) Rebound Puts Its Valuation Discount Back In Focus",
+          "url": "https://finance.yahoo.com/markets/crypto/articles/twenty-one-capital-xxi-rebound-061153475.html",
+          "source": "Yahoo Finance",
+          "published": "2026-10-09T06:11:53+00:00",
+          "summary": "Twenty One Capital (XXI), a Bitcoin focused firm based in Austin, Texas, has drawn fresh attention as investors weigh a market value of about US$2.2b against ongoing net losses...",
+          "symbol": "XXI"
         },
         {
           "title": "Cathie Wood Says Bitcoin Is Beating Gold as Strive’s $169M Spree Outpaces Strategy",
@@ -182,14 +190,6 @@
           "published": "2026-10-07T13:22:15+00:00",
           "summary": "Strive bought 2,000 BTC for nearly $169 million, almost six times Strategy’s latest disclosed purchase. Bitcoin per effective common share increased approximately 3.8%, after...",
           "symbol": "ASST"
-        },
-        {
-          "title": "Twenty One Capital CEO Raphael Zagury on Opportunities in Current Crypto Market",
-          "url": "https://finance.yahoo.com/video/twenty-one-capital-ceo-raphael-150213586.html",
-          "source": "Yahoo Finance",
-          "published": "2026-10-02T15:02:13+00:00",
-          "summary": "Twenty One Capital CEO Raphael Zagury joins Ashley Mastronardi on NYSE Live to discuss Opportunities in Current Crypto Market",
-          "symbol": "XXI"
         }
       ]
     },
@@ -198,7 +198,7 @@
       "title": "Space & defense",
       "kicker": "Equities",
       "blurb": "SpaceX, AST SpaceMobile, Merlin, and Kraken Robotics.",
-      "analysis": "One name closed higher and three names closed lower. Kraken Robotics (KRKNF) leads at +3.71%; Merlin (MRLN) lags at −9.62%. The average session move is −3.08%. Five-session moves: SPCX +13.19%, ASTS +6.33%, MRLN −22.10%, KRKNF +16.15%.",
+      "analysis": "All four names closed lower. AST SpaceMobile (ASTS) is down the most at −6.13%; Merlin (MRLN) held up best at −3.55%. The average session move is −4.72%. Five-session moves: SPCX +1.01%, ASTS −2.60%, MRLN −20.47%, KRKNF +14.09%.",
       "quotes": [
         {
           "symbol": "SPCX",
@@ -206,24 +206,24 @@
           "note": "Space Exploration Technologies",
           "official_name": "Space Exploration Technologies Corp.",
           "currency": "USD",
-          "price": 167.6,
-          "change": -4.3204,
-          "change_percent": -2.51,
-          "previous_close": 171.9204,
-          "day_high": 171.31,
-          "day_low": 165.65,
-          "volume": 76951787,
-          "five_session_change_percent": 13.19,
+          "price": 160.57,
+          "change": -7.0309,
+          "change_percent": -4.2,
+          "previous_close": 167.6009,
+          "day_high": 167.6,
+          "day_low": 160.29,
+          "volume": 68508567,
+          "five_session_change_percent": 1.01,
           "closes": [
-            148.07,
             158.96,
             171.09,
             171.92,
-            167.6
+            167.6,
+            160.57
           ],
           "session": "Regular close",
           "exchange": "NasdaqGS",
-          "as_of": "2026-10-07T20:00:00+00:00",
+          "as_of": "2026-10-08T20:00:00+00:00",
           "timezone": "America/New_York"
         },
         {
@@ -232,24 +232,24 @@
           "note": "Satellite connectivity",
           "official_name": "AST SpaceMobile, Inc.",
           "currency": "USD",
-          "price": 60.65,
-          "change": -2.4699,
-          "change_percent": -3.91,
-          "previous_close": 63.1199,
-          "day_high": 61.63,
-          "day_low": 58.88,
-          "volume": 10741057,
-          "five_session_change_percent": 6.33,
+          "price": 56.93,
+          "change": -3.7203,
+          "change_percent": -6.13,
+          "previous_close": 60.6503,
+          "day_high": 60.3,
+          "day_low": 55.96,
+          "volume": 18427922,
+          "five_session_change_percent": -2.6,
           "closes": [
-            57.04,
             58.45,
             58.44,
             63.12,
-            60.65
+            60.65,
+            56.93
           ],
           "session": "Regular close",
           "exchange": "NasdaqGS",
-          "as_of": "2026-10-07T20:00:01+00:00",
+          "as_of": "2026-10-08T20:00:01+00:00",
           "timezone": "America/New_York"
         },
         {
@@ -258,24 +258,24 @@
           "note": "Autonomous flight",
           "official_name": "Merlin, Inc.",
           "currency": "USD",
-          "price": 1.41,
-          "change": -0.15,
-          "change_percent": -9.62,
-          "previous_close": 1.56,
-          "day_high": 1.52,
-          "day_low": 1.39,
-          "volume": 3783291,
-          "five_session_change_percent": -22.1,
+          "price": 1.36,
+          "change": -0.05,
+          "change_percent": -3.55,
+          "previous_close": 1.41,
+          "day_high": 1.45,
+          "day_low": 1.305,
+          "volume": 2967906,
+          "five_session_change_percent": -20.47,
           "closes": [
-            1.81,
             1.71,
             1.57,
             1.56,
-            1.41
+            1.41,
+            1.36
           ],
           "session": "Regular close",
           "exchange": "NasdaqGM",
-          "as_of": "2026-10-07T20:00:01+00:00",
+          "as_of": "2026-10-08T20:00:01+00:00",
           "timezone": "America/New_York"
         },
         {
@@ -284,42 +284,42 @@
           "note": "Underwater defense",
           "official_name": "Kraken Robotics Inc.",
           "currency": "USD",
-          "price": 3.495,
-          "change": 0.125,
-          "change_percent": 3.71,
-          "previous_close": 3.37,
-          "day_high": 3.5,
-          "day_low": 3.22,
-          "volume": 326160,
-          "five_session_change_percent": 16.15,
+          "price": 3.32,
+          "change": -0.175,
+          "change_percent": -5.01,
+          "previous_close": 3.495,
+          "day_high": 3.55,
+          "day_low": 3.13,
+          "volume": 325019,
+          "five_session_change_percent": 14.09,
           "closes": [
-            3.009,
             2.91,
             3.2,
             3.37,
-            3.495
+            3.495,
+            3.32
           ],
           "session": "Regular close",
           "exchange": "OTC Markets OTCQB",
-          "as_of": "2026-10-07T20:00:00+00:00",
+          "as_of": "2026-10-08T20:00:00+00:00",
           "timezone": "America/New_York"
         }
       ],
       "headlines": [
         {
-          "title": "Here's What a $5,000 Investment in SpaceX Stock Could Be Worth in 3 Years",
-          "url": "https://www.fool.com/investing/2026/10/08/heres-what-a-5000-investment-in-spacex-stock-could/",
-          "source": "Motley Fool",
-          "published": "2026-10-08T12:20:00+00:00",
-          "summary": "SpaceX has the potential to see huge gains in the coming years.",
+          "title": "SpaceX buys 800 MHz spectrum to launch Starlink Mobile carrier",
+          "url": "https://qz.com/spacex-starlink-mobile-carrier-spectrum-grain-management-100926",
+          "source": "Qz",
+          "published": "2026-10-09T11:34:11+00:00",
+          "summary": "The deal gives SpaceX licenses for up to 14 MHz of paired 800 MHz spectrum, which the company says will let Starlink Mobile penetrate buildings and obstacles",
           "symbol": "SPCX"
         },
         {
-          "title": "ASTS Stock Eyes Green Week: Retail Sees ‘Major Catalysts’ For New Highs As Bezos Targets Blue Origin’s December Return",
-          "url": "https://stocktwits.com/news-articles/markets/equity/asts-stock-retail-major-catalysts-bezos-blue-origin-december-return/cZDUbwzRBZW",
+          "title": "Why Are Nasdaq Futures Surging Premarket? SPCX, ASTS, AAPL, TMUS, VZ, NVDA, MU, LITE Stocks In Focus",
+          "url": "https://stocktwits.com/news-articles/markets/equity/why-are-nasdaq-futures-surging-premarket-spcx-asts-aapl-tmus-vz-nvda-mu-lite-stocks-in-focus/cZD6jb4RBVM",
           "source": "Stocktwits",
-          "published": "2026-10-08T01:47:15+00:00",
-          "summary": "New Glenn’s seven-meter fairing could enable larger BlueBird batches under AST’s multi-launch agreement with Blue Origin.",
+          "published": "2026-10-09T08:38:57+00:00",
+          "summary": "On Stocktwits, retail sentiment toward SPY and QQQ has remained ‘extremely bullish’ this week.",
           "symbol": "ASTS"
         },
         {

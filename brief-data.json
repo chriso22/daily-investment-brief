@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T11:45:43.937163+00:00",
+  "generated_at": "2026-10-12T11:45:48.089570+00:00",
   "source": "Yahoo Finance",
   "disclaimer": "Delayed market data for information only. Not investment advice.",
   "groups": [
@@ -8,7 +8,7 @@
       "title": "Bitcoin",
       "kicker": "Crypto",
       "blurb": "U.S. dollar spot price.",
-      "analysis": "Bitcoin is at $82,983, +0.67% from the prior daily close. Across the last five sessions, Bitcoin is 3.27% lower. The session ranged from $81,602 to $82,913.",
+      "analysis": "Bitcoin is at $83,328, +0.31% from the prior daily close. Across the last five sessions, Bitcoin is 2.02% higher. The session ranged from $83,276 to $84,231.",
       "quotes": [
         {
           "symbol": "BTC-USD",
@@ -16,58 +16,58 @@
           "note": "Spot",
           "official_name": "Bitcoin USD",
           "currency": "USD",
-          "price": 82983.08,
-          "change": 553.9239,
-          "change_percent": 0.67,
-          "previous_close": 82429.1561,
-          "day_high": 82912.79,
-          "day_low": 81602.41,
-          "volume": 41050009600,
-          "five_session_change_percent": -3.27,
+          "price": 83327.83,
+          "change": 253.3771,
+          "change_percent": 0.31,
+          "previous_close": 83074.4529,
+          "day_high": 84230.83,
+          "day_low": 83276.36,
+          "volume": 20197359616,
+          "five_session_change_percent": 2.02,
           "closes": [
-            85786.5938,
-            85557.5625,
-            83275.9297,
             81676.3359,
-            82983.0781
+            82546.3203,
+            82912.2266,
+            83679.4688,
+            83327.8281
           ],
           "session": "24-hour",
           "exchange": "CCC",
-          "as_of": "2026-10-09T11:45:39+00:00",
+          "as_of": "2026-10-12T11:45:43+00:00",
           "timezone": "UTC"
         }
       ],
       "headlines": [
         {
-          "title": "Bitcoin Returns to ETF Holders’ Breakeven Price, and $729 Million Heads for the Exit",
-          "url": "https://beincrypto.com/bitcoin-etf-investors-breakeven-outflows/",
+          "title": "Saylor Says There Is Always Room for More Orange. Strategy Bought 334 Bitcoin Last Week. Two Years Ago It Was Buying 55,000 in a Week.",
+          "url": "https://247wallst.com/investing/cryptocurrency/2026/10/12/saylor-says-there-is-always-room-for-more-orange-strategy-bought-334-bitcoin-last-week-two-years-ago-it-was-buying-55000-in-a-week/",
+          "source": "24/7 Wall St.",
+          "published": "2026-10-12T11:30:05+00:00",
+          "summary": "Michael Saylor insists there is always room for more Bitcoin, but Strategy's latest weekly purchase raises a question worth asking: what does a near-microscopic acquisition reveal...",
+          "symbol": "BTC-USD"
+        },
+        {
+          "title": "Bitcoin Price Prediction: BTC as Collateral? South Korea Bank Makes Its Move",
+          "url": "https://cryptonews.com/news/bitcoin-price-prediction-south-korea-collateral/",
+          "source": "Cryptonews",
+          "published": "2026-10-12T10:58:57+00:00",
+          "summary": "Bitcoin is trading at $83,500 after rebounding from the $80,300–$80,400 area. The recovery has steadied the tape, but it has not erased the roughly 3% weekly decline. Can a bank’s...",
+          "symbol": "BTC-USD"
+        },
+        {
+          "title": "Bitwise CIO Ranks 4 Crypto for Long-Term Growth, Starting With Bitcoin",
+          "url": "https://beincrypto.com/bitwise-cio-four-cryptos-long-term-growth/",
           "source": "Beincrypto",
-          "published": "2026-10-09T10:35:06+00:00",
-          "summary": "Bitcoin ETF investors pulled $729M as BTC hit their cost basis. See why Fidelity, not BlackRock, is driving the outflows.",
+          "published": "2026-10-12T10:44:00+00:00",
+          "summary": "Bitwise’s CIO ranks four cryptos for long-term growth, with Bitcoin first and debasement fears driving the case.",
           "symbol": "BTC-USD"
         },
         {
-          "title": "U.S. Government Sends $1 Billion in Seized Bitfinex Bitcoin to Unlabeled Wallets",
-          "url": "https://unchainedcrypto.com/u-s-government-sends-1-billion-in-seized-bitfinex-bitcoin-to-unlabeled-wallets/",
-          "source": "Unchainedcrypto",
-          "published": "2026-10-09T10:21:00+00:00",
-          "summary": "Arkham data shows 12,267 BTC left a wallet holding coins stolen in the 2016 Bitfinex hack on Thursday, with no exchange deposit recorded.",
-          "symbol": "BTC-USD"
-        },
-        {
-          "title": "Nearly 1 in 3 Bitcoin Is Sitting With Its Public Key Exposed, and the Number Keeps Growing",
-          "url": "https://www.ccn.com/news/crypto/bitcoin-public-key-exposure-glassnode/",
-          "source": "Ccn",
-          "published": "2026-10-09T10:12:15+00:00",
-          "summary": "Glassnode says 6.26 million BTC, or 31.2% of issued supply, sits behind public keys already visible on-chain. Address reuse accounts for 4.33 million BTC, making ...",
-          "symbol": "BTC-USD"
-        },
-        {
-          "title": "Bitcoin Price Flashes a Hidden Uptrend Signal Amid One 96% Problem",
-          "url": "https://beincrypto.com/bitcoin-price-hidden-uptrend-signal/",
+          "title": "Bitcoin’s Next Move Depends on the US Bond Market and Inflation Report",
+          "url": "https://beincrypto.com/bitcoin-us-bond-yields-selling-pressure/",
           "source": "Beincrypto",
-          "published": "2026-10-09T09:21:08+00:00",
-          "summary": "Bitcoin price flashes a hidden uptrend signal as long-term holder buying drops 96%. See why a breakdown may not come and the levels to watch.",
+          "published": "2026-10-12T10:04:55+00:00",
+          "summary": "Bitcoin faces further selling pressure as US Treasury yields surge to a 24-year high. Bitunix explains the risks ahead of key US inflation data.",
           "symbol": "BTC-USD"
         }
       ]
@@ -77,7 +77,7 @@
       "title": "Bitcoin-linked equities",
       "kicker": "Equities",
       "blurb": "Strategy, Strive, and Twenty One Capital.",
-      "analysis": "One name closed higher and two names closed lower. Strive (ASST) leads at +0.16%; Strategy (MSTR) lags at −1.24%. The average session move is −0.73%. Five-session moves: MSTR −5.34%, ASST −5.99%, XXI −4.24%.",
+      "analysis": "One name closed higher and two names closed lower. Strategy (MSTR) leads at +1.90%; Strive (ASST) lags at −1.52%. The average session move is −0.03%. Five-session moves: MSTR −6.14%, ASST −8.13%, XXI −5.84%.",
       "quotes": [
         {
           "symbol": "MSTR",
@@ -85,24 +85,24 @@
           "note": "Bitcoin treasury",
           "official_name": "Strategy Inc",
           "currency": "USD",
-          "price": 151.47,
-          "change": -1.9003,
-          "change_percent": -1.24,
-          "previous_close": 153.3703,
-          "day_high": 153.631,
-          "day_low": 147.41,
-          "volume": 23421830,
-          "five_session_change_percent": -5.34,
+          "price": 154.34,
+          "change": 2.8703,
+          "change_percent": 1.9,
+          "previous_close": 151.4697,
+          "day_high": 158.11,
+          "day_low": 150.5,
+          "volume": 16042183,
+          "five_session_change_percent": -6.14,
           "closes": [
-            160.01,
             164.43,
             164.55,
             153.37,
-            151.47
+            151.47,
+            154.34
           ],
           "session": "Regular close",
           "exchange": "NasdaqGS",
-          "as_of": "2026-10-08T20:00:01+00:00",
+          "as_of": "2026-10-09T20:00:01+00:00",
           "timezone": "America/New_York"
         },
         {
@@ -111,24 +111,24 @@
           "note": "Bitcoin treasury",
           "official_name": "Strive, Inc.",
           "currency": "USD",
-          "price": 28.23,
-          "change": 0.0451,
-          "change_percent": 0.16,
-          "previous_close": 28.1849,
-          "day_high": 28.36,
-          "day_low": 27.33,
-          "volume": 7848904,
-          "five_session_change_percent": -5.99,
+          "price": 27.8,
+          "change": -0.4299,
+          "change_percent": -1.52,
+          "previous_close": 28.2299,
+          "day_high": 29.275,
+          "day_low": 27.545,
+          "volume": 8394381,
+          "five_session_change_percent": -8.13,
           "closes": [
-            30.03,
             30.26,
             29.75,
             28.185,
-            28.23
+            28.23,
+            27.8
           ],
           "session": "Regular close",
           "exchange": "NasdaqGM",
-          "as_of": "2026-10-08T20:00:01+00:00",
+          "as_of": "2026-10-09T20:00:01+00:00",
           "timezone": "America/New_York"
         },
         {
@@ -137,50 +137,50 @@
           "note": "Bitcoin treasury",
           "official_name": "Twenty One Capital, Inc.",
           "currency": "USD",
-          "price": 6.32,
-          "change": -0.07,
-          "change_percent": -1.1,
-          "previous_close": 6.39,
-          "day_high": 6.365,
-          "day_low": 6.125,
-          "volume": 1222987,
-          "five_session_change_percent": -4.24,
+          "price": 6.29,
+          "change": -0.03,
+          "change_percent": -0.48,
+          "previous_close": 6.32,
+          "day_high": 6.445,
+          "day_low": 6.275,
+          "volume": 894836,
+          "five_session_change_percent": -5.84,
           "closes": [
-            6.6,
             6.68,
             6.53,
             6.39,
-            6.32
+            6.32,
+            6.29
           ],
           "session": "Regular close",
           "exchange": "NYSE",
-          "as_of": "2026-10-08T20:00:02+00:00",
+          "as_of": "2026-10-09T20:00:02+00:00",
           "timezone": "America/New_York"
         }
       ],
       "headlines": [
+        {
+          "title": "Saylor Says There Is Always Room for More Orange. Strategy Bought 334 Bitcoin Last Week. Two Years Ago It Was Buying 55,000 in a Week.",
+          "url": "https://247wallst.com/investing/cryptocurrency/2026/10/12/saylor-says-there-is-always-room-for-more-orange-strategy-bought-334-bitcoin-last-week-two-years-ago-it-was-buying-55000-in-a-week/",
+          "source": "24/7 Wall St.",
+          "published": "2026-10-12T11:30:05+00:00",
+          "summary": "Michael Saylor insists there is always room for more Bitcoin, but Strategy's latest weekly purchase raises a question worth asking: what does a near-microscopic acquisition reveal...",
+          "symbol": "MSTR"
+        },
+        {
+          "title": "Does Strategy’s 12% Preferred Payout Reveal a Deeper Funding Tradeoff in MSTR’s Crypto Model?",
+          "url": "https://finance.yahoo.com/markets/crypto/articles/does-strategy-12-preferred-payout-061553536.html",
+          "source": "Yahoo Finance",
+          "published": "2026-10-10T06:15:53+00:00",
+          "summary": "In late September 2026, Strategy Inc. announced it would keep the annual dividend rate on its Variable Rate Series A Perpetual Stretch Preferred Stock (STRC) at 12.00% and...",
+          "symbol": "MSTR"
+        },
         {
           "title": "Twenty One Capital (XXI) Stock May Be Below Fair Value On Book Value",
           "url": "https://finance.yahoo.com/markets/stocks/articles/twenty-one-capital-xxi-stock-111432453.html",
           "source": "Yahoo Finance",
           "published": "2026-10-09T11:14:32+00:00",
           "summary": "Twenty One Capital has seen a sharp reset in its share price over the past year, which puts a spotlight on whether the current US$6.32 level still lines up with what its balance...",
-          "symbol": "XXI"
-        },
-        {
-          "title": "Why Saylor Called Musk’s Wildest SpaceX Claim “₿ullish”",
-          "url": "https://beincrypto.com/saylor-strategy-tokenized-stock-spacex/",
-          "source": "Beincrypto",
-          "published": "2026-10-09T07:08:59+00:00",
-          "summary": "Michael Saylor calls Musk's 100x SpaceX vision bullish as Strategy leads all companies in tokenized stock value with $491 million on-chain.",
-          "symbol": "MSTR"
-        },
-        {
-          "title": "Twenty One Capital (XXI) Rebound Puts Its Valuation Discount Back In Focus",
-          "url": "https://finance.yahoo.com/markets/crypto/articles/twenty-one-capital-xxi-rebound-061153475.html",
-          "source": "Yahoo Finance",
-          "published": "2026-10-09T06:11:53+00:00",
-          "summary": "Twenty One Capital (XXI), a Bitcoin focused firm based in Austin, Texas, has drawn fresh attention as investors weigh a market value of about US$2.2b against ongoing net losses...",
           "symbol": "XXI"
         },
         {
@@ -198,7 +198,7 @@
       "title": "Space & defense",
       "kicker": "Equities",
       "blurb": "SpaceX, AST SpaceMobile, Merlin, and Kraken Robotics.",
-      "analysis": "All four names closed lower. AST SpaceMobile (ASTS) is down the most at −6.13%; Merlin (MRLN) held up best at −3.55%. The average session move is −4.72%. Five-session moves: SPCX +1.01%, ASTS −2.60%, MRLN −20.47%, KRKNF +14.09%.",
+      "analysis": "One name closed higher and three names closed lower. SpaceX (SPCX) leads at +1.25%; AST SpaceMobile (ASTS) lags at −10.48%. The average session move is −5.62%. Five-session moves: SPCX −4.98%, ASTS −12.79%, MRLN −20.38%, KRKNF −1.63%.",
       "quotes": [
         {
           "symbol": "SPCX",
@@ -206,24 +206,24 @@
           "note": "Space Exploration Technologies",
           "official_name": "Space Exploration Technologies Corp.",
           "currency": "USD",
-          "price": 160.57,
-          "change": -7.0309,
-          "change_percent": -4.2,
-          "previous_close": 167.6009,
-          "day_high": 167.6,
-          "day_low": 160.29,
-          "volume": 68508567,
-          "five_session_change_percent": 1.01,
+          "price": 162.57,
+          "change": 2.0007,
+          "change_percent": 1.25,
+          "previous_close": 160.5693,
+          "day_high": 166.38,
+          "day_low": 160.61,
+          "volume": 93042640,
+          "five_session_change_percent": -4.98,
           "closes": [
-            158.96,
             171.09,
             171.92,
             167.6,
-            160.57
+            160.57,
+            162.57
           ],
           "session": "Regular close",
           "exchange": "NasdaqGS",
-          "as_of": "2026-10-08T20:00:00+00:00",
+          "as_of": "2026-10-09T20:00:00+00:00",
           "timezone": "America/New_York"
         },
         {
@@ -232,24 +232,24 @@
           "note": "Satellite connectivity",
           "official_name": "AST SpaceMobile, Inc.",
           "currency": "USD",
-          "price": 56.93,
-          "change": -3.7203,
-          "change_percent": -6.13,
-          "previous_close": 60.6503,
-          "day_high": 60.3,
-          "day_low": 55.96,
-          "volume": 18427922,
-          "five_session_change_percent": -2.6,
+          "price": 50.965,
+          "change": -5.9651,
+          "change_percent": -10.48,
+          "previous_close": 56.9301,
+          "day_high": 55.83,
+          "day_low": 47.57,
+          "volume": 54317065,
+          "five_session_change_percent": -12.79,
           "closes": [
-            58.45,
             58.44,
             63.12,
             60.65,
-            56.93
+            56.93,
+            50.965
           ],
           "session": "Regular close",
           "exchange": "NasdaqGS",
-          "as_of": "2026-10-08T20:00:01+00:00",
+          "as_of": "2026-10-09T20:00:01+00:00",
           "timezone": "America/New_York"
         },
         {
@@ -258,24 +258,24 @@
           "note": "Autonomous flight",
           "official_name": "Merlin, Inc.",
           "currency": "USD",
-          "price": 1.36,
-          "change": -0.05,
-          "change_percent": -3.55,
-          "previous_close": 1.41,
-          "day_high": 1.45,
-          "day_low": 1.305,
-          "volume": 2967906,
-          "five_session_change_percent": -20.47,
+          "price": 1.25,
+          "change": -0.11,
+          "change_percent": -8.09,
+          "previous_close": 1.36,
+          "day_high": 1.36,
+          "day_low": 1.22,
+          "volume": 3282522,
+          "five_session_change_percent": -20.38,
           "closes": [
-            1.71,
             1.57,
             1.56,
             1.41,
-            1.36
+            1.36,
+            1.25
           ],
           "session": "Regular close",
           "exchange": "NasdaqGM",
-          "as_of": "2026-10-08T20:00:01+00:00",
+          "as_of": "2026-10-09T20:00:01+00:00",
           "timezone": "America/New_York"
         },
         {
@@ -284,42 +284,42 @@
           "note": "Underwater defense",
           "official_name": "Kraken Robotics Inc.",
           "currency": "USD",
-          "price": 3.32,
-          "change": -0.175,
-          "change_percent": -5.01,
-          "previous_close": 3.495,
-          "day_high": 3.55,
-          "day_low": 3.13,
-          "volume": 325019,
-          "five_session_change_percent": 14.09,
+          "price": 3.148,
+          "change": -0.172,
+          "change_percent": -5.18,
+          "previous_close": 3.32,
+          "day_high": 3.38,
+          "day_low": 3.12,
+          "volume": 215650,
+          "five_session_change_percent": -1.63,
           "closes": [
-            2.91,
             3.2,
             3.37,
             3.495,
-            3.32
+            3.32,
+            3.148
           ],
           "session": "Regular close",
           "exchange": "OTC Markets OTCQB",
-          "as_of": "2026-10-08T20:00:00+00:00",
+          "as_of": "2026-10-09T20:00:00+00:00",
           "timezone": "America/New_York"
         }
       ],
       "headlines": [
         {
-          "title": "SpaceX buys 800 MHz spectrum to launch Starlink Mobile carrier",
-          "url": "https://qz.com/spacex-starlink-mobile-carrier-spectrum-grain-management-100926",
-          "source": "Qz",
-          "published": "2026-10-09T11:34:11+00:00",
-          "summary": "The deal gives SpaceX licenses for up to 14 MHz of paired 800 MHz spectrum, which the company says will let Starlink Mobile penetrate buildings and obstacles",
+          "title": "Australia, NZ telecom shares tumble as SpaceX spectrum deal stokes fears",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/australia-nz-telecom-shares-tumble-085925575.html",
+          "source": "Yahoo Finance",
+          "published": "2026-10-12T08:59:25+00:00",
+          "summary": "Investing.com -- Telecom stocks in Australia and New Zealand fell on Monday after SpaceX agreed to acquire a nationwide low-band spectrum portfolio in the U.S., fuelling concerns...",
           "symbol": "SPCX"
         },
         {
-          "title": "Why Are Nasdaq Futures Surging Premarket? SPCX, ASTS, AAPL, TMUS, VZ, NVDA, MU, LITE Stocks In Focus",
-          "url": "https://stocktwits.com/news-articles/markets/equity/why-are-nasdaq-futures-surging-premarket-spcx-asts-aapl-tmus-vz-nvda-mu-lite-stocks-in-focus/cZD6jb4RBVM",
+          "title": "Why Are Nasdaq Futures Rising Premarket? MU, IREN, SLS, NIO, ASTS, WFF Stocks In Focus",
+          "url": "https://stocktwits.com/news-articles/markets/equity/why-are-nasdaq-futures-rising-premarket-mu-iren-sls-nio-asts-wff-stocks-in-focus/cZxIPmqRBFp",
           "source": "Stocktwits",
-          "published": "2026-10-09T08:38:57+00:00",
-          "summary": "On Stocktwits, retail sentiment toward SPY and QQQ has remained ‘extremely bullish’ this week.",
+          "published": "2026-10-12T08:43:19+00:00",
+          "summary": "On Stocktwits, retail sentiment toward SPY and QQQ has moderated to ‘bullish’.",
           "symbol": "ASTS"
         },
         {

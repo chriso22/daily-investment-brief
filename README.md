@@ -43,14 +43,16 @@ Rebuild only the embedded email HTML from the saved JSON:
 python3 scripts/refresh-brief.py --email-html
 ```
 
-### HTML email delivery
+### HTML email delivery (primary)
 
-GitHub issue notifications stay as a short text backup. To send the styled brief so it shows inside the email when opened, set these repository secrets and the workflow will SMTP-send `brief-email.html` as a multipart HTML message:
+Weekday delivery is the styled HTML brief emailed over Gmail SMTP so it renders inline when opened. Recipients are set with `BRIEF_MAIL_TO`. GitHub issue @mentions remain a short text backup only.
 
-- `BRIEF_SMTP_HOST`
+Set these repository secrets under **Settings → Secrets and variables → Actions**:
+
+- `BRIEF_SMTP_HOST` (use `smtp.gmail.com`)
 - `BRIEF_SMTP_PORT` (optional, default `587`)
 - `BRIEF_SMTP_USER`
-- `BRIEF_SMTP_PASSWORD`
+- `BRIEF_SMTP_PASSWORD` (Gmail app password, not the normal Google password)
 - `BRIEF_MAIL_FROM` (optional if it matches `BRIEF_SMTP_USER`)
 - `BRIEF_MAIL_TO` (comma-separated recipients)
 - `BRIEF_SMTP_SSL` (optional; set `true` for implicit SSL instead of STARTTLS)
@@ -67,9 +69,9 @@ If those secrets are unset, the send step skips and the Pages copy at `/brief-em
 
 The brief is due at **6:45 a.m. Central** (`America/Chicago`), Monday through Friday. That is about an hour and 45 minutes before the US cash open at 8:30 a.m. Central. The clock time is not the problem: 6:45 a.m. is early enough. GitHub’s own scheduler is often hours late, so it is only a backup.
 
-The on-time run is the weekday morning check in this project’s Cursor chat. At 6:45 a.m. Central it refreshes `brief-data.json` and pushes that file to `main` when today’s Central date is not already published. That push starts the workflow’s notify job, which comments on the **Daily Investment Brief** issue as `github-actions[bot]`. The comment mentions @chriso22 and @bevstr, and those mentions are the two GitHub notifications. The morning check itself cannot comment. One check is 11:45 UTC (6:45 a.m. CDT) and the other is 12:45 UTC (6:45 a.m. CST). Outside 6:40–7:40 a.m. Central the check stays quiet.
+The on-time run is the weekday morning check in this project’s Cursor chat. At 6:45 a.m. Central it refreshes `brief-data.json` / `brief-email.html` and pushes when today’s Central date is not already published. That push starts the workflow’s notify job, which SMTP-sends the HTML brief (when the secrets above are set) and comments on the **Daily Investment Brief** issue as `github-actions[bot]`. The comment mentions @chriso22 and @bevstr as a backup notice. The morning check itself cannot comment or use Actions secrets. One check is 11:45 UTC (6:45 a.m. CDT) and the other is 12:45 UTC (6:45 a.m. CST). Outside 6:40–7:40 a.m. Central the check stays quiet.
 
-`.github/workflows/daily-brief.yml` still has backup slots at 47 minutes past 11:00–15:00 UTC, weekdays. The first run whose saved brief is not already from today’s Central date refreshes, commits `brief-data.json` when it changed, and posts a notice on the open issue titled **Daily Investment Brief**, mentioning @chriso22 and @bevstr. Later slots that day do nothing. A manual run from the Actions tab (`workflow_dispatch`) refreshes and notifies even if today’s brief already exists.
+`.github/workflows/daily-brief.yml` still has backup slots at 47 minutes past 11:00–15:00 UTC, weekdays. The first run whose saved brief is not already from today’s Central date refreshes, commits the brief files when they changed, emails the HTML brief, and posts the backup issue notice. Later slots that day do nothing. A manual run from the Actions tab (`workflow_dispatch`) refreshes, emails, and notifies even if today’s brief already exists.
 
 The workflow requests permission to write contents and issues.
 

@@ -6,7 +6,7 @@ A mobile-first page for three groups, in this order:
 2. Bitcoin-linked equities: Strategy (MSTR), Strive (ASST), and Twenty One Capital (XXI)
 3. Space & defense: SpaceX (SPCX), AST SpaceMobile (ASTS), Merlin (MRLN), and Kraken Robotics (KRKNF)
 
-Each group has compact quote rows, a short analysis of the session, and news headlines. Bitcoin headlines are Bitcoin-only: stories about other cryptocurrencies (for example Ethereum, Solana, or Litecoin) are excluded. `index.html` reads `brief-data.json`. `scripts/refresh-brief.py` rebuilds that file from Yahoo Finance chart data and headline feeds. The script uses the Python standard library only.
+Each group has compact quote rows, a short analysis of the session, and news headlines. Bitcoin headlines are Bitcoin-only: stories about other cryptocurrencies (for example Ethereum, Solana, or Litecoin) are excluded. `index.html` reads `brief-data.json`. `scripts/refresh-brief.py` rebuilds that file from Yahoo Finance chart data and headline feeds, and also writes `brief-email.html`: a self-contained, email-safe HTML brief meant to render inline in an email client (no link-out required). The script uses the Python standard library only.
 
 Figures are delayed market data for information only. This is not investment advice.
 
@@ -35,7 +35,33 @@ Python 3.11 or newer, with network access:
 python3 scripts/refresh-brief.py
 ```
 
-The script writes `brief-data.json` in the repository root and prints each quote. It exits with an error only when every quote fails. A single missing symbol is recorded on that row and the rest of the brief is still written.
+The script writes `brief-data.json` and `brief-email.html` in the repository root and prints each quote. It exits with an error only when every quote fails. A single missing symbol is recorded on that row and the rest of the brief is still written.
+
+Rebuild only the embedded email HTML from the saved JSON:
+
+```bash
+python3 scripts/refresh-brief.py --email-html
+```
+
+### HTML email delivery
+
+GitHub issue notifications stay as a short text backup. To send the styled brief so it shows inside the email when opened, set these repository secrets and the workflow will SMTP-send `brief-email.html` as a multipart HTML message:
+
+- `BRIEF_SMTP_HOST`
+- `BRIEF_SMTP_PORT` (optional, default `587`)
+- `BRIEF_SMTP_USER`
+- `BRIEF_SMTP_PASSWORD`
+- `BRIEF_MAIL_FROM` (optional if it matches `BRIEF_SMTP_USER`)
+- `BRIEF_MAIL_TO` (comma-separated recipients)
+- `BRIEF_SMTP_SSL` (optional; set `true` for implicit SSL instead of STARTTLS)
+
+Local send with the same env vars:
+
+```bash
+python3 scripts/refresh-brief.py --send-email
+```
+
+If those secrets are unset, the send step skips and the Pages copy at `/brief-email.html` is still updated for preview.
 
 ## Weekday automation
 

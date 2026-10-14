@@ -6,6 +6,7 @@ on:
     branches: [main]
     paths:
       - brief-data.json
+      - brief-email.html
   schedule:
     # Backup only. The brief is due at 6:45 a.m. America/Chicago, before the
     # 8:30 a.m. Central cash open. GitHub cron is often hours late, so it
@@ -89,19 +90,31 @@ jobs:
         if: steps.gate.outputs.run == 'true'
         run: python3 scripts/refresh-brief.py
 
-      - name: Commit and push brief-data.json
+      - name: Commit and push brief data and email HTML
         if: steps.gate.outputs.run == 'true'
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add brief-data.json
+          git add brief-data.json brief-email.html
           if git diff --cached --quiet; then
-            echo "brief-data.json unchanged"
+            echo "brief files unchanged"
             exit 0
           fi
           git commit -m "Refresh brief data"
           git push
+
+      - name: Send HTML brief email when SMTP is configured
+        if: steps.gate.outputs.run == 'true'
+        env:
+          BRIEF_SMTP_HOST: ${{ secrets.BRIEF_SMTP_HOST }}
+          BRIEF_SMTP_PORT: ${{ secrets.BRIEF_SMTP_PORT }}
+          BRIEF_SMTP_USER: ${{ secrets.BRIEF_SMTP_USER }}
+          BRIEF_SMTP_PASSWORD: ${{ secrets.BRIEF_SMTP_PASSWORD }}
+          BRIEF_SMTP_SSL: ${{ secrets.BRIEF_SMTP_SSL }}
+          BRIEF_MAIL_FROM: ${{ secrets.BRIEF_MAIL_FROM }}
+          BRIEF_MAIL_TO: ${{ secrets.BRIEF_MAIL_TO }}
+        run: python3 scripts/refresh-brief.py --send-email
 
       - name: Notify that the brief is ready
         if: steps.gate.outputs.run == 'true'
@@ -135,6 +148,33 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+
+      - name: Build email HTML from saved brief
+        run: python3 scripts/refresh-brief.py --email-html
+
+      - name: Commit email HTML if the morning push only updated JSON
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add brief-email.html
+          if git diff --cached --quiet; then
+            echo "brief-email.html unchanged"
+            exit 0
+          fi
+          git commit -m "Update embedded email brief"
+          git push
+
+      - name: Send HTML brief email when SMTP is configured
+        env:
+          BRIEF_SMTP_HOST: ${{ secrets.BRIEF_SMTP_HOST }}
+          BRIEF_SMTP_PORT: ${{ secrets.BRIEF_SMTP_PORT }}
+          BRIEF_SMTP_USER: ${{ secrets.BRIEF_SMTP_USER }}
+          BRIEF_SMTP_PASSWORD: ${{ secrets.BRIEF_SMTP_PASSWORD }}
+          BRIEF_SMTP_SSL: ${{ secrets.BRIEF_SMTP_SSL }}
+          BRIEF_MAIL_FROM: ${{ secrets.BRIEF_MAIL_FROM }}
+          BRIEF_MAIL_TO: ${{ secrets.BRIEF_MAIL_TO }}
+        run: python3 scripts/refresh-brief.py --send-email
 
       - name: Notify that the brief is ready
         env:

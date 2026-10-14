@@ -22,12 +22,17 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from decimal import Decimal, ROUND_HALF_UP
+from email.message import EmailMessage
 from email.utils import parsedate_to_datetime
+from html import escape
 from pathlib import Path
+import os
+import smtplib
 from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT_PATH = ROOT / "brief-data.json"
+EMAIL_PATH = ROOT / "brief-email.html"
 CENTRAL = ZoneInfo("America/Chicago")
 NOTICE_MENTIONS = ("@chriso22", "@bevstr")
 PAGES_URL = "https://chriso22.github.io/daily-investment-brief/"
@@ -661,6 +666,379 @@ def central_stamp(generated_at: str | None) -> str:
     return f"{local.strftime('%A, %B')} {local.day}, {clock} {zone}"
 
 
+
+def email_dateline(generated_at: str | None) -> str:
+    if not generated_at:
+        return "Latest saved brief"
+    try:
+        moment = datetime.fromisoformat(generated_at)
+    except ValueError:
+        return "Latest saved brief"
+    if moment.tzinfo is None:
+        moment = moment.replace(tzinfo=timezone.utc)
+    local = moment.astimezone(CENTRAL)
+    return (
+        f"{local.strftime('%A')} {local.day} {local.strftime('%B %Y')}"
+        f" · America/Chicago"
+    )
+
+
+def email_fetched_stamp(generated_at: str | None) -> str:
+    if not generated_at:
+        return "Fresh this run."
+    try:
+        moment = datetime.fromisoformat(generated_at)
+    except ValueError:
+        return "Fresh this run."
+    if moment.tzinfo is None:
+        moment = moment.replace(tzinfo=timezone.utc)
+    local = moment.astimezone(CENTRAL)
+    hour = local.strftime("%I").lstrip("0") or "12"
+    clock = f"{hour}:{local.strftime('%M')}"
+    zone = local.tzname() or "CT"
+    return (
+        f"Data fetched {local.day} {local.strftime('%b %Y')} "
+        f"{clock} {zone} · Fresh this run."
+    )
+
+
+def tone_color(change_percent: float | None) -> str:
+    if change_percent is None:
+        return "#5c564c"
+    direction = bucket(change_percent)
+    if direction == "up":
+        return "#0c6b45"
+    if direction == "down":
+        return "#9d342c"
+    return "#5c564c"
+
+
+def colorize_market_read(text: str) -> str:
+    """Escape text, then tint prices and signed percentages for email clients."""
+    safe = escape(text)
+    safe = re.sub(
+        r"(\$[0-9]{1,3}(?:,[0-9]{3})*(?:\.[0-9]+)?)",
+        r'<strong style="color:#1a1714;">\1</strong>',
+        safe,
+    )
+
+    def pct_span(match: re.Match[str]) -> str:
+        raw = match.group(0)
+        numeric = raw.replace("−", "-").replace("+", "").replace("%", "")
+        try:
+            value = float(numeric)
+            if raw.startswith("−") or raw.startswith("-"):
+                value = -abs(value)
+            elif raw.startswith("+"):
+                value = abs(value)
+        except ValueError:
+            value = 0.0
+        color = tone_color(value)
+        return f'<strong style="color:{color};">{raw}</strong>'
+
+    # Only tint explicitly signed moves. Unsigned figures like "0.52% higher"
+    # keep the surrounding wording for direction.
+    return re.sub(r"[+−-]\d+(?:\.\d+)?%", pct_span, safe)
+
+
+def snapshot_card(quote: dict) -> str:
+    label = escape((quote.get("label") or quote.get("symbol") or "").upper())
+    symbol = escape(quote.get("symbol") or "")
+    note = escape(quote.get("note") or "")
+    if quote.get("price") is None or quote.get("change_percent") is None:
+        return (
+            '<td width="50%" valign="top" style="padding:6px;">'
+            '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" '
+            'style="border:1px solid #e2dacd;border-radius:14px;background:#ffffff;">'
+            '<tr><td style="padding:16px 16px 14px;">'
+            f'<div style="font-size:11px;font-weight:600;letter-spacing:0.12em;'
+            f'color:#655e54;text-transform:uppercase;">{label or symbol}</div>'
+            '<div style="margin-top:10px;font-size:22px;font-weight:700;color:#1a1714;">—</div>'
+            '<div style="margin-top:6px;font-size:13px;color:#655e54;">Unavailable</div>'
+            "</td></tr></table></td>"
+        )
+    price = escape(format_price(quote["price"]))
+    move = escape(signed_pct(quote["change_percent"]))
+    color = tone_color(quote["change_percent"])
+    session = quote.get("session") or ""
+    session_bit = {
+        "24-hour": "24h",
+        "Regular close": "close",
+        "Regular session": "live",
+        "Pre-market": "pre",
+    }.get(session, session)
+    sub = f'{move} {escape(session_bit)}' if session_bit else move
+    meta = f'{symbol}' + (f" · {note}" if note else "")
+    return (
+        '<td width="50%" valign="top" style="padding:6px;">'
+        '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" '
+        'style="border:1px solid #e2dacd;border-radius:14px;background:#ffffff;">'
+        '<tr><td style="padding:16px 16px 14px;">'
+        f'<div style="font-size:11px;font-weight:600;letter-spacing:0.12em;'
+        f'color:#655e54;text-transform:uppercase;">{label}</div>'
+        f'<div style="margin-top:10px;font-size:26px;line-height:1.1;font-weight:700;'
+        f'color:#1a1714;">{price}</div>'
+        f'<div style="margin-top:6px;font-size:13px;font-weight:600;color:{color};">{sub}</div>'
+        f'<div style="margin-top:4px;font-size:11px;color:#655e54;">{escape(meta)}</div>'
+        "</td></tr></table></td>"
+    )
+
+
+def snapshot_rows(quotes: list[dict]) -> str:
+    rows = []
+    for index in range(0, len(quotes), 2):
+        left = snapshot_card(quotes[index])
+        right = (
+            snapshot_card(quotes[index + 1])
+            if index + 1 < len(quotes)
+            else '<td width="50%" style="padding:6px;"></td>'
+        )
+        rows.append(f"<tr>{left}{right}</tr>")
+    return "\n".join(rows)
+
+
+def headline_items(headlines: list[dict]) -> str:
+    if not headlines:
+        return (
+            '<p style="margin:0;font-size:14px;line-height:1.45;color:#655e54;">'
+            "No headlines returned for this group.</p>"
+        )
+    bits = []
+    for story in headlines:
+        title = escape(story.get("title") or "Untitled")
+        url = escape(story.get("url") or PAGES_URL, quote=True)
+        source = escape(story.get("source") or "")
+        symbol = escape(story.get("symbol") or "")
+        meta = " · ".join(part for part in (source, symbol) if part)
+        bits.append(
+            '<tr><td style="padding:0 0 12px;">'
+            f'<a href="{url}" style="color:#1a1714;text-decoration:underline;'
+            f'font-size:14px;line-height:1.4;font-weight:600;">{title}</a>'
+            + (
+                f'<div style="margin-top:3px;font-size:12px;color:#655e54;">{meta}</div>'
+                if meta
+                else ""
+            )
+            + "</td></tr>"
+        )
+    return (
+        '<table role="presentation" width="100%" cellpadding="0" cellspacing="0">'
+        + "".join(bits)
+        + "</table>"
+    )
+
+
+def format_email_html(payload: dict) -> str:
+    groups = payload.get("groups") or []
+    quotes = [
+        quote
+        for group in groups
+        for quote in (group.get("quotes") or [])
+    ]
+    reads = []
+    for group in groups:
+        analysis = group.get("analysis") or ""
+        title = escape(group.get("title") or "Group")
+        if not analysis:
+            continue
+        reads.append(
+            f'<p style="margin:0 0 12px;font-size:15px;line-height:1.55;color:#1a1714;">'
+            f'<strong>{title}.</strong> {colorize_market_read(analysis)}</p>'
+        )
+    market_read = "".join(reads) or (
+        '<p style="margin:0;font-size:15px;line-height:1.55;color:#655e54;">'
+        "No market read available.</p>"
+    )
+    headline_sections = []
+    for group in groups:
+        headline_sections.append(
+            '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" '
+            'style="margin:0 0 18px;border:1px solid #e2dacd;border-radius:14px;'
+            'background:#ffffff;">'
+            '<tr><td style="padding:18px 18px 8px;">'
+            f'<div style="font-size:11px;font-weight:600;letter-spacing:0.12em;'
+            f'color:#655e54;text-transform:uppercase;">{escape(group.get("kicker") or "")}</div>'
+            f'<div style="margin:4px 0 12px;font-size:18px;font-weight:700;color:#1a1714;">'
+            f'{escape(group.get("title") or "")} headlines</div>'
+            f'{headline_items(group.get("headlines") or [])}'
+            "</td></tr></table>"
+        )
+    disclaimer = escape(
+        payload.get("disclaimer")
+        or "Delayed market data for information only. Not investment advice."
+    )
+    source = escape(payload.get("source") or "Yahoo Finance")
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Daily Investment Brief</title>
+</head>
+<body style="margin:0;padding:0;background:#f3efe6;color:#1a1714;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f3efe6;">
+<tr><td align="center" style="padding:20px 12px 28px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:640px;margin:0 auto;">
+<tr><td style="padding:8px 8px 18px;">
+  <div style="font-size:11px;font-weight:700;letter-spacing:0.16em;color:#b85a28;text-transform:uppercase;">Market intelligence</div>
+  <div style="margin-top:8px;font-size:34px;line-height:1.05;font-weight:700;color:#1a1714;font-family:Georgia,'Iowan Old Style',Palatino,serif;">Daily Investment Brief</div>
+  <div style="margin-top:10px;font-size:14px;color:#655e54;">{escape(email_dateline(payload.get("generated_at")))}</div>
+  <div style="margin-top:14px;">
+    <span style="display:inline-block;padding:4px 10px;border-radius:999px;border:1px solid #e7b08a;background:#fff7f0;color:#b85a28;font-size:11px;font-weight:700;letter-spacing:0.08em;">BRIEF</span>
+    <span style="display:inline-block;margin-left:8px;font-size:12px;color:#655e54;">{escape(email_fetched_stamp(payload.get("generated_at")))}</span>
+  </div>
+</td></tr>
+
+<tr><td style="padding:0 2px 18px;">
+  <div style="margin:0 6px 10px;font-size:18px;font-weight:700;color:#1a1714;">Market Read</div>
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #e2dacd;border-radius:14px;background:#ffffff;border-left:4px solid #b85a28;">
+    <tr><td style="padding:18px 18px 6px;">{market_read}</td></tr>
+  </table>
+</td></tr>
+
+<tr><td style="padding:0 2px 8px;">
+  <div style="margin:0 6px 4px;font-size:18px;font-weight:700;color:#1a1714;">Market Snapshot</div>
+</td></tr>
+<tr><td style="padding:0 2px 18px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+    {snapshot_rows(quotes)}
+  </table>
+</td></tr>
+
+<tr><td style="padding:0 2px 8px;">
+  {''.join(headline_sections)}
+</td></tr>
+
+<tr><td style="padding:8px 8px 0;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.45;color:#655e54;">{disclaimer}</p>
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.45;color:#655e54;">Quotes and headlines from {source}.</p>
+  <p style="margin:0;font-size:12px;line-height:1.45;">
+    <a href="{escape(PAGES_URL, quote=True)}" style="color:#b85a28;">Open the web brief</a>
+  </p>
+</td></tr>
+</table>
+</td></tr>
+</table>
+</body>
+</html>
+"""
+
+
+def write_email_html(payload: dict, path: Path = EMAIL_PATH) -> None:
+    path.write_text(format_email_html(payload), encoding="utf-8")
+
+
+def load_saved_brief() -> dict:
+    if not OUTPUT_PATH.exists():
+        raise FileNotFoundError("brief-data.json is missing. Run a refresh first.")
+    return json.loads(OUTPUT_PATH.read_text(encoding="utf-8"))
+
+
+def write_email_from_saved(path: Path) -> int:
+    try:
+        payload = load_saved_brief()
+    except FileNotFoundError as exc:
+        print(str(exc), file=sys.stderr)
+        return 1
+    write_email_html(payload, path)
+    print(f"Wrote {path}")
+    return 0
+
+
+def mail_recipients(raw: str | None) -> list[str]:
+    if not raw:
+        return []
+    return [part.strip() for part in raw.split(",") if part.strip()]
+
+
+def smtp_configured() -> bool:
+    host = os.environ.get("BRIEF_SMTP_HOST", "").strip()
+    mail_from = (
+        os.environ.get("BRIEF_MAIL_FROM", "").strip()
+        or os.environ.get("BRIEF_SMTP_USER", "").strip()
+    )
+    recipients = mail_recipients(os.environ.get("BRIEF_MAIL_TO"))
+    return bool(host and mail_from and recipients)
+
+
+def send_brief_email(html_body: str, payload: dict) -> None:
+    host = os.environ.get("BRIEF_SMTP_HOST", "").strip()
+    user = os.environ.get("BRIEF_SMTP_USER", "").strip()
+    password = os.environ.get("BRIEF_SMTP_PASSWORD", "")
+    mail_from = os.environ.get("BRIEF_MAIL_FROM", "").strip() or user
+    recipients = mail_recipients(os.environ.get("BRIEF_MAIL_TO"))
+    if not host or not mail_from or not recipients:
+        raise RuntimeError(
+            "Email send needs BRIEF_SMTP_HOST, BRIEF_MAIL_FROM (or BRIEF_SMTP_USER), "
+            "and BRIEF_MAIL_TO."
+        )
+    port = int(os.environ.get("BRIEF_SMTP_PORT", "587"))
+    subject = (
+        "Daily Investment Brief — "
+        f"{central_stamp(payload.get('generated_at'))}"
+    )
+    plain_lines = [
+        "Daily Investment Brief",
+        central_stamp(payload.get("generated_at")),
+        "",
+    ]
+    for group in payload.get("groups") or []:
+        for quote in group.get("quotes") or []:
+            label = quote.get("label") or quote.get("symbol")
+            symbol = quote.get("symbol")
+            if quote.get("price") is None or quote.get("change_percent") is None:
+                plain_lines.append(f"- {label} ({symbol}): unavailable")
+                continue
+            plain_lines.append(
+                f"- {label} ({symbol}): {format_price(quote['price'])} "
+                f"({signed_pct(quote['change_percent'])})"
+            )
+    plain_lines.extend(["", PAGES_URL, "", payload.get("disclaimer") or ""])
+
+    message = EmailMessage()
+    message["Subject"] = subject
+    message["From"] = mail_from
+    message["To"] = ", ".join(recipients)
+    message.set_content("\n".join(plain_lines).rstrip() + "\n")
+    message.add_alternative(html_body, subtype="html")
+
+    use_ssl = os.environ.get("BRIEF_SMTP_SSL", "").lower() in {"1", "true", "yes"}
+    if use_ssl:
+        with smtplib.SMTP_SSL(host, port, timeout=30) as smtp:
+            if user:
+                smtp.login(user, password)
+            smtp.send_message(message)
+    else:
+        with smtplib.SMTP(host, port, timeout=30) as smtp:
+            smtp.ehlo()
+            smtp.starttls()
+            smtp.ehlo()
+            if user:
+                smtp.login(user, password)
+            smtp.send_message(message)
+
+
+def send_email_from_saved() -> int:
+    if not smtp_configured():
+        print("SMTP not configured; skipping HTML email send.")
+        return 0
+    try:
+        payload = load_saved_brief()
+    except FileNotFoundError as exc:
+        print(str(exc), file=sys.stderr)
+        return 1
+    html_body = format_email_html(payload)
+    write_email_html(payload)
+    try:
+        send_brief_email(html_body, payload)
+    except Exception as exc:  # noqa: BLE001 - surface SMTP config/network errors
+        print(f"Email send failed: {exc}", file=sys.stderr)
+        return 1
+    print(f"Sent HTML brief to {os.environ.get('BRIEF_MAIL_TO')}")
+    return 0
+
+
 def format_notice(payload: dict) -> str:
     mentions = " ".join(NOTICE_MENTIONS)
     lines = [
@@ -684,7 +1062,9 @@ def format_notice(payload: dict) -> str:
     lines.extend(
         [
             "",
-            PAGES_URL,
+            "Styled HTML brief is embedded in the morning email when SMTP is configured.",
+            f"Web copy: {PAGES_URL}",
+            f"Email preview: {PAGES_URL.rstrip('/')}/brief-email.html",
             "",
             payload.get("disclaimer")
             or "Delayed market data for information only. Not investment advice.",
@@ -710,9 +1090,25 @@ def main() -> int:
         type=Path,
         help="Write a GitHub notice from the saved brief-data.json and exit.",
     )
+    parser.add_argument(
+        "--email-html",
+        type=Path,
+        nargs="?",
+        const=EMAIL_PATH,
+        help="Write an email-safe HTML brief from brief-data.json and exit.",
+    )
+    parser.add_argument(
+        "--send-email",
+        action="store_true",
+        help="Send the HTML brief using BRIEF_SMTP_* / BRIEF_MAIL_* env vars.",
+    )
     args = parser.parse_args()
     if args.notice_body is not None:
         return write_notice(args.notice_body)
+    if args.email_html is not None:
+        return write_email_from_saved(args.email_html)
+    if args.send_email:
+        return send_email_from_saved()
 
     payload = build_brief()
     priced = [
@@ -725,7 +1121,9 @@ def main() -> int:
         print("No quotes were retrieved.", file=sys.stderr)
         return 1
     write_brief(payload)
+    write_email_html(payload)
     print_summary(payload)
+    print(f"Wrote {EMAIL_PATH.relative_to(ROOT)}")
     return 0
 
 

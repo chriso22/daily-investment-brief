@@ -1062,7 +1062,7 @@ def format_notice(payload: dict) -> str:
     lines.extend(
         [
             "",
-            "Styled HTML brief is embedded in the morning email when SMTP is configured.",
+            "Primary delivery is the HTML email (Gmail SMTP).",
             f"Web copy: {PAGES_URL}",
             f"Email preview: {PAGES_URL.rstrip('/')}/brief-email.html",
             "",

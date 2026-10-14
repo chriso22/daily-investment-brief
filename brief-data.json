@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T13:42:20.467713+00:00",
+  "generated_at": "2026-10-14T13:58:57.795041+00:00",
   "source": "Yahoo Finance",
   "disclaimer": "Delayed market data for information only. Not investment advice.",
   "groups": [
@@ -8,7 +8,7 @@
       "title": "Bitcoin",
       "kicker": "Crypto",
       "blurb": "U.S. dollar spot price.",
-      "analysis": "Bitcoin is at $82,839, −0.39% from the prior daily close. Across the last five sessions, Bitcoin is 0.09% lower. The session ranged from $82,348 to $84,006.",
+      "analysis": "Bitcoin is at $82,343, −0.99% from the prior daily close. Across the last five sessions, Bitcoin is 0.69% lower. The session ranged from $82,348 to $84,006.",
       "quotes": [
         {
           "symbol": "BTC-USD",
@@ -16,28 +16,36 @@
           "note": "Spot",
           "official_name": "Bitcoin USD",
           "currency": "USD",
-          "price": 82839.01,
-          "change": -325.172,
-          "change_percent": -0.39,
-          "previous_close": 83164.182,
+          "price": 82343.3,
+          "change": -820.83,
+          "change_percent": -0.99,
+          "previous_close": 83164.13,
           "day_high": 84005.72,
           "day_low": 82348.09,
-          "volume": 28312287232,
-          "five_session_change_percent": -0.09,
+          "volume": 28791447552,
+          "five_session_change_percent": -0.69,
           "closes": [
             82912.2266,
             83679.4688,
             81762.5625,
             83095.125,
-            82839.0078
+            82343.2969
           ],
           "session": "24-hour",
           "exchange": "CCC",
-          "as_of": "2026-10-14T13:42:16+00:00",
+          "as_of": "2026-10-14T13:58:53+00:00",
           "timezone": "UTC"
         }
       ],
       "headlines": [
+        {
+          "title": "A Holder Who Put $100 a Month Into Bitcoin Since 2015 Has Paid In $14,000. Here Is What the Stack Is Worth Now.",
+          "url": "https://247wallst.com/investing/cryptocurrency/2026/10/14/a-holder-who-put-100-a-month-into-bitcoin-since-2015-has-paid-in-14000-here-is-what-the-stack-is-worth-now/",
+          "source": "24/7 Wall St.",
+          "published": "2026-10-14T13:31:13+00:00",
+          "summary": "Putting $100 into Bitcoin every month for over a decade sounds simple, but the gap between what that stack was worth at its peak versus today raises a harder question about...",
+          "symbol": "BTC-USD"
+        },
         {
           "title": "Strategy’s Michael Saylor Says Bitcoin Bull Market Is Just Beginning",
           "url": "https://www.cryptoprowl.com/releases/strategys-michael-saylor-says-bitcoin-bull-market-is-just-beginning-7308",
@@ -61,14 +69,6 @@
           "published": "2026-10-14T13:08:42+00:00",
           "summary": "Michael Saylor publicly cheered a Bitcoin purchase from a company that directly competes with his own, the same week his firm spent far more money on something other than Bitcoin...",
           "symbol": "BTC-USD"
-        },
-        {
-          "title": "Bitcoin Cash Is Up 25% This Month, Three Times Bitcoin’s Gain. Can the Fork Ever Catch the Original?",
-          "url": "https://247wallst.com/investing/cryptocurrency/2026/10/14/bitcoin-cash-is-up-25-this-month-three-times-bitcoins-gain-can-the-fork-ever-catch-the-original/",
-          "source": "24/7 Wall St.",
-          "published": "2026-10-14T12:48:30+00:00",
-          "summary": "Bitcoin Cash just posted a gain three times larger than Bitcoin's over the past month, yet its nine-year track record tells a far more complicated story about whether the fork can...",
-          "symbol": "BTC-USD"
         }
       ]
     },
@@ -77,7 +77,7 @@
       "title": "Bitcoin-linked equities",
       "kicker": "Equities",
       "blurb": "Strategy, Strive, and Twenty One Capital.",
-      "analysis": "All three names are lower. Strive (ASST) is down the most at −6.09%; Twenty One Capital (XXI) held up best at −0.47%. The average session move is −2.42%. Five-session moves: MSTR −0.25%, ASST −8.22%, XXI +0.47%.",
+      "analysis": "All three names are lower. Strive (ASST) is down the most at −7.39%; Twenty One Capital (XXI) held up best at −1.87%. The average session move is −3.99%. Five-session moves: MSTR −2.25%, ASST −9.49%, XXI −0.95%.",
       "quotes": [
         {
           "symbol": "MSTR",
@@ -85,24 +85,24 @@
           "note": "Bitcoin treasury",
           "official_name": "Strategy Inc",
           "currency": "USD",
-          "price": 151.095,
-          "change": -1.085,
-          "change_percent": -0.71,
-          "previous_close": 152.18,
+          "price": 148.065,
+          "change": -4.1149,
+          "change_percent": -2.7,
+          "previous_close": 152.1799,
           "day_high": 152.18,
-          "day_low": 148.94,
-          "volume": 1967692,
-          "five_session_change_percent": -0.25,
+          "day_low": 147.945,
+          "volume": 2881112,
+          "five_session_change_percent": -2.25,
           "closes": [
             151.47,
             154.34,
             152.68,
             152.18,
-            151.095
+            148.065
           ],
           "session": "Regular session",
           "exchange": "NasdaqGS",
-          "as_of": "2026-10-14T13:42:19+00:00",
+          "as_of": "2026-10-14T13:58:57+00:00",
           "timezone": "America/New_York"
         },
         {
@@ -111,24 +111,24 @@
           "note": "Bitcoin treasury",
           "official_name": "Strive, Inc.",
           "currency": "USD",
-          "price": 25.91,
-          "change": -1.68,
-          "change_percent": -6.09,
-          "previous_close": 27.59,
+          "price": 25.55,
+          "change": -2.0391,
+          "change_percent": -7.39,
+          "previous_close": 27.5891,
           "day_high": 26.71,
           "day_low": 25.37,
-          "volume": 2701890,
-          "five_session_change_percent": -8.22,
+          "volume": 3899119,
+          "five_session_change_percent": -9.49,
           "closes": [
             28.23,
             27.8,
             27.71,
             27.59,
-            25.91
+            25.5501
           ],
           "session": "Regular session",
           "exchange": "NasdaqGM",
-          "as_of": "2026-10-14T13:42:20+00:00",
+          "as_of": "2026-10-14T13:58:57+00:00",
           "timezone": "America/New_York"
         },
         {
@@ -137,24 +137,24 @@
           "note": "Bitcoin treasury",
           "official_name": "Twenty One Capital, Inc.",
           "currency": "USD",
-          "price": 6.35,
-          "change": -0.03,
-          "change_percent": -0.47,
-          "previous_close": 6.38,
+          "price": 6.26,
+          "change": -0.1196,
+          "change_percent": -1.87,
+          "previous_close": 6.3796,
           "day_high": 6.415,
           "day_low": 6.24,
-          "volume": 81582,
-          "five_session_change_percent": 0.47,
+          "volume": 145091,
+          "five_session_change_percent": -0.95,
           "closes": [
             6.32,
             6.29,
             6.22,
             6.36,
-            6.35
+            6.26
           ],
           "session": "Regular session",
           "exchange": "NYSE",
-          "as_of": "2026-10-14T13:42:19+00:00",
+          "as_of": "2026-10-14T13:58:41+00:00",
           "timezone": "America/New_York"
         }
       ],
@@ -198,7 +198,7 @@
       "title": "Space & defense",
       "kicker": "Equities",
       "blurb": "SpaceX, AST SpaceMobile, Merlin, and Kraken Robotics.",
-      "analysis": "One name is higher and three names are lower. Kraken Robotics (KRKNF) leads at +0.97%; Merlin (MRLN) lags at −10.03%. The average session move is −4.09%. Five-session moves: SPCX −4.49%, ASTS −21.68%, MRLN −14.71%, KRKNF −6.02%.",
+      "analysis": "All four names are lower. Merlin (MRLN) is down the most at −13.57%; Kraken Robotics (KRKNF) held up best at −2.24%. The average session move is −6.32%. Five-session moves: SPCX −4.89%, ASTS −23.15%, MRLN −18.01%, KRKNF −8.13%.",
       "quotes": [
         {
           "symbol": "SPCX",
@@ -206,24 +206,24 @@
           "note": "Space Exploration Technologies",
           "official_name": "Space Exploration Technologies Corp.",
           "currency": "USD",
-          "price": 153.36,
-          "change": -3.1793,
-          "change_percent": -2.03,
-          "previous_close": 156.5393,
+          "price": 152.72,
+          "change": -3.8196,
+          "change_percent": -2.44,
+          "previous_close": 156.5396,
           "day_high": 155.44,
           "day_low": 151.995,
-          "volume": 10958585,
-          "five_session_change_percent": -4.49,
+          "volume": 16041923,
+          "five_session_change_percent": -4.89,
           "closes": [
             160.57,
             162.57,
             163.42,
             156.54,
-            153.3601
+            152.72
           ],
           "session": "Regular session",
           "exchange": "NasdaqGS",
-          "as_of": "2026-10-14T13:42:19+00:00",
+          "as_of": "2026-10-14T13:58:57+00:00",
           "timezone": "America/New_York"
         },
         {
@@ -232,24 +232,24 @@
           "note": "Satellite connectivity",
           "official_name": "AST SpaceMobile, Inc.",
           "currency": "USD",
-          "price": 44.585,
-          "change": -2.4798,
-          "change_percent": -5.27,
+          "price": 43.75,
+          "change": -3.3148,
+          "change_percent": -7.04,
           "previous_close": 47.0648,
           "day_high": 45.98,
-          "day_low": 43.88,
-          "volume": 3969578,
-          "five_session_change_percent": -21.68,
+          "day_low": 43.64,
+          "volume": 5665096,
+          "five_session_change_percent": -23.15,
           "closes": [
             56.93,
             50.965,
             51.46,
             47.065,
-            44.585
+            43.75
           ],
           "session": "Regular session",
           "exchange": "NasdaqGS",
-          "as_of": "2026-10-14T13:42:20+00:00",
+          "as_of": "2026-10-14T13:58:56+00:00",
           "timezone": "America/New_York"
         },
         {
@@ -258,24 +258,24 @@
           "note": "Autonomous flight",
           "official_name": "Merlin, Inc.",
           "currency": "USD",
-          "price": 1.16,
-          "change": -0.1293,
-          "change_percent": -10.03,
-          "previous_close": 1.2893,
+          "price": 1.115,
+          "change": -0.175,
+          "change_percent": -13.57,
+          "previous_close": 1.29,
           "day_high": 1.28,
-          "day_low": 1.16,
-          "volume": 487786,
-          "five_session_change_percent": -14.71,
+          "day_low": 1.11,
+          "volume": 1094554,
+          "five_session_change_percent": -18.01,
           "closes": [
             1.36,
             1.25,
             1.2,
             1.29,
-            1.1601
+            1.115
           ],
           "session": "Regular session",
           "exchange": "NasdaqGM",
-          "as_of": "2026-10-14T13:42:18+00:00",
+          "as_of": "2026-10-14T13:58:54+00:00",
           "timezone": "America/New_York"
         },
         {
@@ -284,23 +284,24 @@
           "note": "Underwater defense",
           "official_name": "Kraken Robotics Inc.",
           "currency": "USD",
-          "price": 3.12,
-          "change": 0.03,
-          "change_percent": 0.97,
-          "previous_close": 3.09,
-          "day_high": 3.15,
-          "day_low": 3.02,
-          "volume": 140147,
-          "five_session_change_percent": -6.02,
+          "price": 3.05,
+          "change": -0.07,
+          "change_percent": -2.24,
+          "previous_close": 3.12,
+          "day_high": 3.1,
+          "day_low": 3.05,
+          "volume": 17391,
+          "five_session_change_percent": -8.13,
           "closes": [
             3.32,
             3.148,
             3.09,
-            3.12
+            3.12,
+            3.05
           ],
           "session": "Regular session",
           "exchange": "OTC Markets OTCQB",
-          "as_of": "2026-10-13T20:00:00+00:00",
+          "as_of": "2026-10-14T13:43:52+00:00",
           "timezone": "America/New_York"
         }
       ],

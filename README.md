@@ -3,8 +3,8 @@
 A mobile-first page for three groups, in this order:
 
 1. Bitcoin
-2. Bitcoin-linked equities: Strategy (MSTR), Strive (ASST), and Twenty One Capital (XXI)
-3. Space & defense: SpaceX (SPCX), AST SpaceMobile (ASTS), Merlin (MRLN), and Kraken Robotics (KRKNF)
+2. Bitcoin-linked equities: Strategy (MSTR), Strive (ASST), Twenty One Capital (XXI), and MetaPlanet (MPJPY)
+3. Space & defense: SpaceX (SPCX), AST SpaceMobile (ASTS), Merlin (MRLN), Kraken Robotics (KRKNF), and Palantir (PLTR)
 
 Each group has compact quote rows, a short analysis of the session, and news headlines. Bitcoin headlines are Bitcoin-only: stories about other cryptocurrencies (for example Ethereum, Solana, or Litecoin) are excluded. `index.html` reads `brief-data.json`. `scripts/refresh-brief.py` rebuilds that file from Yahoo Finance chart data and headline feeds, and also writes `brief-email.html`: a self-contained, email-safe HTML brief meant to render inline in an email client (no link-out required). The script uses the Python standard library only.
 

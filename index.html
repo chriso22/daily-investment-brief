@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Weekday brief for Bitcoin, bitcoin-linked equities, and space and defense names.">
+  <meta name="description" content="Weekday brief for Bitcoin, bitcoin-linked equities including MetaPlanet, and space and defense names including Palantir.">
   <meta name="theme-color" content="#f3efe6" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#141210" media="(prefers-color-scheme: dark)">
   <title>Daily Investment Brief</title>
@@ -98,25 +98,38 @@
     nav {
       position: sticky;
       top: 0;
-      z-index: 2;
+      z-index: 5;
       display: flex;
-      gap: 1rem;
+      gap: 0.35rem;
       margin: 1rem -1rem 0;
-      padding: 0.7rem 1rem;
+      padding: 0.55rem 1rem;
       overflow-x: auto;
-      background: color-mix(in srgb, var(--bg) 90%, transparent);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid transparent;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      background: color-mix(in srgb, var(--bg) 92%, transparent);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
     }
+
+    nav::-webkit-scrollbar { display: none; }
 
     nav a {
       flex: 0 0 auto;
-      color: var(--ink);
-      font-size: 0.84rem;
+      color: var(--muted);
+      font-size: 0.82rem;
       font-weight: 600;
       text-decoration: none;
-      border-bottom: 2px solid var(--accent);
-      padding-bottom: 0.15rem;
+      border-bottom: 2px solid transparent;
+      padding: 0.35rem 0.45rem 0.3rem;
+      white-space: nowrap;
+      transition: color 160ms ease, border-color 160ms ease;
+    }
+
+    nav a:hover,
+    nav a.is-active {
+      color: var(--ink);
+      border-bottom-color: var(--accent);
     }
 
     nav a:focus-visible,
@@ -307,11 +320,7 @@
       <h1>Daily Investment Brief</h1>
       <p class="dateline" id="dateline">Loading the latest brief…</p>
     </header>
-    <nav aria-label="Sections">
-      <a href="#bitcoin">Bitcoin</a>
-      <a href="#bitcoin-equities">BTC equities</a>
-      <a href="#space-defense">Space &amp; defense</a>
-    </nav>
+    <nav id="section-nav" aria-label="Sections" hidden></nav>
     <main id="brief">
       <p class="status">Fetching quotes and headlines.</p>
     </main>
@@ -324,6 +333,57 @@
     const dateline = document.querySelector("#dateline");
     const brief = document.querySelector("#brief");
     const disclaimer = document.querySelector("#disclaimer");
+    const sectionNav = document.querySelector("#section-nav");
+    let sectionObserver = null;
+
+    const NAV_LABELS = {
+      bitcoin: "Bitcoin",
+      "bitcoin-equities": "BTC equities",
+      "space-defense": "Space & defense",
+    };
+
+    function renderNav(groups) {
+      if (sectionObserver) {
+        sectionObserver.disconnect();
+        sectionObserver = null;
+      }
+      sectionNav.replaceChildren();
+      if (!groups || !groups.length) {
+        sectionNav.hidden = true;
+        return;
+      }
+      groups.forEach((group) => {
+        const link = document.createElement("a");
+        link.href = "#" + group.id;
+        link.textContent = NAV_LABELS[group.id] || group.title;
+        link.dataset.section = group.id;
+        sectionNav.appendChild(link);
+      });
+      sectionNav.hidden = false;
+
+      const links = Array.from(sectionNav.querySelectorAll("a"));
+      const setActive = (id) => {
+        links.forEach((link) => {
+          link.classList.toggle("is-active", link.dataset.section === id);
+        });
+      };
+      if (links[0]) setActive(links[0].dataset.section);
+
+      if (!("IntersectionObserver" in window)) return;
+      sectionObserver = new IntersectionObserver(
+        (entries) => {
+          const visible = entries
+            .filter((entry) => entry.isIntersecting)
+            .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+          if (visible[0]) setActive(visible[0].target.id);
+        },
+        { rootMargin: "-20% 0px -65% 0px", threshold: [0.1, 0.35, 0.6] }
+      );
+      groups.forEach((group) => {
+        const section = document.getElementById(group.id);
+        if (section) sectionObserver.observe(section);
+      });
+    }
 
     const money = new Intl.NumberFormat("en-US", {
       style: "currency",
@@ -521,7 +581,8 @@
       if (data.disclaimer) disclaimer.textContent = data.disclaimer;
       document.title = "Daily Investment Brief";
       brief.replaceChildren();
-      (data.groups || []).forEach((group, index) => {
+      const groups = data.groups || [];
+      groups.forEach((group, index) => {
         const section = document.createElement("section");
         section.id = group.id;
         const kicker = document.createElement("p");
@@ -545,6 +606,7 @@
         section.append(kicker, title, blurb, analysis, quotes, ...renderHeadlines(group.headlines));
         brief.appendChild(section);
       });
+      renderNav(groups);
     }
 
     fetch("brief-data.json", { cache: "no-cache" })
@@ -556,6 +618,7 @@
       .catch(() => {
         dateline.textContent = "Brief data is unavailable.";
         brief.replaceChildren();
+        renderNav([]);
         const status = document.createElement("p");
         status.className = "status";
         status.textContent = "Open this page from a local server, or from GitHub Pages, so brief-data.json can load. From the repo: python3 -m http.server";

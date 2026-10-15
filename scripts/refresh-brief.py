@@ -57,18 +57,19 @@ GROUPS = [
         "id": "bitcoin-equities",
         "title": "Bitcoin-linked equities",
         "kicker": "Equities",
-        "blurb": "Strategy, Strive, and Twenty One Capital.",
+        "blurb": "Strategy, Strive, Twenty One Capital, and MetaPlanet.",
         "symbols": [
             {"symbol": "MSTR", "label": "Strategy", "note": "Bitcoin treasury"},
             {"symbol": "ASST", "label": "Strive", "note": "Bitcoin treasury"},
             {"symbol": "XXI", "label": "Twenty One Capital", "note": "Bitcoin treasury"},
+            {"symbol": "MPJPY", "label": "MetaPlanet", "note": "Bitcoin treasury"},
         ],
     },
     {
         "id": "space-defense",
         "title": "Space & defense",
         "kicker": "Equities",
-        "blurb": "SpaceX, AST SpaceMobile, Merlin, and Kraken Robotics.",
+        "blurb": "SpaceX, AST SpaceMobile, Merlin, Kraken Robotics, and Palantir.",
         "symbols": [
             {
                 "symbol": "SPCX",
@@ -78,6 +79,7 @@ GROUPS = [
             {"symbol": "ASTS", "label": "AST SpaceMobile", "note": "Satellite connectivity"},
             {"symbol": "MRLN", "label": "Merlin", "note": "Autonomous flight"},
             {"symbol": "KRKNF", "label": "Kraken Robotics", "note": "Underwater defense"},
+            {"symbol": "PLTR", "label": "Palantir", "note": "Defense software"},
         ],
     },
 ]
@@ -125,10 +127,12 @@ NAME_TERMS = {
     "MSTR": ("mstr", "strategy", "microstrategy"),
     "ASST": ("asst", "strive"),
     "XXI": ("xxi", "twenty one"),
+    "MPJPY": ("mpjpy", "metaplanet", "meta planet"),
     "SPCX": ("spcx", "spacex"),
     "ASTS": ("asts", "ast spacemobile", "spacemobile"),
     "MRLN": ("mrln", "merlin"),
     "KRKNF": ("krknf", "kraken"),
+    "PLTR": ("pltr", "palantir"),
 }
 TRACKING_PARAMS = {"tsrc", "utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content"}
 

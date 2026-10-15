@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T12:17:52.025223+00:00",
+  "generated_at": "2026-10-15T12:29:25.487568+00:00",
   "source": "Yahoo Finance",
   "disclaimer": "Delayed market data for information only. Not investment advice.",
   "groups": [
@@ -8,7 +8,7 @@
       "title": "Bitcoin",
       "kicker": "Crypto",
       "blurb": "U.S. dollar spot price.",
-      "analysis": "Bitcoin is at $80,930, −2.08% from the prior daily close. Across the last five sessions, Bitcoin is 3.29% lower. The session ranged from $80,474 to $81,774.",
+      "analysis": "Bitcoin is at $81,008, −1.99% from the prior daily close. Across the last five sessions, Bitcoin is 3.19% lower. The session ranged from $80,474 to $81,774.",
       "quotes": [
         {
           "symbol": "BTC-USD",
@@ -16,24 +16,24 @@
           "note": "Spot",
           "official_name": "Bitcoin USD",
           "currency": "USD",
-          "price": 80930.31,
-          "change": -1720.796,
-          "change_percent": -2.08,
-          "previous_close": 82651.106,
+          "price": 81007.78,
+          "change": -1643.9428,
+          "change_percent": -1.99,
+          "previous_close": 82651.7228,
           "day_high": 81773.766,
           "day_low": 80474.07,
-          "volume": 42091220992,
-          "five_session_change_percent": -3.29,
+          "volume": 42096836608,
+          "five_session_change_percent": -3.19,
           "closes": [
             83679.4688,
             81762.5625,
             83095.125,
             81562.4922,
-            80930.3125
+            81007.7812
           ],
           "session": "24-hour",
           "exchange": "CCC",
-          "as_of": "2026-10-15T12:17:48+00:00",
+          "as_of": "2026-10-15T12:29:20+00:00",
           "timezone": "UTC"
         }
       ],
@@ -44,6 +44,14 @@
           "source": "Decrypt",
           "published": "2026-10-15T11:48:42+00:00",
           "summary": "Odds of an October Fed hike have climbed to 29% from 18% a week ago, and analysts see Bitcoin range-bound until the picture clears.",
+          "symbol": "BTC-USD"
+        },
+        {
+          "title": "Bitcoin Wins in Every Economic Scenario, Says Bitwise CIO Matt Hougan",
+          "url": "https://beincrypto.com/bitwise-cio-bitcoin-wins-three-economic-scenarios/",
+          "source": "Beincrypto",
+          "published": "2026-10-15T11:42:05+00:00",
+          "summary": "Bitwise CIO Matt Hougan says Bitcoin wins in all three economic scenarios: AI boom, AI crash or steady growth.",
           "symbol": "BTC-USD"
         },
         {
@@ -61,14 +69,6 @@
           "published": "2026-10-15T09:35:00+00:00",
           "summary": "Citigroup believes that Bitcoin is going to do well during the next 12 months.",
           "symbol": "BTC-USD"
-        },
-        {
-          "title": "Bitcoin Remains Weaker on U.S. Rate-Hike Prospects",
-          "url": "https://finance.yahoo.com/m/8f1e92c2-45c3-3474-bdad-9381f10cd770/bitcoin-remains-weaker-on.html",
-          "source": "Yahoo Finance",
-          "published": "2026-10-15T09:26:38+00:00",
-          "summary": "Bitcoin remains under pressure after hitting a near one-month low overnight as Wednesday's higher-than-expected U.S. inflation data and growing expectations of further U.S...",
-          "symbol": "BTC-USD"
         }
       ]
     },
@@ -76,8 +76,8 @@
       "id": "bitcoin-equities",
       "title": "Bitcoin-linked equities",
       "kicker": "Equities",
-      "blurb": "Strategy, Strive, and Twenty One Capital.",
-      "analysis": "All three names closed lower. Strive (ASST) is down the most at −10.55%; Twenty One Capital (XXI) held up best at −5.82%. The average session move is −7.42%. Five-session moves: MSTR −5.43%, ASST −12.58%, XXI −5.22%.",
+      "blurb": "Strategy, Strive, Twenty One Capital, and MetaPlanet.",
+      "analysis": "One name closed higher and three names closed lower. MetaPlanet (MPJPY) leads at +1.22%; Strive (ASST) lags at −10.55%. The average session move is −5.26%. Five-session moves: MSTR −5.43%, ASST −12.58%, XXI −5.22%, MPJPY +4.40%.",
       "quotes": [
         {
           "symbol": "MSTR",
@@ -156,6 +156,32 @@
           "exchange": "NYSE",
           "as_of": "2026-10-14T20:00:02+00:00",
           "timezone": "America/New_York"
+        },
+        {
+          "symbol": "MPJPY",
+          "label": "MetaPlanet",
+          "note": "Bitcoin treasury",
+          "official_name": "Metaplanet Inc.",
+          "currency": "USD",
+          "price": 1.66,
+          "change": 0.02,
+          "change_percent": 1.22,
+          "previous_close": 1.64,
+          "day_high": 1.74,
+          "day_low": 1.65,
+          "volume": 83763,
+          "five_session_change_percent": 4.4,
+          "closes": [
+            1.59,
+            1.66,
+            1.63,
+            1.64,
+            1.66
+          ],
+          "session": "Regular close",
+          "exchange": "OTC Markets OTCQX",
+          "as_of": "2026-10-14T20:00:00+00:00",
+          "timezone": "America/New_York"
         }
       ],
       "headlines": [
@@ -176,20 +202,20 @@
           "symbol": "ASST"
         },
         {
-          "title": "Strategy’s Michael Saylor Says Bitcoin Bull Market Is Just Beginning",
-          "url": "https://www.cryptoprowl.com/releases/strategys-michael-saylor-says-bitcoin-bull-market-is-just-beginning-7308",
-          "source": "CryptoProwl",
-          "published": "2026-10-14T13:28:00+00:00",
-          "summary": "Michael Saylor, the chairman of serial cryptocurrency acquirer Strategy (NASDAQ: $MSTR) says a new bull market in B...",
-          "symbol": "MSTR"
-        },
-        {
           "title": "Twenty One Capital (XXI) Stock May Be Below Fair Value On Book Value",
           "url": "https://finance.yahoo.com/markets/stocks/articles/twenty-one-capital-xxi-stock-111432453.html",
           "source": "Yahoo Finance",
           "published": "2026-10-09T11:14:32+00:00",
           "summary": "Twenty One Capital has seen a sharp reset in its share price over the past year, which puts a spotlight on whether the current US$6.32 level still lines up with what its balance...",
           "symbol": "XXI"
+        },
+        {
+          "title": "Metaplanet Unveils Net Income Plan to Fund Bitcoin Buys",
+          "url": "https://www.cryptoprowl.com/releases/metaplanet-unveils-net-income-plan-to-fund-bitcoin-buys-7229",
+          "source": "CryptoProwl",
+          "published": "2026-10-05T23:32:00+00:00",
+          "summary": "Metaplanet introduced a net interest income strategy Monday, aiming to invest a portion of its capital into income-...",
+          "symbol": "MPJPY"
         }
       ]
     },
@@ -197,8 +223,8 @@
       "id": "space-defense",
       "title": "Space & defense",
       "kicker": "Equities",
-      "blurb": "SpaceX, AST SpaceMobile, Merlin, and Kraken Robotics.",
-      "analysis": "All four names closed lower. Merlin (MRLN) is down the most at −14.73%; SpaceX (SPCX) held up best at −2.80%. The average session move is −8.76%. Five-session moves: SPCX −5.24%, ASTS −25.98%, MRLN −19.12%, KRKNF −12.65%.",
+      "blurb": "SpaceX, AST SpaceMobile, Merlin, Kraken Robotics, and Palantir.",
+      "analysis": "All 5 names closed lower. Merlin (MRLN) is down the most at −14.73%; SpaceX (SPCX) held up best at −2.80%. The average session move is −7.75%. Five-session moves: SPCX −5.24%, ASTS −25.98%, MRLN −19.12%, KRKNF −12.65%, PLTR +1.10%.",
       "quotes": [
         {
           "symbol": "SPCX",
@@ -303,16 +329,50 @@
           "exchange": "OTC Markets OTCQB",
           "as_of": "2026-10-14T20:00:00+00:00",
           "timezone": "America/New_York"
+        },
+        {
+          "symbol": "PLTR",
+          "label": "Palantir",
+          "note": "Defense software",
+          "official_name": "Palantir Technologies Inc.",
+          "currency": "USD",
+          "price": 200.97,
+          "change": -7.6999,
+          "change_percent": -3.69,
+          "previous_close": 208.6699,
+          "day_high": 209.28,
+          "day_low": 199.74,
+          "volume": 24103301,
+          "five_session_change_percent": 1.1,
+          "closes": [
+            198.78,
+            209.05,
+            209.0,
+            208.67,
+            200.97
+          ],
+          "session": "Regular close",
+          "exchange": "NasdaqGS",
+          "as_of": "2026-10-14T20:00:00+00:00",
+          "timezone": "America/New_York"
         }
       ],
       "headlines": [
         {
-          "title": "Elon Musk Could Announce A Tesla-SpaceX Merger In Coming Weeks, Analyst",
-          "url": "https://finance.yahoo.com/m/32f1294f-e426-3a99-b8d4-22a5a2a00b41/elon-musk-could-announce-a.html",
+          "title": "Rocket Lab Stock Tumbles On Latest Neutron Launch Delay",
+          "url": "https://finance.yahoo.com/m/b61ef3fb-faa8-3fbd-ac69-17bb9f9b3266/rocket-lab-stock-tumbles-on.html",
           "source": "Yahoo Finance",
-          "published": "2026-10-15T12:07:15+00:00",
-          "summary": "SpaceX and Tesla could announce a merger before Tesla's annual meeting likely scheduled for early December, according to Barclays.",
+          "published": "2026-10-15T12:15:05+00:00",
+          "summary": "Rocket Lab stock falls after the SpaceX rival announced another delay to its medium-lift Neutron rocket, missing a 2026 launch target.",
           "symbol": "SPCX"
+        },
+        {
+          "title": "Palantir (PLTR) Stock Sees Modest Fair Value Lift As Analysts Back AI Execution",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/palantir-pltr-stock-sees-modest-100956803.html",
+          "source": "Yahoo Finance",
+          "published": "2026-10-15T10:09:56+00:00",
+          "summary": "Palantir Technologies is back in focus as fresh valuation work lifts fair value estimates to US$205.27 from US$195.57, signaling a modest reset in where analysts anchor their...",
+          "symbol": "PLTR"
         },
         {
           "title": "ASTS Stock Heads For Worst Year Since Listing — Analyst Says 60-Satellite Milestone Could Slip To 2028",
@@ -329,14 +389,6 @@
           "published": "2026-10-07T17:20:00+00:00",
           "summary": "Kraken Robotics is seeing strong demand for its sub-sea technology for defense purposes.",
           "symbol": "KRKNF"
-        },
-        {
-          "title": "Merlin, Inc. To Participate in Upcoming Investor Conferences",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/merlin-inc-participate-upcoming-investor-200700014.html",
-          "source": "Yahoo Finance",
-          "published": "2026-10-05T20:07:00+00:00",
-          "summary": "BOSTON, Oct. 05, 2026 (GLOBE NEWSWIRE) -- Merlin, Inc. (Nasdaq: MRLN), an aerospace and defense technology company building the operating system of record for autonomous flight...",
-          "symbol": "MRLN"
         }
       ]
     }

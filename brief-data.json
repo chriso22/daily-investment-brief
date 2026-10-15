@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T13:58:57.795041+00:00",
+  "generated_at": "2026-10-15T12:17:52.025223+00:00",
   "source": "Yahoo Finance",
   "disclaimer": "Delayed market data for information only. Not investment advice.",
   "groups": [
@@ -8,7 +8,7 @@
       "title": "Bitcoin",
       "kicker": "Crypto",
       "blurb": "U.S. dollar spot price.",
-      "analysis": "Bitcoin is at $82,343, −0.99% from the prior daily close. Across the last five sessions, Bitcoin is 0.69% lower. The session ranged from $82,348 to $84,006.",
+      "analysis": "Bitcoin is at $80,930, −2.08% from the prior daily close. Across the last five sessions, Bitcoin is 3.29% lower. The session ranged from $80,474 to $81,774.",
       "quotes": [
         {
           "symbol": "BTC-USD",
@@ -16,58 +16,58 @@
           "note": "Spot",
           "official_name": "Bitcoin USD",
           "currency": "USD",
-          "price": 82343.3,
-          "change": -820.83,
-          "change_percent": -0.99,
-          "previous_close": 83164.13,
-          "day_high": 84005.72,
-          "day_low": 82348.09,
-          "volume": 28791447552,
-          "five_session_change_percent": -0.69,
+          "price": 80930.31,
+          "change": -1720.796,
+          "change_percent": -2.08,
+          "previous_close": 82651.106,
+          "day_high": 81773.766,
+          "day_low": 80474.07,
+          "volume": 42091220992,
+          "five_session_change_percent": -3.29,
           "closes": [
-            82912.2266,
             83679.4688,
             81762.5625,
             83095.125,
-            82343.2969
+            81562.4922,
+            80930.3125
           ],
           "session": "24-hour",
           "exchange": "CCC",
-          "as_of": "2026-10-14T13:58:53+00:00",
+          "as_of": "2026-10-15T12:17:48+00:00",
           "timezone": "UTC"
         }
       ],
       "headlines": [
         {
-          "title": "A Holder Who Put $100 a Month Into Bitcoin Since 2015 Has Paid In $14,000. Here Is What the Stack Is Worth Now.",
-          "url": "https://247wallst.com/investing/cryptocurrency/2026/10/14/a-holder-who-put-100-a-month-into-bitcoin-since-2015-has-paid-in-14000-here-is-what-the-stack-is-worth-now/",
-          "source": "24/7 Wall St.",
-          "published": "2026-10-14T13:31:13+00:00",
-          "summary": "Putting $100 into Bitcoin every month for over a decade sounds simple, but the gap between what that stack was worth at its peak versus today raises a harder question about...",
+          "title": "Bitcoin Tests $81,000 as Rate Hike Fears Linger After Hot Inflation Data",
+          "url": "https://decrypt.co/381008/bitcoin-tests-81000-as-rate-hike-fears-linger-after-hot-inflation-data",
+          "source": "Decrypt",
+          "published": "2026-10-15T11:48:42+00:00",
+          "summary": "Odds of an October Fed hike have climbed to 29% from 18% a week ago, and analysts see Bitcoin range-bound until the picture clears.",
           "symbol": "BTC-USD"
         },
         {
-          "title": "Strategy’s Michael Saylor Says Bitcoin Bull Market Is Just Beginning",
-          "url": "https://www.cryptoprowl.com/releases/strategys-michael-saylor-says-bitcoin-bull-market-is-just-beginning-7308",
-          "source": "CryptoProwl",
-          "published": "2026-10-14T13:28:00+00:00",
-          "summary": "Michael Saylor, the chairman of serial cryptocurrency acquirer Strategy (NASDAQ: $MSTR) says a new bull market in B...",
+          "title": "‘I don’t really know what’s holding it up’: Peter Schiff shocked by Bitcoin performance — how to take advantage",
+          "url": "https://finance.yahoo.com/markets/crypto/articles/don-t-really-know-holding-110500255.html",
+          "source": "Yahoo Finance",
+          "published": "2026-10-15T11:05:00+00:00",
+          "summary": "“Bitcoin is a Republican thing now.”",
           "symbol": "BTC-USD"
         },
         {
-          "title": "Coinbase Outlines Ways To Protect Bitcoin From Quantum Attacks",
-          "url": "https://www.cryptoprowl.com/releases/coinbase-outlines-ways-to-protect-bitcoin-from-quantum-attacks-7307",
-          "source": "CryptoProwl",
-          "published": "2026-10-14T13:26:00+00:00",
-          "summary": "Cryptocurrency exchange Coinbase Global (NASDAQ: $COIN) has proposed ways to protect Bitcoin (CRYPTO: $BTC) from fu...",
+          "title": "Citigroup Raises Its 12-Month Price Target for Bitcoin to $113,000. These Are the 3 Catalysts Investors Need to Watch.",
+          "url": "https://www.fool.com/investing/2026/10/15/citigroup-raises-its-12-month-price-target-for-bit/",
+          "source": "Motley Fool",
+          "published": "2026-10-15T09:35:00+00:00",
+          "summary": "Citigroup believes that Bitcoin is going to do well during the next 12 months.",
           "symbol": "BTC-USD"
         },
         {
-          "title": "Michael Saylor Cheered a Rival’s $280 Million Bitcoin Buy Despite His Own Company Buying 85% Less the Same Week.",
-          "url": "https://247wallst.com/investing/cryptocurrency/2026/10/14/michael-saylor-cheered-a-rivals-280-million-bitcoin-buy-despite-his-own-company-buying-85-less-the-same-week/",
-          "source": "24/7 Wall St.",
-          "published": "2026-10-14T13:08:42+00:00",
-          "summary": "Michael Saylor publicly cheered a Bitcoin purchase from a company that directly competes with his own, the same week his firm spent far more money on something other than Bitcoin...",
+          "title": "Bitcoin Remains Weaker on U.S. Rate-Hike Prospects",
+          "url": "https://finance.yahoo.com/m/8f1e92c2-45c3-3474-bdad-9381f10cd770/bitcoin-remains-weaker-on.html",
+          "source": "Yahoo Finance",
+          "published": "2026-10-15T09:26:38+00:00",
+          "summary": "Bitcoin remains under pressure after hitting a near one-month low overnight as Wednesday's higher-than-expected U.S. inflation data and growing expectations of further U.S...",
           "symbol": "BTC-USD"
         }
       ]
@@ -77,7 +77,7 @@
       "title": "Bitcoin-linked equities",
       "kicker": "Equities",
       "blurb": "Strategy, Strive, and Twenty One Capital.",
-      "analysis": "All three names are lower. Strive (ASST) is down the most at −7.39%; Twenty One Capital (XXI) held up best at −1.87%. The average session move is −3.99%. Five-session moves: MSTR −2.25%, ASST −9.49%, XXI −0.95%.",
+      "analysis": "All three names closed lower. Strive (ASST) is down the most at −10.55%; Twenty One Capital (XXI) held up best at −5.82%. The average session move is −7.42%. Five-session moves: MSTR −5.43%, ASST −12.58%, XXI −5.22%.",
       "quotes": [
         {
           "symbol": "MSTR",
@@ -85,24 +85,24 @@
           "note": "Bitcoin treasury",
           "official_name": "Strategy Inc",
           "currency": "USD",
-          "price": 148.065,
-          "change": -4.1149,
-          "change_percent": -2.7,
-          "previous_close": 152.1799,
+          "price": 143.24,
+          "change": -8.9406,
+          "change_percent": -5.88,
+          "previous_close": 152.1806,
           "day_high": 152.18,
-          "day_low": 147.945,
-          "volume": 2881112,
-          "five_session_change_percent": -2.25,
+          "day_low": 141.74,
+          "volume": 20701924,
+          "five_session_change_percent": -5.43,
           "closes": [
             151.47,
             154.34,
             152.68,
             152.18,
-            148.065
+            143.24
           ],
-          "session": "Regular session",
+          "session": "Regular close",
           "exchange": "NasdaqGS",
-          "as_of": "2026-10-14T13:58:57+00:00",
+          "as_of": "2026-10-14T20:00:01+00:00",
           "timezone": "America/New_York"
         },
         {
@@ -111,24 +111,24 @@
           "note": "Bitcoin treasury",
           "official_name": "Strive, Inc.",
           "currency": "USD",
-          "price": 25.55,
-          "change": -2.0391,
-          "change_percent": -7.39,
-          "previous_close": 27.5891,
+          "price": 24.68,
+          "change": -2.9099,
+          "change_percent": -10.55,
+          "previous_close": 27.5899,
           "day_high": 26.71,
-          "day_low": 25.37,
-          "volume": 3899119,
-          "five_session_change_percent": -9.49,
+          "day_low": 24.33,
+          "volume": 18214170,
+          "five_session_change_percent": -12.58,
           "closes": [
             28.23,
             27.8,
             27.71,
             27.59,
-            25.5501
+            24.68
           ],
-          "session": "Regular session",
+          "session": "Regular close",
           "exchange": "NasdaqGM",
-          "as_of": "2026-10-14T13:58:57+00:00",
+          "as_of": "2026-10-14T20:00:01+00:00",
           "timezone": "America/New_York"
         },
         {
@@ -137,28 +137,44 @@
           "note": "Bitcoin treasury",
           "official_name": "Twenty One Capital, Inc.",
           "currency": "USD",
-          "price": 6.26,
-          "change": -0.1196,
-          "change_percent": -1.87,
-          "previous_close": 6.3796,
+          "price": 5.99,
+          "change": -0.37,
+          "change_percent": -5.82,
+          "previous_close": 6.36,
           "day_high": 6.415,
-          "day_low": 6.24,
-          "volume": 145091,
-          "five_session_change_percent": -0.95,
+          "day_low": 5.94,
+          "volume": 1875434,
+          "five_session_change_percent": -5.22,
           "closes": [
             6.32,
             6.29,
             6.22,
             6.36,
-            6.26
+            5.99
           ],
-          "session": "Regular session",
+          "session": "Regular close",
           "exchange": "NYSE",
-          "as_of": "2026-10-14T13:58:41+00:00",
+          "as_of": "2026-10-14T20:00:02+00:00",
           "timezone": "America/New_York"
         }
       ],
       "headlines": [
+        {
+          "title": "Barclays Analyst Resets Strategy Stock Price Target. How to Play MSTR Here.",
+          "url": "https://www.barchart.com/story/news/7723035/barclays-analyst-resets-strategy-stock-price-target-how-to-play-mstr-here",
+          "source": "Barchart",
+          "published": "2026-10-14T21:47:36+00:00",
+          "summary": "Barclays lifted its price target for Strategy to $175 and called it a fintech play. Here is what that means for MSTR stock investors.",
+          "symbol": "MSTR"
+        },
+        {
+          "title": "How Strive's huge announcement will help fund its bitcoin purchases",
+          "url": "https://finance.yahoo.com/video/strives-huge-announcement-help-fund-180000719.html",
+          "source": "Yahoo Finance",
+          "published": "2026-10-14T18:00:00+00:00",
+          "summary": "Strive (ASST) just launched the IPO of a new 15% preferred stock to fund its bitcoin purchases. Watch the video above to hear the details.",
+          "symbol": "ASST"
+        },
         {
           "title": "Strategy’s Michael Saylor Says Bitcoin Bull Market Is Just Beginning",
           "url": "https://www.cryptoprowl.com/releases/strategys-michael-saylor-says-bitcoin-bull-market-is-just-beginning-7308",
@@ -166,22 +182,6 @@
           "published": "2026-10-14T13:28:00+00:00",
           "summary": "Michael Saylor, the chairman of serial cryptocurrency acquirer Strategy (NASDAQ: $MSTR) says a new bull market in B...",
           "symbol": "MSTR"
-        },
-        {
-          "title": "Is Trending Stock Strategy Inc (MSTR) a Buy Now?",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/trending-stock-strategy-inc-mstr-120004377.html",
-          "source": "Yahoo Finance",
-          "published": "2026-10-14T12:00:04+00:00",
-          "summary": "Strategy (MSTR) has received quite a bit of attention from Zacks.com users lately. Therefore, it is wise to be aware of the facts that can impact the stock's prospects.",
-          "symbol": "MSTR"
-        },
-        {
-          "title": "ASST Stock Rises Overnight: Strive Launches IPO Of 15% SATS Preferred Stock To Fund Bitcoin Purchases",
-          "url": "https://stocktwits.com/news-articles/markets/equity/asst-stock-rises-overnight-strive-launches-ipo-of-15-sats-preferred-stock-to-fund-bitcoin-purchases/cZxf4MGRBYM",
-          "source": "Stocktwits",
-          "published": "2026-10-14T01:10:48+00:00",
-          "summary": "On Tuesday, Strive said it will offer 5,000,000 shares of its 15% Series A Perpetual SATS Preferred Stock in an IPO, with an intention to use the funds raised to purchase Bitcoin.",
-          "symbol": "ASST"
         },
         {
           "title": "Twenty One Capital (XXI) Stock May Be Below Fair Value On Book Value",
@@ -198,7 +198,7 @@
       "title": "Space & defense",
       "kicker": "Equities",
       "blurb": "SpaceX, AST SpaceMobile, Merlin, and Kraken Robotics.",
-      "analysis": "All four names are lower. Merlin (MRLN) is down the most at −13.57%; Kraken Robotics (KRKNF) held up best at −2.24%. The average session move is −6.32%. Five-session moves: SPCX −4.89%, ASTS −23.15%, MRLN −18.01%, KRKNF −8.13%.",
+      "analysis": "All four names closed lower. Merlin (MRLN) is down the most at −14.73%; SpaceX (SPCX) held up best at −2.80%. The average session move is −8.76%. Five-session moves: SPCX −5.24%, ASTS −25.98%, MRLN −19.12%, KRKNF −12.65%.",
       "quotes": [
         {
           "symbol": "SPCX",
@@ -206,24 +206,24 @@
           "note": "Space Exploration Technologies",
           "official_name": "Space Exploration Technologies Corp.",
           "currency": "USD",
-          "price": 152.72,
-          "change": -3.8196,
-          "change_percent": -2.44,
-          "previous_close": 156.5396,
+          "price": 152.16,
+          "change": -4.38,
+          "change_percent": -2.8,
+          "previous_close": 156.54,
           "day_high": 155.44,
-          "day_low": 151.995,
-          "volume": 16041923,
-          "five_session_change_percent": -4.89,
+          "day_low": 151.101,
+          "volume": 67600447,
+          "five_session_change_percent": -5.24,
           "closes": [
             160.57,
             162.57,
             163.42,
             156.54,
-            152.72
+            152.16
           ],
-          "session": "Regular session",
+          "session": "Regular close",
           "exchange": "NasdaqGS",
-          "as_of": "2026-10-14T13:58:57+00:00",
+          "as_of": "2026-10-14T20:00:01+00:00",
           "timezone": "America/New_York"
         },
         {
@@ -232,24 +232,24 @@
           "note": "Satellite connectivity",
           "official_name": "AST SpaceMobile, Inc.",
           "currency": "USD",
-          "price": 43.75,
-          "change": -3.3148,
-          "change_percent": -7.04,
-          "previous_close": 47.0648,
+          "price": 42.14,
+          "change": -4.9249,
+          "change_percent": -10.46,
+          "previous_close": 47.0649,
           "day_high": 45.98,
-          "day_low": 43.64,
-          "volume": 5665096,
-          "five_session_change_percent": -23.15,
+          "day_low": 42.0,
+          "volume": 27212216,
+          "five_session_change_percent": -25.98,
           "closes": [
             56.93,
             50.965,
             51.46,
             47.065,
-            43.75
+            42.14
           ],
-          "session": "Regular session",
+          "session": "Regular close",
           "exchange": "NasdaqGS",
-          "as_of": "2026-10-14T13:58:56+00:00",
+          "as_of": "2026-10-14T20:00:01+00:00",
           "timezone": "America/New_York"
         },
         {
@@ -258,24 +258,24 @@
           "note": "Autonomous flight",
           "official_name": "Merlin, Inc.",
           "currency": "USD",
-          "price": 1.115,
-          "change": -0.175,
-          "change_percent": -13.57,
+          "price": 1.1,
+          "change": -0.19,
+          "change_percent": -14.73,
           "previous_close": 1.29,
           "day_high": 1.28,
-          "day_low": 1.11,
-          "volume": 1094554,
-          "five_session_change_percent": -18.01,
+          "day_low": 1.07,
+          "volume": 6803508,
+          "five_session_change_percent": -19.12,
           "closes": [
             1.36,
             1.25,
             1.2,
             1.29,
-            1.115
+            1.1
           ],
-          "session": "Regular session",
+          "session": "Regular close",
           "exchange": "NasdaqGM",
-          "as_of": "2026-10-14T13:58:54+00:00",
+          "as_of": "2026-10-14T20:00:01+00:00",
           "timezone": "America/New_York"
         },
         {
@@ -284,42 +284,42 @@
           "note": "Underwater defense",
           "official_name": "Kraken Robotics Inc.",
           "currency": "USD",
-          "price": 3.05,
-          "change": -0.07,
-          "change_percent": -2.24,
+          "price": 2.9,
+          "change": -0.22,
+          "change_percent": -7.05,
           "previous_close": 3.12,
           "day_high": 3.1,
-          "day_low": 3.05,
-          "volume": 17391,
-          "five_session_change_percent": -8.13,
+          "day_low": 2.9,
+          "volume": 246650,
+          "five_session_change_percent": -12.65,
           "closes": [
             3.32,
             3.148,
             3.09,
             3.12,
-            3.05
+            2.9
           ],
-          "session": "Regular session",
+          "session": "Regular close",
           "exchange": "OTC Markets OTCQB",
-          "as_of": "2026-10-14T13:43:52+00:00",
+          "as_of": "2026-10-14T20:00:00+00:00",
           "timezone": "America/New_York"
         }
       ],
       "headlines": [
         {
-          "title": "Why Meta's AI bet could be mispriced",
-          "url": "https://finance.yahoo.com/video/why-metas-ai-bet-could-be-mispriced-133928464.html",
+          "title": "Elon Musk Could Announce A Tesla-SpaceX Merger In Coming Weeks, Analyst",
+          "url": "https://finance.yahoo.com/m/32f1294f-e426-3a99-b8d4-22a5a2a00b41/elon-musk-could-announce-a.html",
           "source": "Yahoo Finance",
-          "published": "2026-10-14T13:39:28+00:00",
-          "summary": "In the Loop Host Ejaaz Ahamadeen examines how Meta's (META) latest AI bet could compete with other artificial intelligence players, such as OpenAI (OPAI.PVT) and SpaceX (SPCX).",
+          "published": "2026-10-15T12:07:15+00:00",
+          "summary": "SpaceX and Tesla could announce a merger before Tesla's annual meeting likely scheduled for early December, according to Barclays.",
           "symbol": "SPCX"
         },
         {
-          "title": "AST SpaceMobile Is the New Battleground Stock",
-          "url": "https://finance.yahoo.com/m/ee43bb70-dbb9-3a9d-88a0-c18f1014c2a0/ast-spacemobile-is-the-new.html",
-          "source": "Yahoo Finance",
-          "published": "2026-10-14T10:54:00+00:00",
-          "summary": "Wall Street is no help when thinking about what to do with AST stock.",
+          "title": "ASTS Stock Heads For Worst Year Since Listing — Analyst Says 60-Satellite Milestone Could Slip To 2028",
+          "url": "https://stocktwits.com/news-articles/markets/equity/asts-stock-worst-year-listing-analyst-60-satellite-slip-2028/cZxWNdmRBAI",
+          "source": "Stocktwits",
+          "published": "2026-10-15T06:17:35+00:00",
+          "summary": "Tim Farrar said reaching 60 satellites could take until 2028, based on an assumed eight remaining New Glenn launches and two Falcon 9 missions.",
           "symbol": "ASTS"
         },
         {

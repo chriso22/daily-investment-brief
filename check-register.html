@@ -286,88 +286,92 @@
       font-weight: 500;
     }
 
-    .table-scroll {
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
-      overscroll-behavior-x: contain;
+    .entry-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
     }
 
-    table {
-      width: 100%;
-      min-width: 40rem;
-      border-collapse: collapse;
-      font-variant-numeric: tabular-nums;
+    .entry {
+      padding: 0.85rem 0.95rem 0.95rem;
+      border-bottom: 1px solid var(--line);
+      animation: rise 0.35s ease both;
     }
 
-    thead th {
-      position: sticky;
-      top: 0;
-      z-index: 1;
-      padding: 0.55rem 0.65rem;
-      background: var(--accent-soft);
-      color: var(--ink-soft);
-      font-size: 0.68rem;
+    .entry:last-child { border-bottom: none; }
+
+    .entry:nth-child(even) {
+      background: color-mix(in srgb, var(--bg-lift) 75%, transparent);
+    }
+
+    .entry-top {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.45rem;
+    }
+
+    .entry-meta {
+      display: grid;
+      grid-template-columns: minmax(4.5rem, 5.5rem) minmax(8.5rem, 10rem);
+      gap: 0.4rem;
+      flex: 1;
+      min-width: 0;
+    }
+
+    .entry-desc {
+      margin-top: 0.45rem;
+    }
+
+    .entry-amounts {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.45rem 0.55rem;
+      margin-top: 0.65rem;
+    }
+
+    .entry-amounts .bal-field {
+      grid-column: 1 / -1;
+    }
+
+    @media (min-width: 640px) {
+      .entry-meta {
+        grid-template-columns: 5.5rem 10rem;
+      }
+
+      .entry-amounts {
+        grid-template-columns: 1fr 1fr 1.15fr;
+      }
+
+      .entry-amounts .bal-field {
+        grid-column: auto;
+      }
+    }
+
+    .mini-label {
+      display: block;
+      margin-bottom: 0.2rem;
+      color: var(--muted);
+      font-size: 0.65rem;
       font-weight: 700;
       letter-spacing: 0.06em;
       text-transform: uppercase;
-      text-align: left;
-      white-space: nowrap;
-      border-bottom: 1.5px solid var(--line);
     }
-
-    thead th.num,
-    tbody td.num {
-      text-align: right;
-    }
-
-    thead th.col-code { width: 4.2rem; }
-    thead th.col-date { width: 6.5rem; }
-    thead th.col-pay,
-    thead th.col-dep,
-    thead th.col-bal { width: 6.5rem; }
-    thead th.col-act { width: 3rem; }
-
-    tbody tr {
-      border-bottom: 1px solid var(--line);
-      transition: background 0.15s ease;
-    }
-
-    tbody tr:last-child { border-bottom: none; }
-
-    tbody tr:nth-child(even) { background: color-mix(in srgb, var(--bg-lift) 70%, transparent); }
-
-    tbody tr:hover { background: var(--accent-soft); }
-
-    tbody td {
-      padding: 0.35rem 0.4rem;
-      vertical-align: middle;
-    }
-
-    tbody td.balance-cell {
-      font-weight: 700;
-      color: var(--ink);
-      white-space: nowrap;
-      padding-right: 0.75rem;
-    }
-
-    tbody td.balance-cell.is-negative { color: var(--debit); }
 
     .cell-input {
       width: 100%;
-      min-height: 2.4rem;
-      padding: 0.35rem 0.45rem;
-      border: 1.5px solid transparent;
+      min-height: 2.35rem;
+      padding: 0.4rem 0.55rem;
+      border: 1.5px solid var(--line);
       border-radius: 6px;
-      background: transparent;
+      background: var(--bg-lift);
       font-variant-numeric: tabular-nums;
     }
-
-    .cell-input:hover { background: rgba(255, 255, 255, 0.55); }
 
     .cell-input:focus {
       outline: none;
       border-color: var(--focus);
       background: #fff;
+      box-shadow: 0 0 0 3px color-mix(in srgb, var(--focus) 22%, transparent);
     }
 
     .cell-input.num {
@@ -378,7 +382,21 @@
     .cell-input.debit:not(:placeholder-shown) { color: var(--debit); }
     .cell-input.credit:not(:placeholder-shown) { color: var(--credit); }
 
-    .desc-input { min-width: 9rem; }
+    .balance-readout {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      min-height: 2.35rem;
+      padding: 0.4rem 0.55rem;
+      border-radius: 6px;
+      background: var(--accent-soft);
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+      font-size: 1.02rem;
+      white-space: nowrap;
+    }
+
+    .balance-readout.is-negative { color: var(--debit); }
 
     /* —— Add form —— */
     .add-panel {
@@ -551,22 +569,7 @@
         <h2 id="register-title">Register</h2>
         <span class="count" id="row-count">0 entries</span>
       </div>
-      <div class="table-scroll" id="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th scope="col" class="col-code">No. / Code</th>
-              <th scope="col" class="col-date">Date</th>
-              <th scope="col">Transaction description</th>
-              <th scope="col" class="num col-pay">Payment / Fee / WD</th>
-              <th scope="col" class="num col-dep">Deposit</th>
-              <th scope="col" class="num col-bal">Balance</th>
-              <th scope="col" class="col-act"><span class="visually-hidden">Remove</span></th>
-            </tr>
-          </thead>
-          <tbody id="register-body"></tbody>
-        </table>
-      </div>
+      <ul class="entry-list" id="register-body" aria-label="Transactions"></ul>
       <div class="empty-hint" id="empty-hint" hidden>No transactions yet. Add one below to start the running balance.</div>
     </section>
 
@@ -850,34 +853,29 @@
         els.current.classList.toggle("is-negative", bal < 0);
         els.count.textContent = state.rows.length + (state.rows.length === 1 ? " entry" : " entries");
         els.empty.hidden = state.rows.length > 0;
-        document.getElementById("table-wrap").hidden = state.rows.length === 0;
+        els.body.hidden = state.rows.length === 0;
 
         els.body.replaceChildren();
 
         state.rows.forEach(function (row, index) {
-          const tr = document.createElement("tr");
-          tr.dataset.id = row.id;
+          const li = document.createElement("li");
+          li.className = "entry";
+          li.dataset.id = row.id;
+          li.style.animationDelay = Math.min(index, 8) * 0.03 + "s";
 
-          tr.appendChild(cellInput(row, "code", row.code, { className: "num", inputMode: "numeric", placeholder: "—" }));
-          tr.appendChild(cellInput(row, "date", row.date, { type: "date" }));
-          tr.appendChild(cellInput(row, "description", row.description, { className: "desc-input", maxLength: 120 }));
-          tr.appendChild(cellInput(row, "payment", row.payment ? formatMoneyInput(row.payment) : "", {
-            className: "num debit",
-            inputMode: "decimal",
-            placeholder: "",
-          }));
-          tr.appendChild(cellInput(row, "deposit", row.deposit ? formatMoneyInput(row.deposit) : "", {
-            className: "num credit",
-            inputMode: "decimal",
-            placeholder: "",
-          }));
+          const top = document.createElement("div");
+          top.className = "entry-top";
 
-          const balTd = document.createElement("td");
-          balTd.className = "num balance-cell" + (balances[index] < 0 ? " is-negative" : "");
-          balTd.textContent = formatMoney(balances[index]);
-          tr.appendChild(balTd);
+          const meta = document.createElement("div");
+          meta.className = "entry-meta";
+          meta.appendChild(labeledField("No. / Code", bindInput(row, "code", row.code, {
+            className: "num",
+            inputMode: "numeric",
+            placeholder: "—",
+          })));
+          meta.appendChild(labeledField("Date", bindInput(row, "date", row.date, { type: "date" })));
+          top.appendChild(meta);
 
-          const actTd = document.createElement("td");
           const del = document.createElement("button");
           del.type = "button";
           del.className = "btn-icon";
@@ -889,16 +887,62 @@
             persist();
             showToast("Entry removed");
           });
-          actTd.appendChild(del);
-          tr.appendChild(actTd);
+          top.appendChild(del);
+          li.appendChild(top);
 
-          els.body.appendChild(tr);
+          const descWrap = document.createElement("div");
+          descWrap.className = "entry-desc";
+          descWrap.appendChild(labeledField("Transaction description", bindInput(row, "description", row.description, {
+            maxLength: 120,
+            placeholder: "Description",
+          })));
+          li.appendChild(descWrap);
+
+          const amounts = document.createElement("div");
+          amounts.className = "entry-amounts";
+          amounts.appendChild(labeledField("Payment / Fee / WD", bindInput(row, "payment", row.payment ? formatMoneyInput(row.payment) : "", {
+            className: "num debit",
+            inputMode: "decimal",
+            placeholder: "0.00",
+          })));
+          amounts.appendChild(labeledField("Deposit", bindInput(row, "deposit", row.deposit ? formatMoneyInput(row.deposit) : "", {
+            className: "num credit",
+            inputMode: "decimal",
+            placeholder: "0.00",
+          })));
+
+          const balField = document.createElement("div");
+          balField.className = "bal-field";
+          const balLabel = document.createElement("span");
+          balLabel.className = "mini-label";
+          balLabel.textContent = "Balance";
+          const balOut = document.createElement("div");
+          balOut.className = "balance-readout" + (balances[index] < 0 ? " is-negative" : "");
+          balOut.textContent = formatMoney(balances[index]);
+          balField.appendChild(balLabel);
+          balField.appendChild(balOut);
+          amounts.appendChild(balField);
+          li.appendChild(amounts);
+
+          els.body.appendChild(li);
         });
       }
 
-      function cellInput(row, field, value, opts) {
+      function labeledField(labelText, inputEl) {
+        const wrap = document.createElement("div");
+        const label = document.createElement("label");
+        label.className = "mini-label";
+        const id = "f-" + Math.random().toString(36).slice(2, 9);
+        inputEl.id = id;
+        label.setAttribute("for", id);
+        label.textContent = labelText;
+        wrap.appendChild(label);
+        wrap.appendChild(inputEl);
+        return wrap;
+      }
+
+      function bindInput(row, field, value, opts) {
         opts = opts || {};
-        const td = document.createElement("td");
         const input = document.createElement("input");
         input.className = "cell-input" + (opts.className ? " " + opts.className : "");
         input.type = opts.type || "text";
@@ -906,7 +950,6 @@
         if (opts.inputMode) input.inputMode = opts.inputMode;
         if (opts.placeholder != null) input.placeholder = opts.placeholder;
         if (opts.maxLength) input.maxLength = opts.maxLength;
-        input.setAttribute("aria-label", field);
 
         input.addEventListener("change", function () {
           if (field === "payment" || field === "deposit") {
@@ -926,8 +969,7 @@
           }
         });
 
-        td.appendChild(input);
-        return td;
+        return input;
       }
 
       function shareUrl() {

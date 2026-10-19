@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T11:45:31.885308+00:00",
+  "generated_at": "2026-10-19T11:45:28.994697+00:00",
   "source": "Yahoo Finance",
   "disclaimer": "Delayed market data for information only. Not investment advice.",
   "groups": [
@@ -8,7 +8,7 @@
       "title": "Bitcoin",
       "kicker": "Crypto",
       "blurb": "U.S. dollar spot price.",
-      "analysis": "Bitcoin is at $82,560, +2.07% from the prior daily close. Across the last five sessions, Bitcoin is 0.97% higher. The session ranged from $81,712 to $82,717.",
+      "analysis": "Bitcoin is at $82,224, +0.32% from the prior daily close. Across the last five sessions, Bitcoin is 0.10% higher. The session ranged from $81,942 to $83,014.",
       "quotes": [
         {
           "symbol": "BTC-USD",
@@ -16,58 +16,58 @@
           "note": "Spot",
           "official_name": "Bitcoin USD",
           "currency": "USD",
-          "price": 82559.55,
-          "change": 1676.7015,
-          "change_percent": 2.07,
-          "previous_close": 80882.8485,
-          "day_high": 82717.27,
-          "day_low": 81712.43,
-          "volume": 31927048192,
-          "five_session_change_percent": 0.97,
+          "price": 82223.73,
+          "change": 263.0936,
+          "change_percent": 0.32,
+          "previous_close": 81960.6364,
+          "day_high": 83014.36,
+          "day_low": 81942.16,
+          "volume": 24991209472,
+          "five_session_change_percent": 0.1,
           "closes": [
-            81762.5625,
-            83095.125,
-            81562.4922,
             82141.4609,
-            82559.5469
+            81500.8047,
+            81382.1484,
+            82017.6016,
+            82223.7266
           ],
           "session": "24-hour",
           "exchange": "CCC",
-          "as_of": "2026-10-16T11:45:25+00:00",
+          "as_of": "2026-10-19T11:45:22+00:00",
           "timezone": "UTC"
         }
       ],
       "headlines": [
         {
-          "title": "Bitcoin Fell Below $80,000, but Wallets Holding 10 to 10,000 BTC Just Hit a Record High. Are Big Buyers Loading Up?",
-          "url": "https://247wallst.com/investing/cryptocurrency/2026/10/16/bitcoin-fell-below-80000-but-wallets-holding-10-to-10000-btc-just-hit-a-record-high-are-big-buyers-loading-up/",
+          "title": "Bitcoin Gains on Reduced Prospect of Imminent Fed Rate Rise",
+          "url": "https://finance.yahoo.com/m/427bb748-fb0c-351a-9633-9d50f963d612/bitcoin-gains-on-reduced.html",
+          "source": "Yahoo Finance",
+          "published": "2026-10-19T10:43:08+00:00",
+          "summary": "Bitcoin rises, supported by reduced expectations for further imminent interest-rate rises by the Federal Reserve and improving risk sentiment, Zaye Capital Markets analyst Naeem...",
+          "symbol": "BTC-USD"
+        },
+        {
+          "title": "Michael Saylor Calls Bitcoin Bull Market Return, While MARA Moves 1,000 BTC to Exchanges",
+          "url": "https://www.ccn.com/news/crypto/saylor-bitcoin-bull-market-mara-1000-btc-exchanges/",
+          "source": "Ccn",
+          "published": "2026-10-19T10:42:15+00:00",
+          "summary": "Michael Saylor says Bitcoin is returning to a bull market, with bank custody, lending, and tokenization driving adoption. Strategy reportedly repurchased around $1.5 billion in ...",
+          "symbol": "BTC-USD"
+        },
+        {
+          "title": "Bitcoin News: MARA Sent 1,000 BTC to Exchanges as Saylor Hints at Another Buy. Is the Biggest Miner Selling?",
+          "url": "https://247wallst.com/investing/cryptocurrency/2026/10/19/bitcoin-news-mara-sent-1000-btc-to-exchanges-as-saylor-hints-at-another-buy-is-the-biggest-miner-selling/",
           "source": "24/7 Wall St.",
-          "published": "2026-10-16T11:00:05+00:00",
-          "summary": "Bitcoin whale wallets just hit an all-time record even as the price tumbled, but the data hides a critical question about whether big buyers are actually accumulating or simply...",
+          "published": "2026-10-19T09:51:17+00:00",
+          "summary": "The largest Bitcoin miner just moved 1,000 BTC onto exchanges while its holdings have quietly shrunk by thousands of coins, and now Michael Saylor is hinting at a buy. Whether...",
           "symbol": "BTC-USD"
         },
         {
-          "title": "Strive Eyes About $630 Million in Upsized Sale of a New Fixed-Rate Preferred Stock",
-          "url": "https://unchainedcrypto.com/strive-eyes-about-630-million-in-upsized-sale-of-a-new-fixed-rate-preferred-stock/",
-          "source": "Unchainedcrypto",
-          "published": "2026-10-16T10:26:24+00:00",
-          "summary": "The bitcoin treasury company priced 7 million shares of its 15% SATS preferred at $90, 2 million more than planned and below the $100 stated amount its dividend is based on.",
-          "symbol": "BTC-USD"
-        },
-        {
-          "title": "CME Is Launching Uniswap and Bitcoin Cash Futures. Do Futures Actually Move Prices?",
-          "url": "https://247wallst.com/investing/cryptocurrency/2026/10/16/cme-is-launching-uniswap-and-bitcoin-cash-futures-do-futures-actually-move-prices/",
+          "title": "Bitcoin Mining Just Got 6% Harder While BTC Fell. Could Miners Start Selling?",
+          "url": "https://247wallst.com/investing/cryptocurrency/2026/10/19/bitcoin-mining-just-got-6-harder-while-btc-fell-could-miners-start-selling/",
           "source": "24/7 Wall St.",
-          "published": "2026-10-16T10:00:30+00:00",
-          "summary": "CME is adding Bitcoin Cash and Uniswap futures to its regulated exchange, but history shows these listings can push prices in opposite directions depending on who shows up to...",
-          "symbol": "BTC-USD"
-        },
-        {
-          "title": "Bitcoin Google Searches Hit a 6-Year Low. Willy Woo Calls It a Buy Signal",
-          "url": "https://beincrypto.com/bitcoin-google-searches-willy-woo-buy/",
-          "source": "Beincrypto",
-          "published": "2026-10-16T07:54:12+00:00",
-          "summary": "Bitcoin Google searches sank to a 6-year low. Willy Woo calls it a buy signal, but traders now drive the data.",
+          "published": "2026-10-19T09:36:08+00:00",
+          "summary": "Bitcoin miners are getting squeezed from both sides as computing demands surge and prices slip, raising fears that desperate operators could start dumping coins and accelerating...",
           "symbol": "BTC-USD"
         }
       ]
@@ -77,7 +77,7 @@
       "title": "Bitcoin-linked equities",
       "kicker": "Equities",
       "blurb": "Strategy, Strive, Twenty One Capital, and MetaPlanet.",
-      "analysis": "All four names closed higher. Strategy (MSTR) leads at +5.62%; MetaPlanet (MPJPY) is the smallest gain at +0.60%. The average session move is +2.91%. Five-session moves: MSTR −1.98%, ASST −7.73%, XXI −3.34%, MPJPY +0.60%.",
+      "analysis": "All four names closed lower. Strategy (MSTR) is down the most at −9.56%; MetaPlanet (MPJPY) held up best at −1.80%. The average session move is −6.25%. Five-session moves: MSTR −10.38%, ASST −13.06%, XXI −9.65%, MPJPY +0.61%.",
       "quotes": [
         {
           "symbol": "MSTR",
@@ -85,24 +85,24 @@
           "note": "Bitcoin treasury",
           "official_name": "Strategy Inc",
           "currency": "USD",
-          "price": 151.29,
-          "change": 8.0501,
-          "change_percent": 5.62,
-          "previous_close": 143.2399,
-          "day_high": 151.33,
-          "day_low": 134.892,
-          "volume": 21711948,
-          "five_session_change_percent": -1.98,
+          "price": 136.83,
+          "change": -14.4603,
+          "change_percent": -9.56,
+          "previous_close": 151.2903,
+          "day_high": 146.83,
+          "day_low": 134.11,
+          "volume": 31969955,
+          "five_session_change_percent": -10.38,
           "closes": [
-            154.34,
             152.68,
             152.18,
             143.24,
-            151.29
+            151.29,
+            136.83
           ],
           "session": "Regular close",
           "exchange": "NasdaqGS",
-          "as_of": "2026-10-15T20:00:01+00:00",
+          "as_of": "2026-10-16T20:00:01+00:00",
           "timezone": "America/New_York"
         },
         {
@@ -111,24 +111,24 @@
           "note": "Bitcoin treasury",
           "official_name": "Strive, Inc.",
           "currency": "USD",
-          "price": 25.65,
-          "change": 0.9699,
-          "change_percent": 3.93,
-          "previous_close": 24.6801,
-          "day_high": 25.77,
-          "day_low": 22.48,
-          "volume": 12390444,
-          "five_session_change_percent": -7.73,
+          "price": 24.09,
+          "change": -1.56,
+          "change_percent": -6.08,
+          "previous_close": 25.65,
+          "day_high": 25.32,
+          "day_low": 23.54,
+          "volume": 10362459,
+          "five_session_change_percent": -13.06,
           "closes": [
-            27.8,
             27.71,
             27.59,
             24.68,
-            25.65
+            25.65,
+            24.09
           ],
           "session": "Regular close",
           "exchange": "NasdaqGM",
-          "as_of": "2026-10-15T20:00:01+00:00",
+          "as_of": "2026-10-16T20:00:01+00:00",
           "timezone": "America/New_York"
         },
         {
@@ -137,24 +137,24 @@
           "note": "Bitcoin treasury",
           "official_name": "Twenty One Capital, Inc.",
           "currency": "USD",
-          "price": 6.08,
-          "change": 0.09,
-          "change_percent": 1.5,
-          "previous_close": 5.99,
-          "day_high": 6.145,
-          "day_low": 5.7,
-          "volume": 2317257,
-          "five_session_change_percent": -3.34,
+          "price": 5.62,
+          "change": -0.46,
+          "change_percent": -7.57,
+          "previous_close": 6.08,
+          "day_high": 6.025,
+          "day_low": 5.525,
+          "volume": 2286696,
+          "five_session_change_percent": -9.65,
           "closes": [
-            6.29,
             6.22,
             6.36,
             5.99,
-            6.08
+            6.08,
+            5.62
           ],
           "session": "Regular close",
           "exchange": "NYSE",
-          "as_of": "2026-10-15T20:00:02+00:00",
+          "as_of": "2026-10-16T20:00:02+00:00",
           "timezone": "America/New_York"
         },
         {
@@ -163,51 +163,51 @@
           "note": "Bitcoin treasury",
           "official_name": "Metaplanet Inc.",
           "currency": "USD",
-          "price": 1.67,
-          "change": 0.01,
-          "change_percent": 0.6,
-          "previous_close": 1.66,
-          "day_high": 1.73,
-          "day_low": 1.63,
-          "volume": 104463,
-          "five_session_change_percent": 0.6,
+          "price": 1.64,
+          "change": -0.03,
+          "change_percent": -1.8,
+          "previous_close": 1.67,
+          "day_high": 1.72,
+          "day_low": 1.61,
+          "volume": 348731,
+          "five_session_change_percent": 0.61,
           "closes": [
-            1.66,
             1.63,
             1.64,
             1.66,
-            1.67
+            1.67,
+            1.64
           ],
           "session": "Regular close",
           "exchange": "OTC Markets OTCQX",
-          "as_of": "2026-10-15T20:00:00+00:00",
+          "as_of": "2026-10-16T20:00:00+00:00",
           "timezone": "America/New_York"
         }
       ],
       "headlines": [
         {
-          "title": "Strategy Shares Fall 3% as MSCI Introduces Index Eligibility Rules That Could Lead to Removal",
-          "url": "https://investorshub.advfn.com/market-news/article/38183/strategy-shares-fall-3-as-msci-introduces-index-eligibility-rules-that-could-lead-to-removal",
-          "source": "Investorshub",
-          "published": "2026-10-16T10:53:57+00:00",
-          "summary": "Strategy (NASDAQ:MSTR) shares declined 3% in premarket trading on Friday, 16 October 2026, after MSCI announced changes to its index eligibility methodology that could result in...",
+          "title": "Michael Saylor Calls Bitcoin Bull Market Return, While MARA Moves 1,000 BTC to Exchanges",
+          "url": "https://www.ccn.com/news/crypto/saylor-bitcoin-bull-market-mara-1000-btc-exchanges/",
+          "source": "Ccn",
+          "published": "2026-10-19T10:42:15+00:00",
+          "summary": "Michael Saylor says Bitcoin is returning to a bull market, with bank custody, lending, and tokenization driving adoption. Strategy reportedly repurchased around $1.5 billion in ...",
           "symbol": "MSTR"
         },
         {
-          "title": "Strategy, Metaplanet Face Exit From MSCI Indexes as the Index Provider Adopts New Test",
-          "url": "https://unchainedcrypto.com/strategy-metaplanet-face-exit-from-msci-indexes-as-the-index-provider-adopts-new-test/",
-          "source": "Unchainedcrypto",
-          "published": "2026-10-16T10:26:36+00:00",
-          "summary": "Digital asset treasury companies that fail MSCI’s operating-asset test now face a five-ratio screen, and MSCI’s current list already marks Strategy, Metaplanet and Upexi as...",
-          "symbol": "MPJPY"
+          "title": "Strategy Eyes 7-Day STRC Payout As Saylor Targets Lower Borrowing Costs After ASST Beat MSTR In Daily Dividends",
+          "url": "https://stocktwits.com/news-articles/markets/equity/michael-saylor-strive-strategy-daily-dividends-strc-payout/cZxNQuiRBtN",
+          "source": "Stocktwits",
+          "published": "2026-10-18T10:11:53+00:00",
+          "summary": "Strategy plans to pay STRC dividends every calendar day, including weekends, in line with the shift toward 24-hour tokenized trading.",
+          "symbol": "ASST"
         },
         {
-          "title": "Strive Eyes About $630 Million in Upsized Sale of a New Fixed-Rate Preferred Stock",
-          "url": "https://unchainedcrypto.com/strive-eyes-about-630-million-in-upsized-sale-of-a-new-fixed-rate-preferred-stock/",
-          "source": "Unchainedcrypto",
-          "published": "2026-10-16T10:26:24+00:00",
-          "summary": "The bitcoin treasury company priced 7 million shares of its 15% SATS preferred at $90, 2 million more than planned and below the $100 stated amount its dividend is based on.",
-          "symbol": "ASST"
+          "title": "Metaplanet (TSE:3350) Faces MSCI Index Risk, Is The Stock Fully Valued?",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/metaplanet-tse-3350-faces-msci-021518171.html",
+          "source": "Yahoo Finance",
+          "published": "2026-10-17T02:15:18+00:00",
+          "summary": "Metaplanet (TSE:3350) is back in focus after MSCI confirmed new index rules that could exclude companies viewed as primarily investment holding vehicles, including bitcoin...",
+          "symbol": "MPJPY"
         },
         {
           "title": "Twenty One Capital (XXI) Stock May Be Below Fair Value On Book Value",
@@ -224,7 +224,7 @@
       "title": "Space & defense",
       "kicker": "Equities",
       "blurb": "SpaceX, AST SpaceMobile, Merlin, Kraken Robotics, and Palantir.",
-      "analysis": "Two names closed higher and three names closed lower. AST SpaceMobile (ASTS) leads at +5.51%; Kraken Robotics (KRKNF) lags at −2.76%. The average session move is +0.40%. Five-session moves: SPCX −8.58%, ASTS −12.76%, MRLN −10.40%, KRKNF −10.42%, PLTR −4.09%.",
+      "analysis": "One name closed higher and four names closed lower. Kraken Robotics (KRKNF) leads at +2.31%; AST SpaceMobile (ASTS) lags at −8.55%. The average session move is −3.49%. Five-session moves: SPCX −10.64%, ASTS −20.99%, MRLN −8.75%, KRKNF −6.63%, PLTR −10.99%.",
       "quotes": [
         {
           "symbol": "SPCX",
@@ -232,24 +232,24 @@
           "note": "Space Exploration Technologies",
           "official_name": "Space Exploration Technologies Corp.",
           "currency": "USD",
-          "price": 148.62,
-          "change": -3.5392,
-          "change_percent": -2.33,
-          "previous_close": 152.1592,
-          "day_high": 149.04,
-          "day_low": 140.66,
-          "volume": 97873301,
-          "five_session_change_percent": -8.58,
+          "price": 146.03,
+          "change": -2.5905,
+          "change_percent": -1.74,
+          "previous_close": 148.6205,
+          "day_high": 147.92,
+          "day_low": 142.965,
+          "volume": 88552887,
+          "five_session_change_percent": -10.64,
           "closes": [
-            162.57,
             163.42,
             156.54,
             152.16,
-            148.62
+            148.62,
+            146.03
           ],
           "session": "Regular close",
           "exchange": "NasdaqGS",
-          "as_of": "2026-10-15T20:00:01+00:00",
+          "as_of": "2026-10-16T20:00:00+00:00",
           "timezone": "America/New_York"
         },
         {
@@ -258,24 +258,24 @@
           "note": "Satellite connectivity",
           "official_name": "AST SpaceMobile, Inc.",
           "currency": "USD",
-          "price": 44.46,
-          "change": 2.3198,
-          "change_percent": 5.51,
-          "previous_close": 42.1402,
-          "day_high": 44.935,
-          "day_low": 39.87,
-          "volume": 23115152,
-          "five_session_change_percent": -12.76,
+          "price": 40.66,
+          "change": -3.8,
+          "change_percent": -8.55,
+          "previous_close": 44.46,
+          "day_high": 44.03,
+          "day_low": 40.02,
+          "volume": 17218049,
+          "five_session_change_percent": -20.99,
           "closes": [
-            50.965,
             51.46,
             47.065,
             42.14,
-            44.46
+            44.46,
+            40.66
           ],
           "session": "Regular close",
           "exchange": "NasdaqGS",
-          "as_of": "2026-10-15T20:00:01+00:00",
+          "as_of": "2026-10-16T20:00:01+00:00",
           "timezone": "America/New_York"
         },
         {
@@ -284,24 +284,24 @@
           "note": "Autonomous flight",
           "official_name": "Merlin, Inc.",
           "currency": "USD",
-          "price": 1.12,
-          "change": 0.02,
-          "change_percent": 1.82,
-          "previous_close": 1.1,
-          "day_high": 1.17,
-          "day_low": 1.06,
-          "volume": 1996880,
-          "five_session_change_percent": -10.4,
+          "price": 1.095,
+          "change": -0.025,
+          "change_percent": -2.23,
+          "previous_close": 1.12,
+          "day_high": 1.15,
+          "day_low": 1.07,
+          "volume": 1929858,
+          "five_session_change_percent": -8.75,
           "closes": [
-            1.25,
             1.2,
             1.29,
             1.1,
-            1.12
+            1.12,
+            1.095
           ],
           "session": "Regular close",
           "exchange": "NasdaqGM",
-          "as_of": "2026-10-15T20:00:01+00:00",
+          "as_of": "2026-10-16T20:00:01+00:00",
           "timezone": "America/New_York"
         },
         {
@@ -310,24 +310,24 @@
           "note": "Underwater defense",
           "official_name": "Kraken Robotics Inc.",
           "currency": "USD",
-          "price": 2.82,
-          "change": -0.08,
-          "change_percent": -2.76,
-          "previous_close": 2.9,
-          "day_high": 2.92,
-          "day_low": 2.8,
-          "volume": 339398,
-          "five_session_change_percent": -10.42,
+          "price": 2.885,
+          "change": 0.065,
+          "change_percent": 2.31,
+          "previous_close": 2.82,
+          "day_high": 2.9,
+          "day_low": 2.67,
+          "volume": 312192,
+          "five_session_change_percent": -6.63,
           "closes": [
-            3.148,
             3.09,
             3.12,
             2.9,
-            2.82
+            2.82,
+            2.885
           ],
           "session": "Regular close",
           "exchange": "OTC Markets OTCQB",
-          "as_of": "2026-10-15T20:00:00+00:00",
+          "as_of": "2026-10-16T20:00:00+00:00",
           "timezone": "America/New_York"
         },
         {
@@ -336,58 +336,58 @@
           "note": "Defense software",
           "official_name": "Palantir Technologies Inc.",
           "currency": "USD",
-          "price": 200.5,
-          "change": -0.4703,
-          "change_percent": -0.23,
-          "previous_close": 200.9703,
-          "day_high": 200.91,
-          "day_low": 192.6,
-          "volume": 24679424,
-          "five_session_change_percent": -4.09,
+          "price": 186.03,
+          "change": -14.4701,
+          "change_percent": -7.22,
+          "previous_close": 200.5001,
+          "day_high": 203.55,
+          "day_low": 184.45,
+          "volume": 33354882,
+          "five_session_change_percent": -10.99,
           "closes": [
-            209.05,
             209.0,
             208.67,
             200.97,
-            200.5
+            200.5,
+            186.03
           ],
           "session": "Regular close",
           "exchange": "NasdaqGS",
-          "as_of": "2026-10-15T20:00:00+00:00",
+          "as_of": "2026-10-16T20:00:01+00:00",
           "timezone": "America/New_York"
         }
       ],
       "headlines": [
         {
-          "title": "Elon Musk vs America’s Big 3 phone giants: AT&T, Verizon, T-Mobile down $50B. Will Starlink slash your wireless bill?",
-          "url": "https://finance.yahoo.com/technology/articles/elon-musk-vs-america-big-111500320.html",
+          "title": "AST SpaceMobile Advances Space-Based Cellular Broadband in Europe in Collaboration with European Mobile Network Operator Partners",
+          "url": "https://finance.yahoo.com/technology/articles/ast-spacemobile-advances-space-based-112500146.html",
           "source": "Yahoo Finance",
-          "published": "2026-10-16T11:15:00+00:00",
-          "summary": "SpaceX is one step closer to becoming a major wireless carrier. While the competition heats up, here are 3 ways to lower your household expenses now.",
-          "symbol": "SPCX"
-        },
-        {
-          "title": "Palantir, Apple and Microsoft Brace for Democrats to Go on Offensive",
-          "url": "https://finance.yahoo.com/economy/policy/articles/palantir-apple-microsoft-brace-democrats-110000498.html",
-          "source": "Yahoo Finance",
-          "published": "2026-10-16T11:00:00+00:00",
-          "summary": "For two years, congressional Democrats furious over corporate America’s cooperation with the Trump administration have been limited to the sternly worded letter.",
-          "symbol": "PLTR"
-        },
-        {
-          "title": "Launch Delays Could Change The Case For AST SpaceMobile Stock",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/launch-delays-could-change-case-101149312.html",
-          "source": "Yahoo Finance",
-          "published": "2026-10-16T10:11:49+00:00",
-          "summary": "AST SpaceMobile and TELUS completed an integration test linking TELUS' terrestrial wireless network with AST SpaceMobile's space based system, aiming to extend direct satellite...",
+          "published": "2026-10-19T11:25:00+00:00",
+          "summary": "MIDLAND, Texas, October 19, 2026--AST SpaceMobile, Inc. (\"AST SpaceMobile\") (NASDAQ: ASTS), the company building the first and only space-based cellular broadband network...",
           "symbol": "ASTS"
         },
         {
-          "title": "Kraken Robotics Is Down 62%. Here's What a $5,000 Investment Could Be Worth if It Recovers to Its High.",
-          "url": "https://www.fool.com/investing/2026/10/07/kraken-robotics-is-down-62-heres-what-a-5000/",
+          "title": "Musk Is Giving Away $10 Billion in SpaceX Stock—To Your Kids.",
+          "url": "https://finance.yahoo.com/m/174da727-5666-3c3c-8864-4205cd7507cc/musk-is-giving-away-%2410.html",
+          "source": "Yahoo Finance",
+          "published": "2026-10-19T11:01:00+00:00",
+          "summary": "Elon Musk is planning a billion dollar SpaceX shares giveaway—in 2027.",
+          "symbol": "SPCX"
+        },
+        {
+          "title": "Knox and Palantir Partner to Further Accelerate Delivery of Software through Largest Federal Cloud",
+          "url": "https://finance.yahoo.com/technology/articles/knox-palantir-partner-further-accelerate-105900917.html",
+          "source": "Yahoo Finance",
+          "published": "2026-10-19T10:59:00+00:00",
+          "summary": "WASHINGTON & MIAMI, October 19, 2026--Knox Systems, among the world's largest Federal and Department of War (DoW) Managed Cloud, today announced a new partnership with Palantir...",
+          "symbol": "PLTR"
+        },
+        {
+          "title": "Kraken Robotics Stock in 3 Years: Boom, Bust, or Quietly Crushing It?",
+          "url": "https://www.fool.com/investing/2026/10/17/kraken-robotics-stock-in-3-years-boom-bust-or-quie/",
           "source": "Motley Fool",
-          "published": "2026-10-07T17:20:00+00:00",
-          "summary": "Kraken Robotics is seeing strong demand for its sub-sea technology for defense purposes.",
+          "published": "2026-10-18T02:20:00+00:00",
+          "summary": "Down more than 60%, can Kraken Robotics stock mount a huge comeback?",
           "symbol": "KRKNF"
         }
       ]
